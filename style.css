@@ -1,1 +1,206 @@
 @import url('bootstrap/css/bootstrap.min.css');
+
+/* General */
+
+body {
+    overflow-x: hidden;    
+}
+
+body, body section, body .jumbotron, body footer {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color:black;
+}
+
+a:hover {
+    color: black;
+    text-decoration:none;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: black;
+}
+
+p { 
+    color: black;
+}
+
+/* Hover effect */
+
+/* https://codepen.io/alicevega/pen/vEWXGL */
+
+.hover-mask a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .hover-mask img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.38s ease-in-out;
+    -moz-transition: all 0.38s ease-in-out;
+    -o-transition: all 0.38s ease-in-out;
+    -ms-transition: all 0.38s ease-in-out;
+    transition: all 0.38s ease-in-out;
+  }
+  .hover-mask:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .hover-mask a h2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+   /* padding: 45% 20px; */
+    padding-top: 33%;
+    text-align: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.38s linear;
+    -moz-transition: all 0.38s linear;
+    -o-transition: all 0.38s linear;
+    -ms-transition: all 0.38s linear;
+    transition: all 0.38s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  .hover-mask:hover a h2 {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+
+
+/* Menu */
+
+.navbar-custom {
+    background-color: black;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand {
+    color: white;
+}
+.navbar-custom .navbar-text {
+    color: white;
+}
+
+.navbar-custom .navbar-brand:hover {
+    text-decoration: underline;
+}
+
+/* .navbar-custom .nav-item {
+    background-color: black;
+    padding: 2px;
+    margin-left:2px;
+    margin-right:2px;
+} */
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .navbar-nav .dropdown-menu .nav-link,
+.navbar-custom .navbar-nav .dropdown-toggle {
+    color: white;
+}
+
+
+.navbar-custom .navbar-nav .dropdown-toggle,
+.navbar-custom .navbar-nav .dropdown-toggle:hover,
+.navbar-custom .navbar-nav .dropdown-toggle:active,
+.navbar-custom .navbar-nav .dropdown-toggle:after,
+.navbar-custom .navbar-nav .dropdown-toggle:focus  {
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-header .navbar-toggle .icon-bar {
+        background-color:#f13c20;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom a.nav-link.active {
+    color:white;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .navbar-nav .dropdown-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: black;
+}
+
+/* Jumbotron - Header */
+
+.jumbotron div {
+    padding-top: 25px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.jumbotron div h1 {
+    text-align: center;
+    color: black;
+}
+
+.jumbotron div p {
+    text-align: justify;
+}
+
+/* .jumbotron {
+    background-color: white;
+} */
+
+/* Section */
+
+section {
+    background-color: white;
+}
+
+.row.no-gutter {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+
+section div img {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: white;
+    margin-top:50px;
+    padding-top: 25px;
+    /* padding-left:25px;
+    padding-right: 25px; */
+}
+
+footer div div div img {
+    width: 75px;
+}
+
+
+

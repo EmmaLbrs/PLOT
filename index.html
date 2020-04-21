@@ -11,13 +11,126 @@
     <!-- Bootstrap CSS     
   	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
   	<link rel="stylesheet" type="text/css" href="style.css">
- 	  <title>PLOT -- CESR</title>
+ 	  <title>PLOT - CESR | Accueil</title>
 
   </head>
 
 
   <body>
-    <div>
+
+    <div class="navbar navbar-expand-lg navbar-fixed-top navbar-custom" id="myNavbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a href="index.html" class="navbar-brand">PLOT</a>
+        </div>
+        
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav" role="navigation">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link" href="carte.html">Carte</a></li>
+              <li class="dropdown nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Légendes<span class="caret"></span> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="nav-link">Textes</a></li>
+                  <li><a href="#" class="nav-link">Audios</a></li>
+                  <li><a href="#" class="nav-link">Base de données iconographiques</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos<span class="caret"></span> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="nav-link">Sources</a></li>
+                  <li><a href="#" class="nav-link">Le projet</a></li>
+                  <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+              </li>          
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="jumbotron text-left">
+      <div class="row">
+        <div class="col-md-4"><h1>Project Legends of Tours (PLOT)</h1>
+        </div>
+        <div class="col-md-8">
+          <p>Notre projet PLOT, “Project Legends Of Tours”, consiste en une réappropriation du patrimoine local de 
+            la Touraine construit autour des légendes associées à la ville de Tours. Les légendes font partie 
+            intégrante de notre patrimoine local et ne doivent pas être mises de côté. Celles-ci entrent dans une
+             optique de revalorisation de la transmission orale, essoufflée au fil des siècles dû à l’émergence des
+              nouvelles technologies. <br/>C’est par ces technologies mêmes que nous voulons perpétuer cette pratique. 
+              Notre objectif est de valoriser ce folklore grâce à un site web agrémenté d’une carte web dynamique, 
+              cliquable par lieux significatifs de la ville de Tours. Celle-ci propose un accès libre à des 
+              enregistrements audio par légende et leurs scripts, pour que chacun puisse découvrir ou redécouvrir 
+              ce patrimoine à travers des lieux connus du grand public. Ainsi, nous voulons sensibiliser 
+              tourangeaux comme visiteurs à l’environnement qui les entoure. </p>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+
+      <section class="row no-gutter">
+
+        <div class="col-md-3 col-sm-6 hover-mask" >
+          <a href="#" title="">
+            <img src="images/images_accueil/kowal-audio.jpg" class="img-responsive" alt="Image de "/>
+            <h2>Vers les audios</h2>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 hover-mask">
+         <a href="#" title="">
+          <img src="images/images_accueil/gottardi-unsplash.jpg" class="img-responsive" alt="Image de "/>
+          <h2>Vers les textes</h2>
+        </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 hover-mask">
+          <a href="carte.html" title="">
+            <img src="images/images_accueil/shuliahin-map2.jpg" class="img-responsive" alt="Image de "/>
+            <h2>Vers la carte</h2>
+          </a>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 hover-mask">
+          <a href="#" title="">
+            <img src="images/images_accueil/barral-pictures.jpg" class="img-responsive" alt="Image de "/>
+            <h2>Vers les images</h2>
+          </a>
+        </div>
+
+      </section>
+
+
+
+      <footer class="row">
+        <div class="col-md-6">
+        <p>
+          <a href="#" class="underline--magical">Sources</a><br/>
+          <a href="#">Nous contacter</a><br/>
+          Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
+        </p>
+      </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-offset-6 col-md-3 logo-footer">
+              <img src="images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/>
+            </div>
+            <div class="col-md-3 logo-footer">
+              <img src="images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" />
+            </div>
+          </div>
+        </div>
+      </footer>
+
     </div>
 
 
