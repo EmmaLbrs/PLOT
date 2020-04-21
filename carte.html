@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css">        
+    <link rel="stylesheet" href="leaflet/leaflet-sidebar-master/src/L.Control.Sidebar.css" />
+
+    <style>
+    #map { 
+        position: absolute; 
+        top:54px; 
+        bottom:0; 
+        right:0; 
+        left:0; 
+    }
+
+    </style>
+
+    <title>PLOT - CESR | Carte</title>
+  </head>
+
+  <body>
+    
+    <div class="navbar navbar-expand-lg navbar-fixed-top navbar-custom" id="myNavbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a href="index.html" class="navbar-brand">PLOT</a>
+        </div>
+        
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav" role="navigation">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link active" href="carte.html">Carte</a></li>
+            <li class="dropdown nav-item">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Légendes<span class="caret"></span> </a>
+              <ul class="dropdown-menu">
+                <li><a href="textes.html" class="nav-link">Textes</a></li>
+                <li><a href="#" class="nav-link">Audios</a></li>
+                <li><a href="#" class="nav-link">Base de données iconographiques</a></li>
+              </ul>
+            </li>
+            <li class="dropdown nav-item">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos<span class="caret"></span> </a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="nav-link">Sources</a></li>
+                <li><a href="#" class="nav-link">Le projet</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+              </ul>
+            </li>          
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container-fluid">
+      
+      <div id="map">
+      </div>
+
+      <div id="sidebar">
+          <div id="content"></div>
+      </div>
+   </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
+    <script src="leaflet/leaflet.js"></script>
+    <script src="leaflet/leaflet-sidebar-master/src/L.Control.Sidebar.js"></script>
+
+    <script>
+
+
+    var map = L.map('map').setView([47.390140, 0.688091],15);
+    
+    var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: 'abcd',
+        minZoom: 0,
+        maxZoom: 20,
+        ext: 'png'
+    });
+
+
+   var Thunderforest_Pioneer = L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={apikey}', {
+      attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      apikey: "98b3e526fe5c4b279ee3544b5c286445",
+      maxZoom: 22
+  });
+
+  Stamen_Toner.addTo(map); 
+
+
+    var sidebar = L.control.sidebar('sidebar', {
+      closeButton: true,
+      position: 'right',
+      autoPan:false
+    });
+
+    map.addControl(sidebar);
+
+    setTimeout(function () {
+        sidebar.hide();}, 500);
+
+    map.on('click', function () {
+      sidebar.hide();
+    })
+
+   function showSideBar () {
+      sidebar.show();
+    }
+
+    var content = document.getElementById("content");
+
+    var castleIcon = L.icon({
+    iconUrl: 'images/icons/iconfinder__Castle_754634.png',
+
+    iconSize:     [50, 50], // size of the icon
+    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
+    });
+
+    var churchIcon = L.icon({
+    iconUrl: 'images/icons/iconfinder_Church_4265806.png',
+
+    iconSize:     [50, 50], // size of the icon
+    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
+    });
+
+    var couventCarme = L.marker([47.395805, 0.682777], {icon: churchIcon}).addTo(map);
+    couventCarme.on('click', function () 
+   {
+            content.innerHTML = "<h1>Le couvent des Carmes</h1><p>Lorem ipsum</p>"
+            showSideBar();
+    });
+
+    var plessisLesTours = L.marker([47.382467, 0.660568], {icon:castleIcon}).addTo(map);
+    plessisLesTours.on('click', function () 
+   {
+            content.innerHTML = "<h1>La Souris Blanche</h1><p>Lorem ipsum</p>"
+            showSideBar();
+    });
+
+    var tombeauStMartin = L.marker([47.392871, 0.683027]).addTo(map);
+    tombeauStMartin.on('click', function () 
+   {
+            content.innerHTML = "<h1>Le tombeau de Saint Martin</h1><p>Lorem ipsum</p>"
+            showSideBar();
+    });
+    
+
+
+    </script>
+
+  </body>
+</html>
