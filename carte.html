@@ -14,9 +14,28 @@
     #map { 
         position: absolute; 
         top:54px; 
-        bottom:0; 
+        bottom:30px; 
         right:0; 
         left:0; 
+        z-index: 1;
+    }
+
+    footer  {
+      z-index: 2;
+      position: absolute;
+      bottom:0px; 
+      right:0; 
+      left:0;
+      padding: 1px;
+      text-align: center;
+    }
+
+    footer div {
+      background-color: black;
+    }
+
+    footer div p, footer div p a {
+      color: white;
     }
 
     </style>
@@ -71,8 +90,17 @@
       <div id="sidebar">
           <div id="content"></div>
       </div>
+      
    </div>
-
+   <footer class="row">
+    <div class="col-md-12">
+    <p>
+      <a href="#" class="underline--magical">Sources</a> - 
+      <a href="#">Nous contacter</a> - 
+      Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
+    </p>
+  </div>
+  </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
