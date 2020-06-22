@@ -38,6 +38,33 @@
       color: white;
     }
 
+    #content { width:inherit;}
+
+    #content div.container {
+      background-color:white;
+      width: inherit;
+
+    }
+
+    /* #content div p, #content div header h2 {
+      color:red;
+      width: inherit;
+      text-align: justify;
+    } */
+
+    div#texte-legende {
+      border-bottom: 1px lightgray solid;
+    }
+
+    div.perso-legendes {
+      margin-top: 25px;
+      border: 1px dashed lightgray;
+      padding: 5px;
+    }
+    #content div div.perso-legendes p {
+      color: black;
+    }
+
     </style>
 
     <title>PLOT - CESR | Carte</title>
@@ -171,7 +198,7 @@
     var couventCarme = L.marker([47.395805, 0.682777], {icon: churchIcon}).addTo(map);
     couventCarme.on('click', function () 
    {
-            content.innerHTML = "<h1>Le couvent des Carmes</h1><p>Lorem ipsum</p>"
+            $("#content").load('legendes/couvent-carmes-html.html');
             showSideBar();
     });
 
