@@ -81,6 +81,7 @@
       .leaflet-sidebar.right.visible ~ .leaflet-right {
         right: 460px; } }
   .leaflet-sidebar .close {
+    border-bottom: 0;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -95,6 +96,10 @@
     border-radius: 16px;*/
     cursor: pointer;
     z-index: 2000 /*it was 8*/; }
+
+    .leaflet-sidebar a.close:before {
+      height: 0px;
+    }
 
 .leaflet-left {
   transition: left 0.5s; }
