@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/PLOT-TEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>La brèche des Normands</title>
+                <respStmt>
+                    <resp>Editrice</resp>
+                    <persName>Valentine Castanet--Bihan</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition numérique des textes du corpus de légendes du projet
+                    PLOT.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Centre d'Etudes Supérieures de la Renaissance (CESR)</publisher>
+                <availability>
+                    <licence>Domaine public</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>Jaccques-Marie Rougé</author>
+                        <title>Le rempart des Tourangeaux</title>
+                    </analytic>
+                    <monogr>
+                        <title>Contes de Touraine</title>
+                        <imprint>
+                            <pubPlace>France</pubPlace>
+                            <publisher>Editions C.L/D.</publisher>
+                            <date>1981</date>
+                            <biblScope unit="page" from="209" to="211">pp. 209-211</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <listPerson type="personnages">
+                    <personGrp xml:id="perso-normands">
+                        <name>Les Normands</name>
+                        <note>Nom autrefois donné aux Vikings.</note>
+                    </personGrp>
+                    <personGrp xml:id="perso-tourangeaux">
+                        <name>Les Tourangeaux</name>
+                        <note>Habitants de la ville de Tours.</note>
+                    </personGrp>
+                    <person xml:id="perso-stmartin">
+                        <persName>Saint-Martin de Tours</persName>
+                        <birth when="0316">
+                            <date>An 316</date>
+                            <placeName>Sabaria de Pannonie (ajd. Szombathely, Hongrie)</placeName>
+                        </birth>
+                        <death when="0397">
+                            <date>An 397</date>
+                            <placeName>Candes, France</placeName>
+                        </death>
+                        <occupation>Saint de la chrétienté et évêque de Tours</occupation>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place type="ville" xml:id="place-tours">
+                        <placeName>Tours</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-remparts-tours">
+                        <placeName>Les remparts de Tours</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-cathedrale-stgatien">
+                        <placeName>Cathédrale Saint-Gatien</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-amphi">
+                        <placeName>Amphithéâtre de Tours</placeName>
+                        <note>Ancien amphithéâtre transformé en place forte.</note>
+                    </place>
+                    <place type="fleuve" xml:id="place-loire">
+                        <placeName>La Loire</placeName>
+                    </place>
+                    <place type="ile" xml:id="place-noirmoutier">
+                        <placeName>L'île de Noirmoutier</placeName>
+                    </place>
+                    <place type="ville" xml:id="place-nantes">
+                        <placeName>Nantes</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-marmoutier">
+                        <placeName>Monastère de Marmoutier</placeName>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>PLOT consiste en une revalorisation des légendes de Tours, grâce à des
+                    audios.</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="taxo-cat">
+                    <category xml:id="cat-hist">
+                        <catDesc>Historique</catDesc>
+                    </category>
+                    <category xml:id="cat-rel">
+                        <catDesc>Religion</catDesc>
+                    </category>
+                    <category xml:id="cat-paien">
+                        <catDesc>Croyance Païenne</catDesc>
+                    </category>
+                    <category xml:id="cat-fant">
+                        <catDesc>Fantastique</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="RAMEAU">
+                    <bibl>Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France <ptr
+                            target="https://rameau.bnf.fr/"/></bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
+                Rougé et arrangé pour notre usage par Valentine Castanet--Bihan.</creation>
+            <langUsage>
+                <language ident="fr-FR">Français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#RAMEAU">
+                    <term>Martin (0316?-0397 ; saint)</term>
+                    <term>Normands</term>
+                    <term>Vikings</term>
+                    <term>Tours (Indre-et-Loire ; région)</term>
+                </keywords>
+                <catRef scheme="#taxo-cat" target="#cat-hist #cat-rel"/>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-20">Ajout des mots clés et licence</change>
+            <change when="2020-06-19">Création de la taxonomie responsable des catégories</change>
+            <change when="2020-06-17">Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <castList>
+                <castItem xml:id="narrateur">
+                    <role>Narrateur</role>
+                    <persName>Sandrine Bihan</persName>
+                </castItem>
+            </castList>
+            <set>
+                <p>Au IVᵉ siècle, alors que la ville de <placeName ref="#place-tours"
+                        >Tours</placeName> prospérait, elle s’entoura d’une <placeName
+                        ref="#place-remparts-tours">muraille</placeName> afin de se protéger
+                    d'éventuelles attaques des <name ref="#perso-normands">peuples
+                        germaniques</name>. Ces <placeName ref="#place-remparts-tours"
+                        >remparts</placeName>, symboles de richesse, contenaient l’actuel quartier
+                    de la <placeName ref="#place-cathedrale-stgatien">Cathédrale
+                        Saint-Gatien</placeName>, ainsi que <placeName ref="#place-amphi"
+                        >l’amphithéâtre</placeName> transformé en place forte. On peut aujourd’hui
+                    encore voir les traces de ces fortifications de part et d’autres de ce
+                    quartier.</p>
+            </set>
+        </front>
+        <body>
+            <sp who="#narrateur">
+                <speaker>Sandrine Bihan</speaker>
+                <p xml:id="titre">La brèche des Normands</p>
+                <p>Vers la fin du IXᵉ siècle, <name ref="#perso-normands">les Normands</name> se
+                    firent plusieurs fois remarquer en remontant <placeName ref="#place-loire">la
+                        Loire</placeName> dans le but de piller les richesses de la région,
+                    notamment dans les monastères, couvents et églises. L’histoire qui suit provient
+                    de l’une de leurs expéditions.</p>
+                <p>Un jour, vers le milieu du IXe siècle, on vit <name ref="#perso-normands">les
+                        Normands</name> arriver, dans des embarcations fines et légères, capable de
+                    naviguer les plus petits cours d’eau. De la sorte, ils installèrent leur
+                    quartier général sur <placeName ref="#place-noirmoutier">l’île de
+                        Noirmoutier</placeName>, leur permettant ainsi de rallier plus facilement
+                    les terres. Très vite ils commencèrent à remonter <placeName ref="#place-loire"
+                        >la Loire</placeName>, pillant sur leur passage villes et villages, ainsi
+                    que les monastères ou tout autre institution possédant un peu de richesses.
+                        <placeName ref="#place-nantes">Nantes</placeName> tomba bien vite sous leurs
+                    attaques, suivi par <placeName ref="#place-marmoutier">Marmoutier</placeName>,
+                    qui était le monastère le plus important de la région. Ce fut un véritable
+                    carnage et seulement quelques moines réussirent à se cacher des truands ou
+                    s’échapper par des voies dérobées. Cette victoire permit aux <name
+                        ref="#perso-normands">Normands</name> de se ravitailler autant que
+                    nécessaire avant de se tourner vers leur prochain objectif : <placeName
+                        ref="#place-tours">la ville de Tours</placeName>.</p>
+                <p><placeName ref="#place-remparts-tours">Les fortifications</placeName> étaient
+                    cependant trop solides pour que <name ref="#perso-normands">les Normands</name>
+                    puissent envahir <placeName ref="#place-tours">la ville</placeName> dès leur
+                    arrivée. Ils établirent alors un siège tout autour <placeName
+                        ref="#place-remparts-tours">des remparts</placeName>, le temps de trouver
+                    comment rentrer.</p>
+                <p>Malgré de nombreuses tentatives, <name ref="#perso-normands">les Normands</name>
+                    restaient coincés aux portes de <placeName ref="#place-tours">la
+                        ville</placeName> : <name ref="#perso-tourangeaux">les Tourangeaux</name>
+                    repoussaient les attaques et faisaient tomber les échelles vacillantes encore et
+                    encore. Lassés de ces échecs, <name ref="#perso-normands">les hommes du
+                        nord</name> contournèrent <placeName ref="#place-remparts-tours">la
+                        muraille</placeName>, pour rejoindre l’endroit où elle était la plus fine et
+                    commencèrent à la défaire, pierre par pierre.</p>
+                <p>Voyant <placeName ref="#place-remparts-tours">les remparts</placeName>
+                    s’affaiblir et la brèche s’agrandir sous les coups de bélier, <name
+                        ref="#perso-tourangeaux">les Tourangeaux</name> craignirent que <name
+                        ref="#perso-normands">les Normands</name> réussissent finalement à pénétrer
+                        <placeName ref="#place-tours">la ville</placeName>. Ils étaient parfaitement
+                    conscients que leur défense ne tiendrait plus longtemps face aux assauts répétés
+                        <name ref="#perso-normands">des ennemis</name>.</p>
+                <p>Le 12 Mai 903, au bout de douze longs jours de siège, <name
+                        ref="#perso-tourangeaux">les combattants</name> reprirent courage. En effet,
+                    un cortège imposant diligenté par les prêtres, déposa sur les murs un coffre les
+                    reliques de <persName ref="#perso-stmartin">Saint-Martin</persName>, protecteur
+                    de <placeName ref="#place-tours">Tours</placeName>.</p>
+                <p>Aussitôt, <name ref="#perso-normands">les Normands</name> prirent peur et firent
+                    demi-tour, laissant <name ref="#perso-tourangeaux">les Tourangeaux</name>
+                    victorieux et reconnaissants envers <persName ref="#perso-stmartin"
+                        >Saint-Martin</persName>.</p>
+                <p>Il est encore possible de voir le tunnel creusé dans la <placeName
+                        ref="#place-remparts-tours">muraille</placeName>, qui s’appelle aujourd’hui
+                    la brèche des normands.</p>
+            </sp>
+        </body>
+    </text>
+</TEI>

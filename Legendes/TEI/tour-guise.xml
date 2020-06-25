@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/PLOT-TEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>La Tour de Guise</title>
+                <respStmt>
+                    <resp>Editrice</resp>
+                    <persName>Valentine Castanet--Bihan</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition numérique des textes du corpus de légendes du projet
+                    PLOT.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Centre d'Etudes Supérieures de la Renaissance (CESR)</publisher>
+                <availability>
+                    <licence>Domaine public</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>Jaccques-Marie Rougé</author>
+                        <title>L'évasion du Duc de Guise</title>
+                    </analytic>
+                    <monogr>
+                        <title>Histoires du jardin de la France</title>
+                        <imprint>
+                            <pubPlace>France</pubPlace>
+                            <publisher>Tours : Maison Mame</publisher>
+                            <date>1981</date>
+                            <biblScope unit="page" from="69" to="73">pp. 69-73</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <listPerson type="personnages">
+                    <person xml:id="perso-henriIII">
+                        <persName>Henri III</persName>
+                        <birth when="1551-09-19">
+                            <date>19 Septembre 1551</date>
+                            <placeName>Château de Fontainebleau, France</placeName>
+                        </birth>
+                        <death when="1589-08-02">
+                            <date>2 Août 1589</date>
+                            <placeName>Château de Saint-Cloud, France</placeName>
+                        </death>
+                        <occupation>Roi de France</occupation>
+                    </person>
+                    <person xml:id="perso-henri-lorraine">
+                        <persName>Henri Ier de Lorraine</persName>
+                        <birth when="1550-12-31">
+                            <date>31 Décembre 1550</date>
+                            <placeName>Joinville, France</placeName>
+                        </birth>
+                        <death when="1588-12-23">
+                            <date>23 Décembre 1588</date>
+                            <placeName>Blois, France</placeName>
+                        </death>
+                        <occupation>Duc de Guise</occupation>
+                        <note>Autrement appelé Henri le Balafré</note>
+                    </person>
+                    <person xml:id="perso-charles-mayenne">
+                        <persName>Charles de Mayenne</persName>
+                        <birth when="1554-03-26">
+                            <date>26 Mars 1554</date>
+                            <placeName>Alençon, France</placeName>
+                        </birth>
+                        <death when="1611-10-03">
+                            <date>3 Octobre 1611</date>
+                            <placeName>Soissons, France</placeName>
+                        </death>
+                        <occupation>Duc de Mayenne</occupation>
+                        <note>Oncle de <persName ref="#perso-charlesI-guise">Charle de
+                                Guise</persName>, frère de feu <persName ref="#perso-henri-lorraine"
+                                >Henri de Lorraine</persName>.</note>
+                    </person>
+                    <person xml:id="perso-charlesI-guise">
+                        <persName>Charles de Lorraine</persName>
+                        <birth when="1571-08-02">
+                            <date>2 Août 1571</date>
+                            <placeName>Joinville, France</placeName>
+                        </birth>
+                        <death when="1640-09-30">
+                            <date>30 Septembre 1640</date>
+                            <placeName>Cuna, Italie</placeName>
+                        </death>
+                        <occupation>Prince de Joinville puis, à la mort de son père, Duc de
+                            Guise</occupation>
+                        <note>Charles Ier de Guise. Fils de <persName ref="#perso-henri-lorraine"
+                                >Henri de Lorraine</persName>, neveu de <persName
+                                ref="#perso-charles-mayenne">Charles de Mayenne</persName>.</note>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place type="ville" xml:id="place-tours">
+                        <placeName>Tours</placeName>
+                    </place>
+                    <place type="fleuve" xml:id="place-loire">
+                        <placeName>La Loire</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-chateau-tours">
+                        <placeName>Château de Tours</placeName>
+                    </place>
+                    <place type="ville" xml:id="place-notre-dame-la-riche">
+                        <placeName>Notre-Dame-la-Riche</placeName>
+                    </place>
+                    <place type="riviere" xml:id="place-cher">
+                        <placeName>Le Cher</placeName>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>PLOT consiste en une revalorisation des légendes de Tours, grâce à des
+                    audios.</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="taxo-cat">
+                    <category xml:id="cat-hist">
+                        <catDesc>Historique</catDesc>
+                    </category>
+                    <category xml:id="cat-rel">
+                        <catDesc>Religion</catDesc>
+                    </category>
+                    <category xml:id="cat-paien">
+                        <catDesc>Croyance Païenne</catDesc>
+                    </category>
+                    <category xml:id="cat-fant">
+                        <catDesc>Fantastique</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="RAMEAU">
+                    <bibl>Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France <ptr
+                            target="https://rameau.bnf.fr/"/></bibl>
+                </taxonomy>
+                </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
+                Rougé et arrangé pour notre usage par Valentine Castanet--Bihan.</creation>
+            <langUsage>
+                <language ident="fr-FR">Français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#RAMEAU">
+                    <term>Guise, Charles de Lorraine duc de (1571-1640)</term>
+                    <term>Guise (famille)</term>
+                    <term>Château de Tours</term>
+                </keywords>
+                <catRef scheme="#taxo-cat" target="#cat-hist"/>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-20">Ajout des mots clés et licence</change>
+            <change when="2020-06-19">Création de la taxonomie responsable des catégories</change>
+            <change when="2020-06-18">Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <castList>
+                <castItem xml:id="narrateur">
+                    <role>Narrateur</role>
+                    <persName>Alexandre Castanet</persName>
+                </castItem>
+            </castList>
+            <set>
+                <p>En 1588, en pleine guerre de religion, <persName ref="#perso-henriIII">le roi de
+                        France Henri III</persName> fait assassiner <persName
+                        ref="#perso-henri-lorraine">Henri de Lorraine, duc de Guise, dit le
+                        Balafré</persName>. Le <persName ref="#perso-charles-mayenne">duc de
+                        Mayenne</persName>, membre de la famille réussit à s’enfuir, mais <persName
+                        ref="#perso-henriIII">Henri III</persName> fait tout de même arrêter
+                        <persName ref="#perso-charlesI-guise">Charles Ier</persName>, fils ainé du
+                    défunt <persName ref="#perso-henri-lorraine">duc de Guise</persName> et le reste
+                    de sa famille. </p>
+                <p><persName ref="#perso-charlesI-guise">Charles Ier, prince de Joinville</persName>
+                    se fait ainsi enfermer dans le donjon du <placeName ref="#place-chateau-tours"
+                        >château de Tours</placeName>. On raconte que son évasion fut spectaculaire.
+                </p>
+            </set>
+        </front>
+        <body>
+            <sp who="#narrateur">
+                <speaker>Alexandre Castanet</speaker>
+                <p xml:id="titre">La Tour de Guise</p>
+                <p>Dans le donjon du <placeName ref="#place-chateau-tours">château de
+                        Tours</placeName> était enfermé <persName ref="#perso-charlesI-guise">le
+                        jeune duc Charles Ier de Guise</persName>, prisonnier du <persName
+                        ref="#perso-henriIII">roi Henri III</persName>.</p>
+                <p>Un soir d’août 1591, au milieu des sons des batraciens, un croassement plutôt
+                    humain se fit entendre. <persName ref="#perso-charlesI-guise">Le jeune
+                        duc</persName> appelait et très vite une voix fluette répondit. Une jeune
+                    lavandière du château se tenait en face au bout du pont. Armée d’une fronde,
+                    elle lança un message lesté d’une pierre qui passa entre les barreaux de la
+                    fenêtre. <persName ref="#perso-charlesI-guise">Le jeune duc</persName> se hâta
+                    de le lire. « A demain, Monseigneur ! ».</p>
+                <p><persName ref="#perso-charlesI-guise">Charles de Guise</persName> songea qu’il
+                    serait peut-être libre le lendemain, bien que lui-même n’en soit pas sûr. Après
+                    tout, la tour était très haute et de nombreux gardes surveillaient les sorties
+                    et l’extérieur, il s‘empressa cependant de manger le papier, faisant ainsi
+                    disparaitre toute preuve les incriminant.</p>
+                <p>Ressassant ainsi les risques d’une évasion, il se rendit compte que la lavandière
+                    avait dissimulé une longue et solide corde dans sa corbeille à linge. Périlleux,
+                    pensa-t-il, mais avait-il vraiment le choix ? Il devait faire confiance à la
+                    blanchisseuse, sinon il ne sortirait jamais de sa prison.</p>
+                <p>Ce ne fût que le lendemain qu’il comprit le choix de cette date : le 15 août,
+                    jour de l’Assomption, les gardes seraient occupés à se régaler autour d’un
+                    banquet, l’atmosphère serait à la détente et aux jeux. Il s’agissait là de
+                    l’unique chance du <persName ref="#perso-charlesI-guise">duc de Guise</persName>
+                    de tromper leur vigilance.</p>
+                <p>Afin d'occuper les gardes jouant au bilboquet ou aux osselet dans la cour,
+                        <persName ref="#perso-charlesI-guise">Charles</persName> leur lança un défi
+                    :</p>
+                <p>« Celui qui réussira à monter le plus vite à cloche-pied l’escalier de la tour
+                    gagne. » annonça-t-il.</p>
+                <p>Dans un élan de compétition ils se précipitèrent dans cette course bancale.
+                    Pendant ce temps, <persName ref="#perso-charlesI-guise">le jeune duc</persName>
+                    courut à sa chambre, confiant à un serviteur l’importante mission de détourner
+                    l’attention des geôliers, en portant de fausses accusations : « Celui-ci a
+                    triché ! ».</p>
+                <p>Pendant que les gardes se défendaient et punissaient le serviteur, <persName
+                        ref="#perso-charlesI-guise">le duc</persName> avait d’ores et déjà
+                    solidement accroché la corde aux barreaux de sa fenêtre et entamé sa descente.
+                    Mais il restait un veilleur… Celui-ci apercevant le duc, arma son arquebuse et
+                    tira. Effrayé, <persName ref="#perso-charlesI-guise">Charles</persName> lâcha la
+                    corde et fit une chute d’environ cinq mètres. Fort heureusement, l’atterrissage
+                    se fit sans trop de mal, malgré quelques légères blessures.</p>
+                <p><persName ref="#perso-charlesI-guise">Charles de Guise</persName> fuit et le
+                    temps que les gardes se rassemblent pour le poursuivre, il avait déjà rejoint
+                        <placeName ref="#place-loire">les rives de la Loire</placeName> en direction
+                    de <placeName ref="#place-notre-dame-la-riche">Notre-Dame-la-Riche</placeName>.
+                    La lavandière ayant tout prévu, un cheval l’y attendait. Il se hâta de le
+                    monter, alors qu’encore on le poursuivait. Sur le chemin, une vieille femme le
+                    reconnut et alerta ses poursuivants. Mais <persName ref="#perso-charlesI-guise"
+                        >le duc de Guise</persName> réussit à les semer en traversant <placeName
+                        ref="#place-cher">le Cher</placeName> avec l’aide d’un passeur.</p>
+                <p>Enfin en sécurité, le duc se demanda ce qu’il allait faire désormais. Ce qu’il ne
+                    savait pas encore, c’est que la lavandière l’attendait, accompagnée de tous les
+                    hommes soutenant sa cause.</p>
+                <p>Lorsqu’il aperçut sa jolie complice, <persName ref="#perso-charlesI-guise"
+                        >Charles</persName> la remercia d’un chaste baiser. Puis comprenant que le
+                    temps lui manquait, il reprit la route suivi de deux-cents hommes et de ses
+                    partisans, pour rejoindre <persName ref="#perso-charles-mayenne">son oncle, le
+                        duc de Mayenne</persName>. Il laissa derrière lui la blanchisseuse, encore
+                    surprise du baiser.</p>
+                <p>Très vite, la rumeur de l’évasion de <persName ref="#perso-charlesI-guise"
+                        >Charles Ier de Guise</persName> se répandit dans <placeName
+                        ref="#place-tours">la ville</placeName> et les habitants se mirent à appeler
+                    le donjon du <placeName ref="#place-chateau-tours">château</placeName> par ce
+                    nom, encore utilisé aujourd’hui : la Tour de Guise. </p>
+            </sp>
+        </body>
+    </text>
+</TEI>

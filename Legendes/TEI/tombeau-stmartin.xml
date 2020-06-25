@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/PLOT-TEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Le tombeau de Saint-Martin</title>
+                <respStmt>
+                    <resp>Editrice</resp>
+                    <persName>Alexa Darmagnac</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition numérique des textes du corpus de légendes du projet
+                    PLOT.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Centre d'Etudes Supérieures de la Renaissance (CESR)</publisher>
+                <availability>
+                    <licence>Domaine public</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <analytic>
+                            <title>INFOS A RETROUVER</title>
+                            <author>Grégoire de Tours</author>
+                        </analytic>
+                        <monogr>
+                            <title>Le livre des miracles de Saint-Martin</title>
+                            <imprint>
+                                <publisher>ed. Paleo, Collection Source de l'histoire de
+                                    France</publisher>
+                                <pubPlace>A RETROUVER</pubPlace>
+                            </imprint>
+                            <biblScope>A RETROUVER</biblScope>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct>
+                        <analytic>
+                            <author>Jaccques-Marie Rougé</author>
+                            <title>La mort de Saint-Martin</title>
+                        </analytic>
+                        <monogr>
+                            <title>Contes de Touraine</title>
+                            <imprint>
+                                <pubPlace>France</pubPlace>
+                                <publisher>Editions C.L/D.</publisher>
+                                <date>1981</date>
+                                <biblScope unit="page" from="148" to="149">pp. 148-149</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+                <listPerson type="personnages">
+                    <person xml:id="perso-stmartin">
+                        <persName>Saint-Martin de Tours</persName>
+                        <birth when="0316">
+                            <date>An 316</date>
+                            <placeName>Sabaria de Pannonie (ajd. Szombathely, Hongrie)</placeName>
+                        </birth>
+                        <death when="0397">
+                            <date>An 397</date>
+                            <placeName>Candes, France</placeName>
+                        </death>
+                        <occupation>Saint de la chrétienté et évêque de Tours</occupation>
+                    </person>
+                    <personGrp xml:id="perso-moines-tourangeanx">
+                        <name>Les moines Tourangeaux</name>
+                        <note>Moines de la ville de Tours, dont l'évêque était Saint-Martin.</note>
+                    </personGrp>
+                    <personGrp xml:id="perso-moines-poitevins">
+                        <name>Les moines Poitevins</name>
+                        <note>Moines du Poitou.</note>
+                    </personGrp>
+                    <person xml:id="perso-stbrice">
+                        <persName>Brice de Tours</persName>
+                        <birth>Vers 377</birth>
+                        <death when="0444">
+                            <date>An 444</date>
+                            <placeName>Tours, France</placeName>
+                        </death>
+                        <occupation>Evêque de Tours</occupation>
+                        <note>4ème évêque de Tours, a succédé à Saint-Martin. Devenu
+                            Saint-Brice</note>
+                    </person>
+                    <person xml:id="perso-stperpet">
+                        <persName>Perpet de Tours</persName>
+                        <birth>
+                            <placeName>Auvergne, France</placeName>
+                        </birth>
+                        <death when="0491-04-08">
+                            <date>8 Avril 491</date>
+                            <placeName>Tours, France</placeName>
+                        </death>
+                        <occupation>Evêque de Tours</occupation>
+                        <note>6ème évêque de Tours. Devenu Saint Perpet</note>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place type="ville" xml:id="place-tours">
+                        <placeName>Tours</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-marmoutier">
+                        <placeName>Monastère de Marmoutier</placeName>
+                    </place>
+                    <place type="ville" xml:id="place-candes">
+                        <placeName>Candes</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-basilique-tours">
+                        <placeName>Basilique Saint-Martin de Tours</placeName>
+                    </place>
+                    <place type="fleuve" xml:id="place-loire">
+                        <placeName>La Loire</placeName>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>PLOT consiste en une revalorisation des légendes de Tours, grâce à des
+                    audios.</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="taxo-cat">
+                    <category xml:id="cat-hist">
+                        <catDesc>Historique</catDesc>
+                    </category>
+                    <category xml:id="cat-rel">
+                        <catDesc>Religion</catDesc>
+                    </category>
+                    <category xml:id="cat-paien">
+                        <catDesc>Croyance Païenne</catDesc>
+                    </category>
+                    <category xml:id="cat-fant">
+                        <catDesc>Fantastique</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="RAMEAU">
+                    <bibl>Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France <ptr
+                            target="https://rameau.bnf.fr/"/></bibl>
+                </taxonomy>
+               </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
+                Rougé et arrangé pour notre usage par Valentine Castanet--Bihan.</creation>
+            <langUsage>
+                <language ident="fr-FR">Français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#RAMEAU">
+                    <term>Martin (0316?-0397 ; saint)</term>
+                    <term>Tours (Indre-et-Loire) -- Basilique Saint-Martin</term>
+                </keywords>
+                <catRef scheme="#taxo-cat" target="#cat-rel #cat-hist"/>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-20">Ajout des mots clés et licence</change>
+            <change when="2020-06-19">Création de la taxonomie responsable des catégories</change>
+            <change when="2020-06-18">Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <castList>
+                <castItem xml:id="narrateur">
+                    <role>Narrateur</role>
+                    <persName>EN ATTENTE D'UN NARRATEUR</persName>
+                </castItem>
+            </castList>
+            <set>
+                <p><persName ref="#perso-stmartin">Saint-Martin, évêque de Tours</persName>, était
+                    connu pour sa vertu et ses nombreux travaux. Fondateur du <placeName
+                        ref="#place-marmoutier">monastère de Marmoutier</placeName>, ses fidèles et
+                    lui-même se donnèrent pour mission d’évangéliser les campagnes, alors encore
+                    païennes. Aujourd’hui, <placeName ref="#place-basilique-tours">la basilique de
+                        Tours</placeName>, où se trouve son tombeau, est l’un des premiers lieux de
+                    pèlerinage pour <persName ref="#perso-stmartin"/>.</p>
+            </set>
+        </front>
+        <body>
+            <sp who="#narrateur">
+                <speaker>EN ATTENTE D'UN NARRATEUR</speaker>
+                <p xml:id="titre">Le tombeau de <persName ref="#perso-stmartin">Saint-Martin</persName></p>
+                <p>Alors qu’il tentait de réconcilier <name ref="#perso-moines-tourangeanx">les
+                        moines Tourangeaux</name> et <name ref="#perso-moines-poitevins">les moines
+                        Poitevins</name>, <persName ref="#perso-stmartin">Saint-Martin</persName>
+                    mourut en 397 à Candes. <name
+                        ref="#perso-moines-poitevins #perso-moines-tourangeanx">Les deux
+                        partis</name> mirent leurs différends de côté pour veiller ensemble sur sa
+                    dépouille. Mais la trêve ne dura pas. <name
+                        ref="#perso-moines-tourangeanx #perso-moines-poitevins">Les uns et les
+                        autres</name> se disputaient les reliques de <persName ref="#perso-stmartin"
+                        >ce grand homme, vénéré par tous.</persName></p>
+                <p>Au milieu de la nuit, alors que <name ref="#perso-moines-poitevins">les
+                        Poitevins</name> dormaient profondément, <name
+                        ref="#perso-moines-tourangeanx">les Tourangeaux</name> décidèrent de passer
+                    à l’action. Il parvinrent à sortir le corps du <persName ref="#perso-stmartin"
+                        >saint homme</persName> par la fenêtre de la chapelle et l’apportèrent
+                    précautionneusement vers <placeName ref="#place-loire">la Loire</placeName>, où
+                    les attendait une barque. La voile levée, <name ref="#perso-moines-tourangeanx"
+                        >les hommes</name> ramèrent, et le vent soufflant comme pour leur donner
+                    raison, accéléra le voyage.</p>
+                <p><persName ref="#perso-stmartin">Le saint</persName> se fit donc enterrer dans un
+                    cimetière public <placeName ref="#place-tours">à Tours</placeName>. Puis, en
+                    435, <persName ref="#perso-stbrice">l’évêque Saint-Brice</persName> fit
+                    construire une chapelle au-dessus de la tombe afin de lui rendre hommage.</p>
+                <p>Mais l’importance de <persName ref="#perso-stmartin">Saint-Martin</persName>
+                    conduit à une plus grande décision encore. <persName ref="#perso-stperpet">Saint
+                        Perpet</persName> décida en 471 de faire édifier une collégiale rappelant à
+                    la mémoire du <persName ref="#perso-stmartin">saint homme</persName>. Sitôt les
+                    travaux terminés, il fut décidé que la consécration du bâtiment, ainsi que le
+                    déplacement des reliques se feraient le 1er juillet.</p>
+                <p>Le jour même, évêques, abbés et autres fidèles se pressent au cimetière où se
+                    trouve encore le sarcophage dans lequel repose la dépouille de <persName
+                        ref="#perso-stmartin">Saint-Martin</persName>. Très vite, on creuse et
+                    dégage la terre afin d’atteindre le sarcophage, mais alors même qu’on tente de
+                    le sortir de terre, celui-ci ne bouge pas d’un pouce. Après de maintes essais,
+                    la foule, abattue décide de rentrer. Il est décidé qu’on réessaiera demain.</p>
+                <p>Mais le lendemain, même affaire : impossible de déplacer le sarcophage. Alors que
+                    les fidèles commencent à s’inquièter de ce mystère, un vieillard à la longue
+                    chevelure blanche s’avance au milieu de la foule désespérée. Peut-être,
+                    annonce-t-il, faudra-t-il encore patienter quelques jours. Après tout, le 4
+                    juillet se trouve être le jour de la consécration épiscopale<note place="bottom"
+                        >"L'ordination épiscopale, dite encore consécration ou sacre est la
+                        cérémonique lithurgique au cours de laquelle le sacrement de l'ordre dans sa
+                        plénitude est conféré aux nouveaux évêques.", Chapeau André. Les ordinations
+                        épiscopales dans l'Église catholique du XVIe siècle à nos jours. In: Revue
+                        d'histoire de l'Église de France, tome 76, n°196, 1990. pp. 73-84.</note>.
+                    Ne serait-ce pas là un message de <persName ref="#perso-stmartin"
+                        >Saint-Martin</persName> ?</p>
+                <p>Tous décident de suivre le conseil de l’étrange vieillard et d’attendre. Le 4
+                    juillet donc, on tente à nouveau de sortir le sarcophage de terre, et cette
+                    fois-ci, ô miracle, ce dernier est extrait sans aucune difficulté !</p>
+                <p>La foule en liesse accompagne le déplacement du saint homme jusqu’à la
+                    collégiale, et lorsqu’on se retourne pour remercier le vieil homme de sa
+                    précieuse remarque, ce dernier s’est évaporé... </p>
+            </sp>
+        </body>
+    </text>
+</TEI>

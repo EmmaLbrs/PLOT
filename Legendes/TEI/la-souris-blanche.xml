@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/PLOT-TEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>La souris blanche</title>
+                <respStmt>
+                    <resp>Editrice</resp>
+                    <persName>Alexa Darmagnac</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition numérique des textes du corpus de légendes du projet
+                    PLOT.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Centre d'Etudes Supérieures de la Renaissance (CESR)</publisher>
+                <availability>
+                    <licence>Domaine public</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>Jacques-Marie Rougé</author>
+                        <author>Robert Vivier</author>
+                        <author>Emile Millet</author>
+                        <title>La souris blanche</title>
+                    </analytic>
+                    <monogr>
+                        <title>Contes et légendes de Touraine</title>
+                        <imprint>
+                            <pubPlace>France</pubPlace>
+                            <publisher>Arrault et Cie</publisher>
+                            <date>1945</date>
+                            <biblScope unit="page" from="218" to="226">p. 218-226</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <listPerson type="personnages">
+                    <person xml:id="perso-louisXI">
+                        <persName>Louis XI</persName>
+                        <occupation>Né en 1423 à Bourges est roi de France de 1461 à 1484. Appertenant à la famille des Valois.</occupation>
+                    </person>
+                    <person xml:id="perso-charlesVIII">
+                        <persName>Charles VIII</persName>
+                        <occupation>Né en 1470, est roi de France de 1483 à 1498. Il est le dernier roi de la branche des Valois.  </occupation>
+                    </person>
+                    <person xml:id="perso-jacques-darmagnac">
+                        <persName>Jacques d'Armagnac de Nemours</persName>
+                        <occupation>Comte de Pardiac et duc de Nemours de 1462 à 1477.</occupation>
+                    </person>
+                    <person xml:id="perso-fils-darmagnac">
+                        <persName>Fils du duc d'Armagnac</persName>
+                        <occupation>Duc de Nemours à la mort de son père.</occupation>
+                    </person>
+                    <person xml:id="perso-blanchette">
+                        <persName>Blanchette/Angelina</persName>
+                        <occupation>Une souris blanche/fée, amie de Charles VIII</occupation>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place type="batiment" xml:id="place-chateau-tours">
+                        <placeName>Chateau de Plessis-lès-Tours</placeName>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>PLOT consiste en une revalorisation des légendes de Tours, grâce à des
+                    audios.</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="taxo-cat">
+                    <category xml:id="cat-hist">
+                        <catDesc>Historique</catDesc>
+                    </category>
+                    <category xml:id="cat-rel">
+                        <catDesc>Religieux</catDesc>
+                    </category>
+                    <category xml:id="cat-paien">
+                        <catDesc>Croyance Païenne</catDesc>
+                    </category>
+                    <category xml:id="cat-fant">
+                        <catDesc>Fantastique</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="RAMEAU">
+                    <bibl>
+                        Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France. 
+                        <ptr target="http://rameau.bnf.fr/"/>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
+                Rougé, Robert Vivié et Emile Millet et arrangé pour notre usage par Emma
+                Lesburgueres.</creation>
+            <langUsage>
+                <language ident="fr-FR">Français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#RAMEAU">
+                    <term>Rois et souverains</term>
+                    <term>Magie</term>
+                    <term>Fées</term>
+                </keywords>
+                <catRef scheme="#taxo-cat" target="#cat-fant"/>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-20">Mots clés.</change>
+            <change when="2020-06-19">Taxonomie.</change>
+            <change when="2020-06-17">Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <castList>
+                <castItem xml:id="narrateur">
+                    <role>Narrateur</role>
+                </castItem>
+            </castList>
+            <set>
+                <p> Louis XI (1423 – 1483) est un roi de France souvent dépeint comme un tyran
+                    fourbe et cruel. Il fit enfermer Jacques d’Armagnac, duc de Nemours, coupable de
+                    trahison, dans une cage de fer (une fillette) puis le condamna à mort. Les
+                    enfants du duc furent également torturés, à tel point que l’un d’eux mourut de
+                    ces supplices.</p>
+            </set>
+        </front>
+        <body>
+            <sp who="#narrateur">
+                <speaker>En attente d'un narrateur.</speaker>
+                <p xml:id="titre">la souris blanche</p>
+
+                <p> 
+                    Il était une fois un roi de France, <persName ref="#perso-louisXI">Louis
+                        XI</persName>, et son fils, <persName ref="#perso-charlesVIII">Charles
+                        VIII</persName>. Tous deux habitaient le lugubre <placeName
+                        ref="#place-chateau-tours">château de Plessis-lès-Tours</placeName>. Dans
+                    l’année 1483, le <persName ref="#perso-louisXI">roi</persName> décida de partir
+                    en pèlerinage à <placeName ref="#place-notre-dame-de-clery"
+                        >Notre-Dame-de-Cléry</placeName>. Il était mourant et hanté par de vieux
+                    souvenirs, notamment celui de la mort de <persName
+                        ref="#perso-jacques-darmagnac">Jacques d’Armagnac de Nemours</persName>. Ce
+                    dernier, ayant comploté contre son <persName ref="#perso-louisXI"
+                    >roi</persName>, le paya de sa vie, mais la sentence de <persName
+                        ref="#perso-louisXI">Louis XI</persName> ne s’arrêta pas là. Il avait alors
+                    contraint les enfants à assister à l’exécution de leur père. Le <persName
+                        ref="#perso-louisXI">roi</persName> regrettait, depuis, ce geste mais
+                    gardait encore, enfermé dans une cellule du château, l’un des fils du <persName
+                        ref="#perso-jacques-darmagnac">duc de Nemours</persName>. 
+                </p>
+                <p>
+                    C’est dans cet effroyable <placeName ref="#place-chateau-tours"
+                        >château</placeName> que grandissait <persName ref="#perso-charlesVIII"
+                        >Charles VIII</persName>, seul si ce n’est pour une souris blanche –
+                        <persName ref="#perso-blanchette">Blanchette</persName> – qui lui rendait
+                    souvent visite. Un jour, alors qu’elle était en retard, le dauphin <persName
+                        ref="#perso-charlesVIII">Charles</persName> la gronda et lui demanda la
+                    raison de cette impolitesse. <persName ref="#perso-blanchette"
+                        >Blanchette</persName> vint alors placer ses pattes sur les mots d’un
+                    évangile ouvert sur la table : 
+                    
+                    « Visitez les prisonniers ». 
+                </p>
+                <p>
+                    <persName ref="#perso-charlesVIII">Charles</persName> se souvint alors du
+                        <persName ref="#perso-fils-darmagnac">jeune d’Armagnac</persName>,
+                    emprisonné dans une cage du cachot du <placeName ref="#place-chateau-tours"
+                        >château</placeName>, et auquel il avait souvent pensé. Il avait bien des
+                    fois souhaité lui rendre visite mais la pensée que son père le découvre l’en
+                    avait empêché. Cependant, à présent il regrettait ce manque de courage et
+                    bientôt il se résolut à y aller. 
+                </p>
+                <p>
+                    Le soir, accompagné d’un valet qui portait nourriture et boisson, il descendit
+                    jusqu’au cachot. Les scrupules du gardien de prison, qui lui refusait l’accès,
+                    furent levés grâce à une seule phrase. « Le <persName ref="#perso-louisXI"
+                        >roi</persName> est bien malade. » Cela ne manquait pas de rappeler aux
+                    serviteurs de <persName ref="#perso-louisXI">Louis XI</persName> que celui-ci
+                    n’était pas éternel et qu’il valait mieux éviter la rancune de son successeur. 
+                </p>
+                <p> 
+                    Le geôlier amena alors <persName ref="#perso-charlesVIII">Charles</persName> et
+                    son page jusqu’à la cage du <persName ref="#perso-fils-darmagnac">duc de
+                        Nemours</persName> – car il s’agissait bien d’une cage ! Elle était si
+                    étroite, si basse, qu’elle contraignait chaque mouvement de <persName
+                        ref="#perso-fils-darmagnac">d’Armagnac</persName> qui, quoique âgé de
+                    dix-sept ans, était si frêle qu’il n’en faisait que douze. 
+                </p>
+                <p> 
+                    Il fut difficile pour le <persName ref="#perso-charlesVIII">dauphin</persName>
+                    d’aborder le prisonnier, mais bientôt le dialogue s’établit. Alors que le
+                        <persName ref="#perso-fils-darmagnac">duc</persName> demandait des nouvelles
+                    du monde, l’irruption de <persName ref="#perso-blanchette">Blanchette</persName>
+                    bouleversa la conversation. Elle vint se lover dans les bras de <persName
+                        ref="#perso-fils-darmagnac">Nemours</persName>, comme elle le faisait le
+                    matin même dans ceux de <persName ref="#perso-charlesVIII">Charles</persName>.
+                    La jalousie du <persName ref="#perso-charlesVIII">dauphin</persName> s’éteint
+                    cependant à mesure qu’il apprit à connaître son rival, et il continua de le
+                    visiter, même après que <persName ref="#perso-louisXI">Louis XI</persName>
+                    revint de son pèlerinage. 
+                </p>
+                <p> 
+                    Un soir, alors que les deux jeunes gens conversaient comme à leur habitude, des
+                    bruits inhabituels se firent entendre. Il s’agissait là des pas de <persName
+                        ref="#perso-louisXI">Louis XI</persName>, accompagné de son bourreau, de
+                    quelques serviteurs et du geôlier qui avait trahi le secret du <persName
+                        ref="#perso-charlesVIII">dauphin</persName>. Ils désarmèrent <persName
+                        ref="#perso-charlesVIII">Charles</persName> et l’emmenèrent en dehors du
+                    cachot. Puis le <persName ref="#perso-louisXI">roi</persName> murmura à son
+                    bourreau quelques phrases, auxquelles celui-ci répondit : 
+                    
+                    « Bien monseigneur, dès ce soir à minuit, cela sera fait. » 
+                    
+                    Nemours comprit bien ce qui avait été commandé par le <persName ref="#perso-louisXI">roi</persName>. 
+                </p>
+                <p> 
+                    Lorsque de nouveau des bruits de pas retentirent, et que la lumière d’une
+                    lanterne filtrait à travers la porte, le cœur de <persName
+                        ref="#perso-fils-darmagnac">Nemours</persName> se serra. Il déposa <persName
+                        ref="#perso-blanchette">Blanchette</persName> au sol et lui ordonna de se
+                    sauver. La porte s’ouvrit finalement et le jeune <persName
+                        ref="#perso-fils-darmagnac">duc</persName>, les yeux fermés, attendit sa
+                    sentence. 
+                    
+                    « Vous êtes libre. » 
+                </p>
+                <p> 
+                    Ces mots, prononcés par une voix qu’il reconnaissait bien, le laissèrent bouche
+                    bée. Ce n’était pas le bourreau qui était là devant lui, mais <persName
+                        ref="#perso-charlesVIII">Charles</persName>, calme et majestueux, dans son
+                    nouveau rôle de roi. Il était entouré par de nobles dames et hommes, et des
+                    familiers – et tous s’écriaient 
+                    
+                    « Vive le roi ! ».
+                    « En effet, mon père est mort
+                    il y a de ça une heure et me voilà ainsi orphelin et roi. Pardonnez-le,
+                        <persName ref="#perso-fils-darmagnac">Nemours</persName>. » 
+                </p>
+                <p>
+                    <persName ref="#perso-charlesVIII">Charles</persName> ordonna que la cage fût
+                    détruite aussitôt. Cependant, alors que les marteaux s’acharnaient contre les
+                    barreaux, le fer ne cédait pas.
+                    
+                    « Sire, interrompit un vieux moine présent dans
+                    l’assemblée. Cette entreprise est inutile ; il est impossible de détruire la
+                    cage avec des outils humain. Elle est l’œuvre d’un Bohémien, un sorcier, et
+                    seule une baguette de fée permettra de l’abattre. » 
+                </p>
+                <p> 
+                    <persName ref="#perso-charlesVIII">Charles</persName> commanda alors que tous se mettent à la recherche du Bohémien – et
+                    n’oublia pas de préciser que, si l’homme était trouvé, la reconnaissance du <persName ref="#perso-charlesVIII">roi</persName>
+                    saurait être récompensée. Les deux amis restèrent alors seuls et silencieux,
+                    inquiets à l’idée que la cage ne puisse jamais plus être ouverte. L’horloge
+                    sonna alors une heure et la malédiction de <persName ref="#perso-blanchette">Blanchette</persName>prit fin. Cela faisait
+                    cent ans exactement qu’un sorcier avait transformé la fée en souris et, enfin,
+                    elle était libérée de ce mauvais sort. Alors la cage s’évanouit comme si elle
+                    n’avait jamais existé et <persName ref="#perso-blanchette">Angelina</persName>, dans son habit de fée, volait au-dessus du
+                    sol, avec à la main sa baguette. 
+                    
+                    « Les enfants, vous me connaissiez sous le nom de <persName ref="#perso-blanchette">Blanchette</persName>,
+                    votre sœur souris, mais on m’appelle en réalité la Fée des
+                    Pleurs. Vos larmes enfin se dissipent et je dois vous quitter, pour accomplir
+                    d’autres missions ailleurs. Adieu ! » 
+                </p>
+            </sp>
+        </body>
+    </text>
+</TEI>

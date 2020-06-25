@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/PLOT-TEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>La bataille de Tours</title>
+                <respStmt>
+                    <resp>Editrice</resp>
+                    <persName>Emma Lesburgueres</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition numérique des textes du corpus de légendes du projet
+                    PLOT.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Centre d'Etudes Supérieures de la Renaissance (CESR)</publisher>
+                <availability>
+                    <licence>Domaine public</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>La bataille de Tours - FRAGMENT.</title>
+                        <author>Louis-Antoine-François de MARCHANGY</author>
+                    </analytic>
+                    <monogr>
+                        <title>Les Annales romantiques</title>
+                        <imprint>
+                            <date>1825</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <listPerson type="personnages">
+                    <person xml:id="perso-charles-martel">
+                        <persName>Charles Martel</persName>
+                        <birth when="0688">
+                            <date>An 688</date>
+                            <placeName>Andenne, Belgique</placeName>
+                        </birth>
+                        <death when="0741-10-22">
+                            <date>22 Octobre 741</date>
+                            <placeName>Quierzy, France</placeName>
+                        </death>
+                        <occupation>Homme d'état, chef militaire</occupation>
+                    </person>
+                    <personGrp xml:id="perso-francs">
+                        <name>Les Francs</name>
+                        <note>Peuple germanique qui a donné son nom à la France et aux
+                            français.</note>
+                    </personGrp>
+                    <personGrp xml:id="perso-burgondes">
+                        <name>Les Burgondes</name>
+                        <note>Peuple germanique.</note>
+                    </personGrp>
+                    <person xml:id="perso-abd-al-rahman">
+                        <persName>Abd al-Rahman</persName>
+                        <birth>
+                            <placeName>Tihama</placeName>
+                        </birth>
+                        <death when="0732">
+                            <date>An 732</date>
+                            <placeName>Poitiers, France</placeName>
+                        </death>
+                        <occupation>Wali d'al-Andalus</occupation>
+                    </person>
+                    <personGrp xml:id="perso-omeyyades">
+                        <name>Les Omeyyades</name>
+                        <note>Dynastie arabe qui gouverne le monde musulman puis al-Andalus.</note>
+                    </personGrp>
+                    <person xml:id="perso-eudes-aquitaine">
+                        <persName>Eudes d'Aquitaine</persName>
+                        <death when="0735">
+                            <date>An 735</date>
+                        </death>
+                        <occupation>Duc d'Aquitaine et de Vasconie</occupation>
+                    </person>
+                    <personGrp xml:id="perso-aquitains">
+                        <name>Les Aquitains</name>
+                        <note>Ensemble de peuples protohistoriques et de l'Antiquité situés entre
+                            les Pyrénées occidentales, la rive gauche de la Garonne et l'océan
+                            Atlantique.</note>
+                    </personGrp>
+                    <person xml:id="perso-stmartin">
+                        <persName>Saint-Martin de Tours</persName>
+                        <birth when="0316">
+                            <date>An 316</date>
+                            <placeName>Sabaria de Pannonie (ajd. Szombathely, Hongrie)</placeName>
+                        </birth>
+                        <death when="0397">
+                            <date>An 397</date>
+                            <placeName>Candes, France</placeName>
+                        </death>
+                        <occupation>Saint de la chrétienté et évêque de Tours</occupation>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place type="ville" xml:id="place-tours">
+                        <placeName>Tours</placeName>
+                    </place>
+                    <place type="ville" xml:id="place-poitiers">
+                        <placeName>Poitiers</placeName>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>PLOT consiste en une revalorisation des légendes de Tours, grâce à des
+                    audios.</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="taxo-cat">
+                    <category xml:id="cat-hist">
+                        <catDesc>Historique</catDesc>
+                    </category>
+                    <category xml:id="cat-rel">
+                        <catDesc>Religieux</catDesc>
+                    </category>
+                    <category xml:id="cat-paien">
+                        <catDesc>Croyance Païenne</catDesc>
+                    </category>
+                    <category xml:id="cat-fant">
+                        <catDesc>Fantastique</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="RAMEAU">
+                    <bibl>Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France <ptr
+                            target="https://rameau.bnf.fr/"/></bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
+                Rougé et arrangé pour notre usage par Emma Lesburgueres.</creation>
+            <langUsage>
+                <language ident="fr-FR">Français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#RAMEAU">
+                    <term>Bataille de Poitiers (732)</term>
+                    <term>Charles Martel (0688?-0741)</term>
+                    <term>Ġāfiqī, ʿAbd al-Raḥmān ibn ʿAbd Allāh ibn Bišr al- (06..-0732)</term>
+                </keywords>
+                <catRef scheme="#taxo-cat" target="#cat-hist"/>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-20">Ajout des mots clés et licence</change>
+            <change when="2020-06-19">Création de la taxonomie responsable des catégories</change>
+            <change when="2020-06-18">Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <castList>
+                <castItem xml:id="narrateur">
+                    <role>Narrateur</role>
+                    <persName>EN ATTENTE D'UN NARRATEUR</persName>
+                </castItem>
+            </castList>
+            <set>
+                <p>La bataille de <placeName ref="#place-tours">Tours</placeName>, plutôt connue en
+                    France sous le nom de bataille de <placeName ref="#place-poitiers"
+                        >Poitiers</placeName>, opposa <persName ref="#perso-charles-martel">Charles
+                        Martel</persName>, dirigeant <name ref="#perso-francs">les Francs</name> et
+                        <name ref="#perso-burgondes">Burgondes</name>, et <persName
+                        ref="#perso-abd-al-rahman">Abd al-Rahman</persName>, à la tête des <name
+                        ref="#perso-omeyyades">Omeyyades</name>.</p>
+            </set>
+        </front>
+        <body>
+            <sp who="#narrateur">
+                <speaker>EN ATTENTE D'UN NARRATEUR</speaker>
+                <p xml:id="titre">La bataille de <placeName ref="#place-tours">Tours</placeName></p>
+                <p>En l’année 732, deux armées – celles de <persName ref="#perso-charles-martel"
+                        >Charles Martel</persName> et d’<persName ref="#perso-abd-al-rahman">Abd
+                        al-Rahman</persName> – se rencontrèrent devant les remparts de <placeName
+                        ref="#place-tours">Tours</placeName>. En effet, <placeName
+                        ref="#place-tours">la ville</placeName> renfermait le tombeau de <persName
+                        ref="#perso-stmartin">Saint Martin</persName> qui regorgeait de trésors et
+                    fascinait <name ref="#perso-omeyyades">les Sarrasins</name>. Ceux-ci avaient
+                    établi leur camp non loin de là et offraient un spectacle singulier aux hommes
+                    de <persName ref="#perso-charles-martel">Charles Martel</persName>. Des drapeaux
+                    noirs et blancs flottaient au-dessus des rangs, des chameaux se reposaient entre
+                    les tentes orientales et les soldats – leur front orné d’un turban –
+                    s’entraînaient avec leur cimeterre.</p>
+                <p>Durant six jours, nul ne fit un mouvement. Cependant, au septième jour, <persName
+                        ref="#perso-charles-martel">Charles</persName> ordonna à ses troupes de se
+                    ranger en bataille. Les cavaliers d’<persName ref="#perso-abd-al-rahman">Abd
+                        al-Rahman</persName>, fulgurants, chargèrent les premiers. Mais les soldats
+                    de <persName ref="#perso-charles-martel">Charles Martel</persName> résistèrent
+                    grâce à leur bouclier et leur armure et parvinrent à contenir l’offensive
+                    ennemie. Ils tendaient leur lance vers <name ref="#perso-omeyyades">les
+                        Omeyyades</name> et se dressaient ainsi, comme un rempart.</p>
+                <p>Peu à peu, la fatigue s’emparait de la cavalerie. <persName
+                        ref="#perso-charles-martel">Charles Martel</persName>, profitant de cette
+                    brèche, donna le signal à ses soldats. Aussitôt, des hurlements retentirent. Des
+                    flammes engloutissaient le camp <name ref="#perso-omeyyades">des
+                        Sarrasins</name> ; <name ref="#perso-aquitains">les Aquitains</name>,
+                    dirigés par <persName ref="#perso-eudes-aquitaine">Eudes d’Aquitaine</persName>,
+                    étaient arrivés par l’arrière de l’armée d’<persName ref="#perso-abd-al-rahman"
+                        >Abd al-Rahman</persName> et avaient ainsi semé la confusion.</p>
+                <p>Les soldats furent alors pris en étau et frappés de tous côtés. <persName
+                        ref="#perso-abd-al-rahman">Abd al-Rahman</persName> s’écroula sur ce champ
+                    de bataille, abattu par <persName ref="#perso-charles-martel">Charles
+                        Martel</persName>. </p>
+            </sp>
+        </body>
+    </text>
+</TEI>

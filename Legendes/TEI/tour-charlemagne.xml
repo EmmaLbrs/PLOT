@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/PLOT-TEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>La Tour Charlemagne</title>
+                <respStmt>
+                    <resp>Editrice</resp>
+                    <persName>Alexa Darmagnac</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition numérique des textes du corpus de légendes du projet
+                    PLOT.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Centre d'Etudes Supérieures de la Renaissance (CESR)</publisher>
+                <availability>
+                    <licence>Domaine public</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>Jacques-Marie Rougé</author>
+                        <title>La Tour Charlemagne</title>
+                    </analytic>
+                    <monogr>
+                        <title>Contes de Touraine</title>
+                        <imprint>
+                            <pubPlace>France</pubPlace>
+                            <publisher>Editions C.L/D.</publisher>
+                            <date>1981</date>
+                            <biblScope unit="page" from="211" to="213">pp. 211-213</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <listPerson type="personnages">
+                    <person xml:id="perso-charlemagne">
+                        <persName>Charlemagne</persName>
+                        <occupation>Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis Empereur d'Occident en 800.</occupation>
+                    </person>
+                    <person xml:id="perso-luitgarde">
+                        <persName>Luitgarde</persName>
+                        <occupation>Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une princesse germanique
+                            et également la 4ème épouse du roi des Francs, Charlemagne</occupation>
+                    </person>
+                    <person xml:id="perso-stmartin">
+                        <persName>Saint-Martin</persName>
+                        <occupation>Né en 316 et décédé en 397. Un des principaux saints de la chrétienté et évèque de Tours.</occupation>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place type="ville" xml:id="place-tours">
+                        <placeName>Tours</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-basilique-stmartin">
+                        <placeName>Basilique Saint-Martin</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-tour-charlemagne">
+                        <placeName>Tour Charlemagne</placeName>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>PLOT consiste en une revalorisation des légendes de Tours, grâce à des
+                    audios.</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="taxo-cat">
+                    <category xml:id="cat-hist">
+                        <catDesc>Historique</catDesc>
+                    </category>
+                    <category xml:id="cat-rel">
+                        <catDesc>Religieux</catDesc>
+                    </category>
+                    <category xml:id="cat-paien">
+                        <catDesc>Croyance Païenne</catDesc>
+                    </category>
+                    <category xml:id="cat-fant">
+                        <catDesc>Fantastique</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="RAMEAU">
+                    <bibl>
+                        Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France. 
+                        <ptr target="http://rameau.bnf.fr/"/>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
+                Rougé et arrangé pour notre usage par Alexa Darmagnac.</creation>
+            <langUsage>
+                <language ident="fr-FR">Français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#RAMEAU">
+                    <term>Rois et souverains</term>
+                    <term>Femmes et mort</term>
+                </keywords>
+                <catRef scheme="#taxo-cat" target="#cat-hist"/>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-20">Mots clés.</change>
+            <change when="2020-06-19">Taxonomie.</change>
+            <change when="2020-06-16">Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <castList>
+                <castItem xml:id="narrateur">
+                    <role>Narrateur</role>
+                    <persName>Frédérique Ménicot</persName>
+                </castItem>
+            </castList>
+            <set>
+                <p>La tour Charlemagne Notre légende se déroule en 800, Charlemagne était alors roi
+                    des Francs et des Lombards. Il ne devint empereur d’Occident que le 25 décembre
+                    800, soit quelques mois après le décès de Luitgarde sa quatrième et dernière
+                    épouse. La campagne énoncée dans la légende fait référence au fait que
+                    Charlemagne faisait une tournée en Neustrie (région au nord-ouest du royaume des
+                    Francs).</p>
+            </set>
+        </front>
+        <body>
+            <sp who="#Frederique-Menicot">
+                <speaker>Frédérique Ménicot</speaker>
+                <p xml:id="titre">La Tour Charlemagne</p>
+                <p>
+                    <persName ref="#perso-luitgarde">Luitgarde</persName>, la 4ème épouse du roi des
+                    Francs, <persName ref="#perso-charlemagne">Charlemagne</persName>, se rendit
+                    dans la ville de <placeName ref="#place-tours">Tours</placeName>, alors que son
+                    époux était en pleine tournée. De cette visite, la reine s’affaiblit et tomba
+                    bientôt malade. Sa santé était en danger et le roi revint de son voyage pour
+                    être auprès de sa bien-aimée. Le roi fit chercher un remède pour guérir la
+                    reine. Il pensa aux reliques de <persName ref="#perso-stmartin"
+                        >Saint-Martin</persName> qui pouvaient, d’après la légende guérir les
+                    maladies. On fit également appel à des savants, des moines, des botanistes, et
+                    même des Égyptiennes, mais rien n’avait pu encore aider son épouse.</p>
+                <p>La reine était en train de mourir d’un mal inconnu. Entourée de ses femmes
+                    fidèles, elle luttait contre la mort. Son combat était vain, et la reine, petit
+                    à petit imagina la mort. La faucheuse prenait des traits de monstres qui
+                    encerclaient son cou ou d’un oiseau guettant sa proie. Quand vint le moment tant
+                    redouté, des prêtres vinrent réciter les Saintes Paroles à la mourante.
+                        <persName ref="#perso-luitgarde">Luitgarde</persName> la tendre épouse du
+                    roi, rendit son dernier souffle. Quand s’allumèrent les cierges et devant son
+                    corps maintenant vide de toute vie, le roi s’agenouilla.</p>
+                <p><persName ref="#perso-charlemagne">Charlemagne</persName> qui avait connu des
+                    femmes, des batailles et des couronnes n’était plus qu’un homme qui se lamentait
+                    d’avoir perdu l’être aimé. Il baisa les mains de sa tendre épouse et après un
+                    dernier regard pour elle, il se retira.</p>
+                <p>Le jour de ses funérailles ce 4 Juin 800, la reine <persName
+                        ref="#perso-luitgarde">Luitgarde</persName> était étendue à visage
+                    découvert, habillée de ses plus beaux habits. Son lit mortuaire, porté par les
+                    principaux officiers du palais, était précédé par un diacre tenant en main une
+                    grande croix d’argent. Ce cortège funéraire passait dans la foule sous les
+                    bruits de lamentation du peuple. Le roi marchait seul, la tête haute, robuste de
+                    corps. Il portait des habits brodés d’or et de pierres précieuses, épée près du
+                    corps. À son côté, un clerc portait sur un coussin brillant un diadème
+                    étincelant d’or et de pierreries. Le diadème de la reine. Ce cortège se
+                    poursuivait avec les fils de <persName ref="#perso-charlemagne"
+                        >Charlemagne</persName>. La reine <persName ref="#perso-luitgarde"
+                        >Luitgarde</persName> et le roi n’eurent jamais d’enfants et sa descendance
+                    venait de ses premières épouses. On pouvait admirer dans ce cortège des curés,
+                    chanceliers, comtes et domestiques du palais, sénéchaux, clercs, évêques, abbés,
+                    seigneurs, prêtres puis enfin des savants. Ce cortège était là pour rendre
+                    hommage à la reine et l’accompagner dans sa dernière demeure.</p>
+                <p><persName ref="#perso-luitgarde">Luitgarde</persName> fut enterrée dans ce
+                    sanctuaire, la <placeName ref="#place-basilique-stmartin">basilique
+                        Saint-Martin</placeName> au centre de la ville de Tours. C’est là où
+                        <persName ref="#perso-charlemagne">Charlemagne</persName> déposa sa dernière
+                    épouse, celle qu’il ne remplaça jamais. L’édifice dans lequel reposait la 4ème
+                    reine du roi des Francs subit un incendie et il ne resta bientôt que des
+                    cendres. De ces cendres naquit quelques années après une tour.</p>
+                <p>De cette tour de pierre, qui gardait les cendres de <persName
+                        ref="#perso-luitgarde">Luitgarde</persName> demeure depuis la <placeName
+                        ref="#place-tour-charlemagne">Tour Charlemagne</placeName>. </p>
+            </sp>
+        </body>
+    </text>
+</TEI>

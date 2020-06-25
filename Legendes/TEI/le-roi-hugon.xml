@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schemas/PLOT-TEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>La légende du roi Hugon</title>
+                <respStmt>
+                    <resp>Editrice</resp>
+                    <persName>Alexa Darmagnac</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition numérique des textes du corpus de légendes du projet
+                    PLOT.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Centre d'Etudes Supérieures de la Renaissance (CESR)</publisher>
+                <availability>
+                    <licence>Domaine public</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>Société archéologique de Touraine.</author>
+                        <title>Le roi Hugon</title>
+                    </analytic>
+                    <monogr>
+                        <title>Mémoires de la Société archéologique de Touraine</title>
+                        <imprint>
+                            <pubPlace>France</pubPlace>
+                            <publisher>Tours</publisher>
+                            <date>1865</date>
+                            <biblScope unit="page" from="141" to="148">pp. 141-148</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <listPerson type="personnages">
+                    <person xml:id="perso-roi-hugon">
+                        <persName>Le roi Hugon</persName>
+                        <occupation>Hugon Ier, comte de Tours au IXème s, envoyé par Charles le
+                            Chauve de fortifier la ville de Tours.</occupation>
+                    </person>
+                    <person xml:id="perso-charles-le-chauve">
+                        <persName>Charles le Chauve</persName>
+                        <occupation>Né en 823 est le petit fils de Charlemagne et roi des Francs de 843 à 877. </occupation>
+                    </person>
+                    <personGrp xml:id="perso-chretien">
+                        <name>Les chrétiens</name>
+                        <note>Religion appartenant au christianisme qui reconnait l'autorité du Pape.</note>
+                    </personGrp>
+                    <personGrp xml:id="perso-protestant">
+                        <name>Les protestants</name>
+                        <note>Religion appartenant au christianisme qui rejette 
+                            les fonctions mise en place par le catholicisme durant le Moyen Age</note>
+                    </personGrp>
+                </listPerson>
+                <listPlace>
+                    <place type="ville" xml:id="place-tours">
+                        <placeName>Tours</placeName>
+                    </place>
+                    <place type="batiment" xml:id="place-chateau-fort">
+                        <placeName>Chateau fort</placeName>
+                    </place>
+                    <place type="ville" xml:id="place-orleans">
+                        <placeName>Orléans</placeName>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>PLOT consiste en une revalorisation des légendes de Tours, grâce à des
+                    audios.</p>
+            </projectDesc>
+            <classDecl>
+                <taxonomy xml:id="taxo-cat">
+                    <category xml:id="cat-hist">
+                        <catDesc>Historique</catDesc>
+                    </category>
+                    <category xml:id="cat-rel">
+                        <catDesc>Religieux</catDesc>
+                    </category>
+                    <category xml:id="cat-paien">
+                        <catDesc>Croyance Païenne</catDesc>
+                    </category>
+                    <category xml:id="cat-fant">
+                        <catDesc>Fantastique</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="RAMEAU">
+                    <bibl>
+                        Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France. 
+                        <ptr target="http://rameau.bnf.fr/"/>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de la société archéologique de Touraine
+                et arrangé pour notre usage par Alexa Darmagnac.</creation>
+            <langUsage>
+                <language ident="fr-FR">Français</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="#RAMEAU">
+                    <term>Rois et souverains</term>
+                    <term>Fantômes</term>
+                    <term>Huguenots</term>
+                </keywords>
+                <catRef scheme="#taxo-cat" target="#cat-fant"/>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-20">Mots clés.</change>
+            <change when="2020-06-19">Taxonomie.</change>
+            <change when="2020-06-17">Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <castList>
+                <castItem xml:id="narrateur">
+                    <role>Narrateur</role>
+                    <persName/>
+                </castItem>
+            </castList>
+            <set>
+                <p> Hugues ou Hugon Ier, comte de Tours au IXème s, avait été chargé par Charles le
+                    Chauve de fortifier la ville de Tours des invasions normandes (vikings). Ce
+                    château fort est aujourd’hui disparu. C’est au XVI s qu’on attribua le nom de
+                    Huguenot aux protestants qui étaient mal vus par la population catholique. Il
+                    était là pour critiquer et effrayer les personnes qui voudraient les rejoindre.
+                </p>
+            </set>
+        </front>
+        <body>
+            <sp who="#narrateur">
+                <speaker>En attente d'un narrateur.</speaker>
+                <p xml:id="titre">Le roi Hugon</p>
+
+                <p> Au Moyen Age, dans la ville de <placeName ref="#place-tours">Tours</placeName> 
+                    un grand <placeName ref="#place-chateau-fort">château fort</placeName> dominait 
+                    les bords de Loire. Ce <placeName ref="#place-chateau-fort">château</placeName> avait pour vocation 
+                    de protéger la ville des invasions normandes. <persName ref="#perso-roi-hugon">Hugues Ier</persName> 
+                    devint comte de Tours et devait par l’ordre du <persName ref="#perso-charles-le-chauve">roi</persName>
+                    fortifier la ville. Il fit construire une tour carrée à laquelle il donna
+                    bientôt son nom. <persName ref="#perso-roi-hugon">Hugues Ier</persName> décéda sur le champ 
+                    de bataille en protégeant la ville d’<placeName ref="#place-orleans">Orléans</placeName>. 
+                </p>
+                <p>
+                    Quelques années après, de ce <placeName ref="#place-chateau-fort">château</placeName> il ne resta plus rien. 
+                    De ces ruines qui étaient impressionnante et sinistre on entendit des plaintes.
+                    Puis une apparition, la nuit. Un fantôme qui chevauchait le soir aux environs
+                    des villes et dans les rues et s’attaquait aux personnes qu’il rencontrait. Une
+                    fois son escapade finie il retournait se réfugier dans l’ancienne Tour du 
+                    <persName ref="#perso-roi-hugon">roi Hugon</persName>.
+                    C’est de cette tour bientôt surnommée la tour de feu <persName ref="#perso-roi-hugon">Hugon</persName> 
+                    que l’on entendait des plaintes.
+                </p>
+                <p>
+                    Le souverain décédé était alors de retour et n’était pas
+                    prêt de s’arrêter. La population prit bientôt peur de ce revenant et des
+                    <persName ref="#perso-chretiens">chrétiens</persName> installèrent une cloche dans la tour pour empêcher le fantôme de
+                    terroriser la ville. Mais ceci ne fonctionna pas. Feu le <persName ref="#perso-roi-hugon">roi Hugon</persName>
+                    prit un malin plaisir à faire sonner la cloche dès qu’il s’attaquait à quelqu’un, pour
+                    prévenir la population qu’il était là. La cloche censée faire partir le revenant
+                    était devenue la cloche des agonisants. Mais s’il n’y avait pas de victimes, le
+                    fantôme se contentait de renverser les croix du cimetière pour marquer sa
+                    présence. 
+                </p> 
+                <p>
+                    On se servit de ce revenant comme mise en garde auprès des enfants
+                    désobéissant. Il était devenu un personnage de la ville, effrayant chacun mais
+                    permettant aux petits enfants d’obéir à leurs parents.
+                </p> 
+                <p>
+                    Quelques siècles plus
+                    tard quand vint l’émergence du <persName ref="#perso-protestants">protestantisme</persName>,
+                    les partisans de ce nouvel ordre se réunirent dans les décombres de la tour. 
+                    Les <persName ref="#perso-chretiens">catholiques</persName>surnommèrent les
+                    <persName ref="#perso-protestants">protestants</persName> d’Huguenots en mémoire de ce fantôme qui hantait les nuits de la
+                    ville et du mal qu’il faisait. Un terme négatif fait pour dégouter la population
+                    de se joindre à cet ordre. Mais les <persName ref="#perso-protestants">protestants</persName> gardèrent ce nom d’Huguenot et
+                    se l’approprièrent pour désigner chaque protestant du pays.
+                </p>
+                <p>
+                    C’est donc d’un fantôme qui hantait la ville de <placeName ref="#place-tours">Tours</placeName>
+                    et effrayait les petits enfants que naquit le nom d’un mouvement qui les séduits eux même, par 
+                    la signification de ce nouveau patronyme. </p>
+            </sp>
+        </body>
+    </text>
+</TEI>
