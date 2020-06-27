@@ -5,7 +5,7 @@
 
     <xsl:template match="tei:TEI">
 
-        <xsl:result-document href="../HTML/{@xml:id}-html.html" method="xhtml"
+        <xsl:result-document href="../HTML/{@xml:id}-txt.html" method="xhtml"
             doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
             exclude-result-prefixes="xs tei">
 
@@ -53,10 +53,55 @@
         </xsl:result-document>
 
 
-        <xsl:result-document href="../PHP/{@xml:id}-carte.php" method="html">
-            <html>
-                <xsl:processing-instruction name="php">echo 'Hello World';</xsl:processing-instruction>
-            </html>
+        <xsl:result-document href="../HTML/{@xml:id}-carte.php" method="xhtml">
+         
+                <html>
+                    <head>
+                        <meta charset="utf-8"/>
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                        <meta name="viewport"
+                            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+                        <title>
+                            <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                        </title>
+                        <!--<link rel="stylesheet" href="../HTML/CSS/style.css"/>-->
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                    </head>
+                    <body>
+                        
+    
+                            <div id="texte-legende">
+                                <header>
+                                    <xsl:apply-templates
+                                        select="tei:text/tei:body/tei:sp/tei:p[@xml:id = 'titre']"/>
+                                </header>
+                                
+                                <xsl:for-each select="tei:text/tei:body/tei:sp/tei:p">
+                                    <xsl:apply-templates select=".[not(@xml:id) or @xml:id != 'titre']"
+                                    />
+                                </xsl:for-each>
+                            </div>
+                        
+                            <div id="autour-legende">
+                                <div id="perso-legendes">
+                                    <xsl:for-each
+                                        select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:person">
+                                        <xsl:apply-templates select="."/>
+                                    </xsl:for-each>
+                                </div>
+                            </div>
+
+                        
+                        
+                        
+                    </body>
+                    
+                </html>
+            
+                <!--<xsl:processing-instruction name="php">echo 'Hello World';</xsl:processing-instruction>-->
+            
         </xsl:result-document>
     </xsl:template>
     
@@ -64,6 +109,9 @@
         <xsl:element name="a">
             <xsl:attribute name="href">
                 <xsl:value-of select="./@ref"/>
+            </xsl:attribute>
+            <xsl:attribute name="goto">
+                <xsl:text>autour-legende</xsl:text>
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>

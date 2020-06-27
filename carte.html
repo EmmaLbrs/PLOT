@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="leaflet/leaflet.css">        
     <link rel="stylesheet" href="leaflet/leaflet-sidebar-master/src/L.Control.Sidebar.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="leaflet/sidebar-v2-master/css/leaflet-sidebar.css" />
+
 
     <style>
     #map { 
@@ -38,38 +41,6 @@
       color: white;
     }
 
-    #content { width:inherit;}
-
-    #content div.container {
-      background-color:white;
-      width: inherit;
-      text-align: justify;
-
-    }
-
-    #content header {
-      color:lightseagreen;
-      margin-bottom: 25px;
-    }
-
-    #content header h2 {
-      border-bottom:3px lightseagreen dashed;
-      display: inline-block;
-    }
-
-    div#texte-legende {
-      border-bottom: 1px gray solid;
-    }
-
-    div.perso-legendes {
-      margin-top: 25px;
-    }
-    div.perso-legendes p {
-      color: black;
-      margin-top:5px;
-      border-bottom: 1px lightgrey solid;
-      margin-bottom:5px;
-    }
 
     </style>
 
@@ -117,12 +88,38 @@
 
     <div class="container-fluid">
       
-      <div id="map">
-      </div>
+      <div id="sidebar" class="sidebar collapsed">
 
-      <div id="sidebar">
-          <div id="content"></div>
-      </div>
+        <!-- Nav tabs -->
+       <div class="sidebar-tabs">
+            <ul role="tablist" class="tabs">
+                <li><a href="#texte-legende" role="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#autour-legende" role="tab"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div id="texte-legende" class="sidebar-pane">
+                <h1 class="sidebar-header" id="titre-legende">
+                    
+                    <span class="sidebar-close"><i class="fa fa-caret-right"></i></span>
+                </h1>
+                <div id="container-texte" class="container-texte"></div>
+
+            </div>
+
+            <div id="autour-legende" class="sidebar-pane">
+                <h1 class="sidebar-header">Autour de la légende<span class="sidebar-close">
+                    <i class="fa fa-caret-right"></i></span>
+                </h1>
+                <div id="container-autour" class="container-autour"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
       
    </div>
    <footer class="row">
@@ -141,7 +138,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script> 
     <script src="leaflet/leaflet.js"></script>
-    <script src="leaflet/leaflet-sidebar-master/src/L.Control.Sidebar.js"></script>
+    <script src="leaflet/sidebar-v2-master/js/leaflet-sidebar.js"></script>
+    <script src="leaflet/sidebar-v2-master/js/scripttab.js" type="text/javascript"></script>
 
     <script>
 
@@ -166,26 +164,44 @@
   Stamen_Toner.addTo(map); 
 
 
-    var sidebar = L.control.sidebar('sidebar', {
-      closeButton: true,
-      position: 'right',
-      autoPan:false
-    });
+  //   var sidebar = L.control.sidebar('sidebar', {
+  //     closeButton: true,
+  //     position: 'right',
+  //     autoPan:false
+  //   });
 
-    map.addControl(sidebar);
+  //   map.addControl(sidebar);
 
-    setTimeout(function () {
-        sidebar.hide();}, 500);
+  //   setTimeout(function () {
+  //       sidebar.hide();}, 500);
 
-    map.on('click', function () {
-      sidebar.hide();
-    })
 
-   function showSideBar () {
-      sidebar.show();
-    }
 
-    var content = document.getElementById("content");
+  //  function showSideBar () {
+  //     sidebar.show();
+  //   }
+
+  //   var content = document.getElementById("content");
+
+  var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(map);
+
+  map.on('click', function () {
+       sidebar.close();
+     })
+
+  var home = document.getElementById("texte-legende");
+  var profile = document.getElementById("autour-legende");
+  var container1 = document.getElementById("container-texte");
+  var container2 = document.getElementById("container-autour");
+  var titreLeg = document.getElementById("titre-legende")
+
+function loadPage(href)
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", href, false);
+        xmlhttp.send();
+        return xmlhttp.responseText;
+    };
 
     var castleIcon = L.icon({
     iconUrl: 'images/icons/iconfinder__Castle_754634.png',
@@ -203,24 +219,73 @@
 
     var couventCarme = L.marker([47.395805, 0.682777], {icon: churchIcon}).addTo(map);
     couventCarme.on('click', function () 
-   {
-            $("#content").load('Legendes/HTML/couvent-carmes-txt.html');
-            showSideBar();
+   {        
+            var legende = loadPage('Legendes/HTML/couvent-carmes-carte.php');
+            var doc = new DOMParser().parseFromString(legende, "text/html");
+            var texteLegende = doc.getElementById("texte-legende");
+            var titre = texteLegende.getElementsByTagName("h2");
+            var autourLegende = doc.getElementById("autour-legende");
+            
+             titreLeg.innerHTML += titre[0].innerText;
+             sidebar.setContent(texteLegende, autourLegende);
+
+            // //home.innerHTML += texteLegende.innerHTML;
+            // profile.innerHTML += autourLegende.innerHTML;
+
+            // for(i = 0; i <= texteLegende.children.length - 1; i++)
+            //   home.appendChild(texteLegende.children[i]);
+
+            // console.log(home.innerHTML);
+
+            $(doc).ready(function() {
+                tabAnchor();
+            })
+
+            sidebar.toggle("texte-legende");
+
     });
+
 
     var plessisLesTours = L.marker([47.382467, 0.660568], {icon:castleIcon}).addTo(map);
     plessisLesTours.on('click', function () 
    {
-            content.innerHTML = "<h1>La Souris Blanche</h1><p>Lorem ipsum</p>"
-            showSideBar();
+            var legende = loadPage('Legendes/HTML/la-souris-blanche-carte.php');
+            var doc = new DOMParser().parseFromString(legende, "text/html");
+            var texteLegende = doc.getElementById("texte-legende");
+            var titre = texteLegende.getElementsByTagName("h2");
+            var autourLegende = doc.getElementById("autour-legende");
+            
+            titreLeg.innerHTML += titre[0].innerText;
+            //console.log(texteLegende.innerHTML);
+           // home.innerHTML += texteLegende.innerHTML;
+          //  for(i = 0; i <= texteLegende.children.length - 1; i++)
+          //  {
+          //     container1.appendChild(texteLegende.children[i]);
+          //  }
+              
+          //   for(i = 0; i <= autourLegende.children.length - 1; i++)
+          //     container2.appendChild(autourLegende.children[i]);
+
+          console.log('contenu de autourLegende' + autourLegende.innerHTML);
+          sidebar.setContent(texteLegende, autourLegende);
+
+            $(doc).ready(function() {
+                tabAnchor();
+            })
+
+            //console.log(home.innerHTML);
+
+       
+            //sidebar.open("texte-legende");
+            sidebar.toggle("texte-legende");
     });
 
     var tombeauStMartin = L.marker([47.392871, 0.683027]).addTo(map);
     tombeauStMartin.on('click', function () 
    {
-            content.innerHTML = "<h1>Le tombeau de Saint Martin</h1><p>Lorem ipsum</p>"
-            showSideBar();
-    });
+            // content.innerHTML = "<h1>Le tombeau de Saint Martin</h1><p>Lorem ipsum</p>"
+        //    showSideBar();
+    }); 
     
 
 
