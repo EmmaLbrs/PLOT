@@ -29,7 +29,8 @@
       left: 10px; } }
 
 .sidebar-right {
-  right: 0; }
+  right: 0;
+  padding-left: 5px; }
   @media (min-width: 768px) {
     .sidebar-right {
       right: 0px;
