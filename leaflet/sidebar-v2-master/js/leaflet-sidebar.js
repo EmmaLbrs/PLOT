@@ -133,6 +133,10 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
     open: function(id) {
         var i, child;
 
+        if((id != "texte-legende") && (id != "autour-legende")) {
+            this._sidebar.blur();
+        }
+
         console.log("open")
         //console.log(this._sidebar.innerHTML);
 

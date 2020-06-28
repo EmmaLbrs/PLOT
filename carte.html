@@ -14,6 +14,14 @@
 
 
     <style>
+
+      div.container-fluid {
+        margin-top:54px;
+      }
+
+      #sidebar {
+        display:block;
+      }
     #map { 
         position: absolute; 
         top:54px; 
@@ -189,11 +197,28 @@
        sidebar.close();
      })
 
+
+  var navbar = document.getElementById("myNavbar");
+  navbar.addEventListener("click", function(event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement;
+    var url = target.getAttribute("href");
+    if (url != null)
+      window.location.href=target.getAttribute("href");
+  });
+
+  
+
   var home = document.getElementById("texte-legende");
   var profile = document.getElementById("autour-legende");
   var container1 = document.getElementById("container-texte");
   var container2 = document.getElementById("container-autour");
-  var titreLeg = document.getElementById("titre-legende")
+  var titreLeg = document.getElementById("titre-legende");
+
+  sidebar.addEventListener('focus', (event) => {
+    console.log("hello");
+  event.target.style.background = 'pink';    
+}, true);
 
 function loadPage(href)
     {
@@ -278,6 +303,7 @@ function loadPage(href)
        
             //sidebar.open("texte-legende");
             sidebar.toggle("texte-legende");
+            console.log("actif : " + document.activeElement);
     });
 
     var tombeauStMartin = L.marker([47.392871, 0.683027]).addTo(map);
