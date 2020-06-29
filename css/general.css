@@ -11,28 +11,28 @@ body, body section, body .jumbotron, body footer {
 a {
     text-decoration: none;
     background-color: transparent;
-    color:black;
+    color:darkblue;
 }
 
 a:hover {
-    color: black;
+    color: orange;
     text-decoration:none;
 }
 
 a:active, a:visited, a:link  {
     text-decoration: none;
-    color:inherit;
+    /* color:inherit; */
 }
 
 /* https://codepen.io/thelittleblacksmith/pen/zXNVvY */
   
-a {
+.navbar a {
     border-bottom: 1px solid red;
     transition: all 0.25s linear;
     position: relative;
   }
 
-a:before {
+.navbar a:before {
   
   
     content: "";
@@ -72,15 +72,15 @@ a:before {
     bottom: 2px; /* this is to match where the border is */
   }
 
-.dropdown-menu a.nav-link, div.hover-mask a {
+/* .dropdown-menu a.nav-link, div.hover-mask a {
     border-bottom: 0px;
 }
 
 .dropdown-menu a.nav-link:before, div.hover-mask a:before {
     height:0;
-}
+} */
 
-a:hover:before {
+.navbar a:hover:before {
     transform: scale(1);
   }
 
@@ -152,23 +152,6 @@ p {
 
 .navbar-custom .dropdown-menu {
     background-color: black;
-}
-
-/* Jumbotron - Header */
-
-.jumbotron div {
-    padding-top: 25px;
-    padding-left:25px;
-    padding-right:25px;
-}
-
-.jumbotron div h1 {
-    text-align: center;
-    color: black;
-}
-
-.jumbotron div p {
-    text-align: justify;
 }
 
 /* Footer */
