@@ -1,0 +1,190 @@
+@import url('../bootstrap/css/bootstrap.min.css');
+
+body {
+    overflow-x: hidden;    
+}
+
+body, body section, body .jumbotron, body footer {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color:black;
+}
+
+a:hover {
+    color: black;
+    text-decoration:none;
+}
+
+a:active, a:visited, a:link  {
+    text-decoration: none;
+    color:inherit;
+}
+
+/* https://codepen.io/thelittleblacksmith/pen/zXNVvY */
+  
+a {
+    border-bottom: 1px solid red;
+    transition: all 0.25s linear;
+    position: relative;
+  }
+
+a:before {
+  
+  
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color:red;
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+  
+  }
+
+  .nav-item > a, a.navbar-brand {
+    border-bottom: 0px solid white;
+    transition: all 0.25s linear;
+    position: relative;
+  }
+
+.nav-item > a:before, a.navbar-brand:before {
+    height:5px;
+    bottom:2px;
+    background-color: white;
+  }
+
+  a.active:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    background-color:red;
+    position: absolute;
+    left: 0;
+    bottom: 2px; /* this is to match where the border is */
+  }
+
+.dropdown-menu a.nav-link, div.hover-mask a {
+    border-bottom: 0px;
+}
+
+.dropdown-menu a.nav-link:before, div.hover-mask a:before {
+    height:0;
+}
+
+a:hover:before {
+    transform: scale(1);
+  }
+
+h1 {
+    color: black;
+}
+
+p { 
+    color: black;
+}
+
+
+/* Menu */
+
+.navbar-custom {
+    background-color: black;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand {
+    color: white;
+}
+.navbar-custom .navbar-text {
+    color: white;
+}
+
+
+/* .navbar-custom .nav-item {
+    background-color: black;
+    padding: 2px;
+    margin-left:2px;
+    margin-right:2px;
+} */
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .navbar-nav .dropdown-menu .nav-link,
+.navbar-custom .navbar-nav .dropdown-toggle {
+    color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+
+.navbar-custom .navbar-nav .dropdown-toggle,
+.navbar-custom .navbar-nav .dropdown-toggle:hover,
+.navbar-custom .navbar-nav .dropdown-toggle:active,
+.navbar-custom .navbar-nav .dropdown-toggle:after,
+.navbar-custom .navbar-nav .dropdown-toggle:focus  {
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-header .navbar-toggle .icon-bar {
+        background-color:#f13c20;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom a.nav-link.active {
+    color:white;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .navbar-nav .dropdown-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: black;
+}
+
+/* Jumbotron - Header */
+
+.jumbotron div {
+    padding-top: 25px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.jumbotron div h1 {
+    text-align: center;
+    color: black;
+}
+
+.jumbotron div p {
+    text-align: justify;
+}
+
+/* Footer */
+
+footer {
+  /*  background-color: white; */
+    margin-top:30px;
+    padding-top: 25px;
+     padding-left:10px;
+   /* padding-right: 25px; */
+}
+
+footer div div div img {
+    width: 75px;
+    padding-bottom: 10px;
+}
+
+
+

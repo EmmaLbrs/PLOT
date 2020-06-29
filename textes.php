@@ -9,8 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS     
-  	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
-  	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+  	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
        <title>PLOT - CESR | Textes</title>
        
        <style>
@@ -104,10 +105,10 @@
 
     $legendes = $bdd->query('SELECT * from legende');
     while ($donnees = $legendes->fetch()) {
-        $posSlash = strpos($donnees['url_texte_simple'], '/');
-        $posSlash = $posSlash+1;
-        $subStringUrl = substr($donnees['url_texte_simple'], $posSlash); 
-        echo "<a href=".$subStringUrl.">".$donnees['titre']."</a>";
+        // $posSlash = strpos($donnees['url_texte_simple'], '/');
+        // $posSlash = $posSlash+1;
+        // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash); 
+        echo "<a href=".$donnees['url_texte_simple'].">".$donnees['titre']."</a>";
     }
      
      ?>

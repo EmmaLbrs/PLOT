@@ -10,7 +10,9 @@
 
     <!-- Bootstrap CSS     
   	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
-  	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+
        <title>PLOT - CESR | Résultat de la recherche</title>
        
        <style>
@@ -120,11 +122,11 @@
             else {
                 echo "<ul>";
                 while ($donnees = $legendes->fetch()) {
-                    $posSlash = strpos($donnees['url_texte_simple'], '/');
-                    $posSlash = $posSlash+1;
-                    $subStringUrl = substr($donnees['url_texte_simple'], $posSlash);
+                    // $posSlash = strpos($donnees['url_texte_simple'], '/');
+                    // $posSlash = $posSlash+1;
+                    // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash);
 
-                    echo "<li><a href=".$subStringUrl.">" . $donnees['titre'] . "</a></li>";
+                    echo "<li><a href=".$donnees['url_texte_simple'].">" . $donnees['titre'] . "</a></li>";
                 }
                 echo "</ul>";
             }

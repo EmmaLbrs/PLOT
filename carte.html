@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" href="leaflet/leaflet.css">        
     <link rel="stylesheet" href="leaflet/leaflet-sidebar-master/src/L.Control.Sidebar.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -203,8 +204,9 @@
     event = event || window.event;
     var target = event.target || event.srcElement;
     var url = target.getAttribute("href");
-    if (url != null)
+    if (url != null) {
       window.location.href=target.getAttribute("href");
+    }
   });
 
   
