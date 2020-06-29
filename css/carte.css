@@ -1,0 +1,41 @@
+div.container-fluid {
+    margin-top:54px;
+  }
+
+  #sidebar {
+    display:block;
+  }
+#map { 
+    position: absolute; 
+    top:54px; 
+    bottom:30px; 
+    right:0; 
+    left:0; 
+    z-index: 1;
+}
+
+div.container-texte, div.container-autour {
+    margin-top:10px;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+
+
+footer  {
+  z-index: 2;
+  position: absolute;
+  bottom:0px; 
+  right:0; 
+  left:0;
+  padding: 1px;
+  text-align: center;
+}
+
+footer div {
+  background-color: black;
+}
+
+footer div p, footer div p a {
+  color: white;
+}
