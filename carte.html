@@ -9,7 +9,6 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" href="leaflet/leaflet.css">        
-    <link rel="stylesheet" href="leaflet/leaflet-sidebar-master/src/L.Control.Sidebar.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="leaflet/sidebar-v2-master/css/leaflet-sidebar.css" />
 
@@ -111,7 +110,7 @@
         <div class="sidebar-content">
             <div id="texte-legende" class="sidebar-pane">
                 <h1 class="sidebar-header" id="titre-legende">
-                    
+                    <span id="span-titre"></span>
                     <span class="sidebar-close" onclick="sidebar.close()"><i class="fa fa-times"></i></span>
                 </h1>
                 <div id="container-texte" class="container-texte"></div>
@@ -200,6 +199,7 @@
 
 
   var navbar = document.getElementById("myNavbar");
+
   navbar.addEventListener("click", function(event) {
     event = event || window.event;
     var target = event.target || event.srcElement;
@@ -209,6 +209,10 @@
     }
   });
 
+  sidebar.addEventListener("click", function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+  })
   
 
   var home = document.getElementById("texte-legende");
@@ -216,10 +220,16 @@
   var container1 = document.getElementById("container-texte");
   var container2 = document.getElementById("container-autour");
   var titreLeg = document.getElementById("titre-legende");
+  var spanLeg = document.getElementById("span-titre");
+
+  sidebar.addEventListener("closing", function(event) {
+    console.log("closing");
+    spanLeg.innerHTML = null;
+  })
+
 
   sidebar.addEventListener('focus', (event) => {
-    console.log("hello");
-  event.target.style.background = 'pink';    
+    console.log("focus");   
 }, true);
 
 function loadPage(href)
@@ -253,7 +263,7 @@ function loadPage(href)
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             
-             titreLeg.innerHTML += titre[0].innerText;
+             spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(texteLegende, autourLegende);
 
             // //home.innerHTML += texteLegende.innerHTML;
@@ -282,7 +292,7 @@ function loadPage(href)
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             
-            titreLeg.innerHTML += titre[0].innerText;
+            spanLeg.innerHTML += titre[0].innerText;
             //console.log(texteLegende.innerHTML);
            // home.innerHTML += texteLegende.innerHTML;
           //  for(i = 0; i <= texteLegende.children.length - 1; i++)
@@ -293,7 +303,6 @@ function loadPage(href)
           //   for(i = 0; i <= autourLegende.children.length - 1; i++)
           //     container2.appendChild(autourLegende.children[i]);
 
-          console.log('contenu de autourLegende' + autourLegende.innerHTML);
           sidebar.setContent(texteLegende, autourLegende);
 
             $(doc).ready(function() {
