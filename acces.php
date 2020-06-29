@@ -102,7 +102,7 @@
     }
 
     ?>
-    <p> Par lieu : </p>
+    <p>Par lieu : </p>
     <form method="post" action="cible_requete.php">
     
     <p>
@@ -116,7 +116,22 @@
     </select>
     <input type="submit" name="valider" value="OK"/>
     </p>
+    </form>
+
+    <p>Par personnage : </p>
+    <form method="post" action="cible_requete.php">
     
+    <p>
+    <select name="personnage">
+        <?php
+            $personnages = $bdd->query('SELECT * from personnage');
+            while ($donnees = $personnages->fetch()) {
+                echo "<option value=".$donnees['id_perso'].">".$donnees['nom']."</option>";
+            }
+        ?>
+    </select>
+    <input type="submit" name="valider" value="OK"/>
+    </p>
     </form>
     
 

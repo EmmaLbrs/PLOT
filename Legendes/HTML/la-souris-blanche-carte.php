@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><html xmlns:tei="http://www.tei-c.org/ns/1.0">
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
    <head>
       <meta charset="utf-8"></meta>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
@@ -181,26 +181,41 @@
          </p>
       </div>
       <div id="autour-legende">
-         <div id="perso-legendes">
-            <p id="perso-louisXI">Louis XI
+         <div id="contexte-leg">
+            <h2>Contexte</h2>
+            <p> Louis XI (1423 – 1483) est un roi de France souvent dépeint comme un tyran
+               fourbe et cruel. Il fit enfermer Jacques d’Armagnac, duc de Nemours, coupable de
+               trahison, dans une cage de fer (une fillette) puis le condamna à mort. Les
+               enfants du duc furent également torturés, à tel point que l’un d’eux mourut de
+               ces supplices.
+            </p>
+         </div>
+         <div id="perso-legende">
+            <h2>Personnages</h2>
+            <p id="perso-louisXI">
+               <a href="cible_requete.php?personnage_id=perso-louisXI">Louis XI</a>
                <br></br>Né en 1423 à Bourges est roi de France de 1461 à 1484. Appertenant à la famille des
                Valois.
                <br></br>
             </p>
-            <p id="perso-charlesVIII">Charles VIII
+            <p id="perso-charlesVIII">
+               <a href="cible_requete.php?personnage_id=perso-charlesVIII">Charles VIII</a>
                <br></br>Né en 1470, est roi de France de 1483 à 1498. Il est le dernier roi de la branche
                des Valois.  
                <br></br>
             </p>
-            <p id="perso-jacques-darmagnac">Jacques d'Armagnac de Nemours
+            <p id="perso-jacques-darmagnac">
+               <a href="cible_requete.php?personnage_id=perso-jacques-darmagnac">Jacques d'Armagnac de Nemours</a>
                <br></br>Comte de Pardiac et duc de Nemours de 1462 à 1477.
                <br></br>
             </p>
-            <p id="perso-fils-darmagnac">Fils du duc d'Armagnac
+            <p id="perso-fils-darmagnac">
+               <a href="cible_requete.php?personnage_id=perso-fils-darmagnac">Fils du duc d'Armagnac</a>
                <br></br>Duc de Nemours à la mort de son père.
                <br></br>
             </p>
-            <p id="perso-blanchette">Blanchette/Angelina
+            <p id="perso-blanchette">
+               <a href="cible_requete.php?personnage_id=perso-blanchette">Blanchette/Angelina</a>
                <br></br>Une souris blanche/fée, amie de Charles VIII
                <br></br>
             </p>

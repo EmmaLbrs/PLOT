@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><html xmlns:tei="http://www.tei-c.org/ns/1.0">
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
    <head>
       <meta charset="utf-8"></meta>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
@@ -149,22 +149,37 @@
          </p>
       </div>
       <div id="autour-legende">
-         <div id="perso-legendes">
-            <p id="perso-Louis-XI">Louis XI
+         <div id="contexte-leg">
+            <h2>Contexte</h2>
+            <p>Les carmes, un ordre religieux catholique contemplatif (voir et observer),
+               servant le prophète Elie, datant du XIIème siècle. Le couvent des carmes à Tours
+               n’existe plus aujourd’hui. Louis XI était roi de France de 1461 à 1484 et s’est
+               éteint au château de Plessis-lèz-Tours. C’est le sixième roi de la famille des
+               Valois et il était notamment considéré par ses adversaires comme un roi sournois
+               
+            </p>
+         </div>
+         <div id="perso-legende">
+            <h2>Personnages</h2>
+            <p id="perso-Louis-XI">
+               <a href="cible_requete.php?personnage_id=perso-Louis-XI">Louis XI</a>
                <br></br>Né en 1423 à Bourges est roi de France de 1461 à 1484. Appertenant à la famille des
                Valois.
                <br></br>
             </p>
-            <p id="perso-moine-queteur">moine queteur
+            <p id="perso-moine-queteur">
+               <a href="cible_requete.php?personnage_id=perso-moine-queteur">moine queteur</a>
                <br></br>Moine carme qui quête pour son couvent
                <br></br>
             </p>
-            <p id="perso-moine">Moine Carme
+            <p id="perso-moine">
+               <a href="cible_requete.php?personnage_id=perso-moine">Moine Carme</a>
                <br></br>Ordre religieux catholique contemplatif qui ont comme père
                spirituel le prophète Elie
                <br></br>
             </p>
-            <p id="perso-tristan">Tristan
+            <p id="perso-tristan">
+               <a href="cible_requete.php?personnage_id=perso-tristan">Tristan</a>
                <br></br>Louis Tritan l'Hermite était maitre de l'artillerie puis grand prévot du roi Louis
                XI.
                <br></br>

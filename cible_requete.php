@@ -110,26 +110,39 @@
         $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, legendementionnerlieu
         WHERE ' .$_POST['lieu']. '= fk_idLieuPrincipal OR (' .$_POST['lieu'].' = fk_idLieuSecondaire AND fk_idLeg = id_leg)';
     }
+    else if (isset($_POST['personnage'])) {
+      $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, possederpersonnage
+      WHERE ' .$_POST['personnage']. '= fk_idPerso AND fk_idLeg = id_leg';
+    }
+    else if(isset($_GET['personnage_id']))
+    {
+      $string = htmlspecialchars($_GET['personnage_id']);
+      $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, possederpersonnage, personnage
+      WHERE "' .$string. '"= id_persotei AND fk_idPerso = id_perso AND fk_idLeg = id_leg';
+    }
     
     ?>
     
         <?php
-            $legendes = $bdd->query($query);
+            $legendes = $bdd->prepare($query);
+            $legendes->execute();
+          
+              if ($legendes->rowCount() == 0) {
+                  echo "Aucun résultat ne correspond à la recherche.";
+              }
+              else {
+                  echo "Résultat correspondant à la recherche :";
+                  echo "<ul>";
+                  while ($donnees = $legendes->fetch()) {
+                      // $posSlash = strpos($donnees['url_texte_simple'], '/');
+                      // $posSlash = $posSlash+1;
+                      // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash);
 
-            if ($legendes->rowCount() == 0) {
-                echo "Aucun résultat ne correspond à la recherche.";
-            }
-            else {
-                echo "<ul>";
-                while ($donnees = $legendes->fetch()) {
-                    // $posSlash = strpos($donnees['url_texte_simple'], '/');
-                    // $posSlash = $posSlash+1;
-                    // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash);
-
-                    echo "<li><a href=".$donnees['url_texte_simple'].">" . $donnees['titre'] . "</a></li>";
-                }
-                echo "</ul>";
-            }
+                      echo "<li><a href=".$donnees['url_texte_simple'].">" . $donnees['titre'] . "</a></li>";
+                  }
+                  echo "</ul>";
+              }
+                      
                 
 
         ?>
