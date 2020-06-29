@@ -72,13 +72,13 @@ a:active, a:visited, a:link  {
     bottom: 2px; /* this is to match where the border is */
   }
 
-/* .dropdown-menu a.nav-link, div.hover-mask a {
+.dropdown-menu a.nav-link, div.hover-mask a {
     border-bottom: 0px;
 }
 
 .dropdown-menu a.nav-link:before, div.hover-mask a:before {
     height:0;
-} */
+}
 
 .navbar a:hover:before {
     transform: scale(1);
