@@ -215,8 +215,11 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
                             //var size = legende.children.length - 1;
                             //console.log("size:" + size);
                             for(incr = 0; incr <= legende.children.length - 1; incr++) {
-                                console.log("valeur" + incr);
-                                //console.log("container-texte : " + legende.children[incr].innerHTML);
+                                //console.log("valeur" + incr);
+                                console.log("container-texte : " + legende.children[incr].tagName);
+                                if (legende.children[incr].tagName == "HEADER") {
+                                    continue;
+                                }
                                 descendant.appendChild(legende.children[incr].cloneNode(1));
                             }
                             
