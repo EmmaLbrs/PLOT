@@ -7,9 +7,68 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
       <title>La Tour de Guise</title>
+      <link rel="stylesheet" href="../../css/general.css"></link>
+      <link rel="stylesheet" href="../../css/legendes.css"></link>
    </head>
    <body>
-      <div class="container">
+      <div class="navbar navbar-expand-lg navbar-fixed-top navbar-custom" id="myNavbar">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </a>
+               <a href="index.html" class="navbar-brand">PLOT</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+               <ul class="nav navbar-nav" role="navigation">
+                  <li class="nav-item">
+                     <a class="nav-link" href="../../index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../../carte.html">Carte</a>
+                  </li>
+                  <li class="dropdown nav-item">
+                     <a class="dropdown-toggle active" data-toggle="dropdown" href="../../legende.html">Légendes
+                        <span class="caret"></span>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="#" class="nav-link active">Textes</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav-link">Audios</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav-link">Base de données
+                              iconographiques
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown nav-item">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">A
+                        propos
+                        <span class="caret"></span>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="#" class="nav-link">Sources</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav-link">Le projet</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav-link">Contact</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
          <header>
             <h2 xmlns:tei="http://www.tei-c.org/ns/1.0">La Tour de Guise</h2>
          </header>
@@ -104,7 +163,8 @@
                nom, encore utilisé aujourd’hui : la Tour de Guise. 
             </p>
          </div>
-         <div class="perso-legendes">
+         <div id="perso-legende">
+            <h3>Personnages</h3>
             <p id="perso-henriIII">
                <a href="cible_requete.php?personnage_id=perso-henriIII">Henri III</a>
                <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
@@ -163,6 +223,41 @@
                <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
             </p>
          </div>
+         <div id="liens-telechargement">
+            <ul>
+               <li>
+                  <a href="../PDF/tour_guise.pdf" download="tour_guise"> Télécharger le fichier en PDF
+                     
+                  </a>
+               </li>
+               <li>
+                  <a href="../TEI/tour_guise.xml" download="tour_guise"> Télécharger le fichier en XML
+                     
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <footer class="row">
+            <div class="col-md-6">
+               <p>
+                  <a href="#" class="underline--magical">Sources</a>
+                  <br></br>
+                  <a href="#">Nous contacter</a>
+                  <br></br> Mentions légales -- Centre
+                  d'Etudes Supérieures de la Renaissance -- 2020 
+               </p>
+            </div>
+            <div class="col-md-6">
+               <div class="row">
+                  <div class="col-md-offset-6 col-md-3 logo-footer">
+                     <img src="../../images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"></img>
+                  </div>
+                  <div class="col-md-3 logo-footer">
+                     <img src="../../images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours"></img>
+                  </div>
+               </div>
+            </div>
+         </footer>
       </div>
    </body>
 </html>

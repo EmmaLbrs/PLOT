@@ -22,38 +22,61 @@
                     <link rel="stylesheet" href="../../css/legendes.css"/>
                 </head>
                 <body>
-                    
-                    <div class="navbar navbar-expand-lg navbar-fixed-top navbar-custom" id="myNavbar">
+
+                    <div class="navbar navbar-expand-lg navbar-fixed-top navbar-custom"
+                        id="myNavbar">
                         <div class="container">
                             <div class="navbar-header">
-                                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
+                                <a class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                    <span class="icon-bar"/>
+                                    <span class="icon-bar"/>
+                                    <span class="icon-bar"/>
                                 </a>
                                 <a href="index.html" class="navbar-brand">PLOT</a>
                             </div>
-                            
+
                             <div class="navbar-collapse collapse navbar-right">
                                 <ul class="nav navbar-nav" role="navigation">
-                                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="carte.html">Carte</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html">Accueil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../carte.html">Carte</a>
+                                    </li>
                                     <li class="dropdown nav-item">
-                                        <a class="dropdown-toggle active" data-toggle="dropdown" href="legende.html">Légendes<span class="caret"></span> </a>
+                                        <a class="dropdown-toggle active" data-toggle="dropdown"
+                                            href="../../legende.html">Légendes<span class="caret"/>
+                                        </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#" class="nav-link active">Textes</a></li>
-                                            <li><a href="#" class="nav-link">Audios</a></li>
-                                            <li><a href="#" class="nav-link">Base de données iconographiques</a></li>
+                                            <li>
+                                                <a href="#" class="nav-link active">Textes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link">Audios</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link">Base de données
+                                                  iconographiques</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown nav-item">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos<span class="caret"></span> </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">A
+                                                propos<span class="caret"/>
+                                        </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#" class="nav-link">Sources</a></li>
-                                            <li><a href="#" class="nav-link">Le projet</a></li>
-                                            <li><a href="#" class="nav-link">Contact</a></li>
+                                            <li>
+                                                <a href="#" class="nav-link">Sources</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link">Le projet</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link">Contact</a>
+                                            </li>
                                         </ul>
-                                    </li>          
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -71,19 +94,8 @@
                                 <xsl:apply-templates select=".[not(@xml:id) or @xml:id != 'titre']"
                                 />
                             </xsl:for-each>
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>../PDF/</xsl:text>
-                                    <xsl:value-of select="./@xml:id"/>
-                                    <xsl:text>.pdf</xsl:text>
-                                </xsl:attribute>
-                                <xsl:attribute name="download">
-                                    <xsl:value-of select="./@xml:id"/>
-                                </xsl:attribute>
-                                Télécharger le fichier en PDF
-                            </xsl:element>
                         </div>
-                        
+
 
                         <div id="perso-legende">
                             <h3>Personnages</h3>
@@ -93,21 +105,52 @@
                             </xsl:for-each>
                         </div>
 
+                        <div id="liens-telechargement">
+                            <ul>
+                                <li>
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href">
+                                            <xsl:text>../PDF/</xsl:text>
+                                            <xsl:value-of select="./@xml:id"/>
+                                            <xsl:text>.pdf</xsl:text>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="download">
+                                            <xsl:value-of select="./@xml:id"/>
+                                        </xsl:attribute> Télécharger le fichier en PDF
+                                    </xsl:element>
+                                </li>
+                                <li>
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href">
+                                            <xsl:text>../TEI/</xsl:text>
+                                            <xsl:value-of select="./@xml:id"/>
+                                            <xsl:text>.xml</xsl:text>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="download">
+                                            <xsl:value-of select="./@xml:id"/>
+                                        </xsl:attribute> Télécharger le fichier en XML
+                                    </xsl:element>
+                                </li>
+                            </ul>
+                        </div>
+
                         <footer class="row">
                             <div class="col-md-6">
                                 <p>
                                     <a href="#" class="underline--magical">Sources</a><br/>
-                                    <a href="#">Nous contacter</a><br/>
-                                    Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
-                                </p>
+                                    <a href="#">Nous contacter</a><br/> Mentions légales -- Centre
+                                    d'Etudes Supérieures de la Renaissance -- 2020 </p>
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-offset-6 col-md-3 logo-footer">
-                                        <img src="../../images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/>
+                                        <img src="../../images/logos/logo_cesr.gif"
+                                            class="img-responsive" alt="Logo du CESR"/>
                                     </div>
                                     <div class="col-md-3 logo-footer">
-                                        <img src="../../images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" />
+                                        <img src="../../images/logos/logo_univ_tours.png"
+                                            class="img-responsive"
+                                            alt="Logo de l'Université de Tours"/>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +256,8 @@
                         <xsl:element name="a">
                             <xsl:attribute name="href">
                                 <xsl:text>cible_requete.php?personnage_id=</xsl:text>
-                                <xsl:value-of select="../@xml:id"/></xsl:attribute>
+                                <xsl:value-of select="../@xml:id"/>
+                            </xsl:attribute>
                             <xsl:value-of select="."/>
                         </xsl:element>
                     </xsl:when>
