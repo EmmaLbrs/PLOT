@@ -169,10 +169,17 @@
       window.location.href=target.getAttribute("href");
     }
   });
+  
 
   sidebar.addEventListener("click", function(event) {
+    console.log("click");
     event.stopPropagation();
     event.preventDefault();
+    var url = target.getAttribute("href");
+    if (url != null && url != "autour-legende" && url != "texte-legende") {
+      window.location.href=target.getAttribute("href");
+      console.log(target.getAttribute("href"));
+    }
   })
   
 
