@@ -62,11 +62,8 @@
             les fidèles commencent à s’inquièter de ce mystère, un vieillard à la longue
             chevelure blanche s’avance au milieu de la foule désespérée. Peut-être,
             annonce-t-il, faudra-t-il encore patienter quelques jours. Après tout, le 4
-            juillet se trouve être le jour de la consécration épiscopale"L'ordination épiscopale, dite encore consécration ou sacre est la
-            cérémonique lithurgique au cours de laquelle le sacrement de l'ordre dans sa
-            plénitude est conféré aux nouveaux évêques.", Chapeau André. Les ordinations
-            épiscopales dans l'Église catholique du XVIe siècle à nos jours. In: Revue
-            d'histoire de l'Église de France, tome 76, n°196, 1990. pp. 73-84..
+            juillet se trouve être le jour de la consécration épiscopale
+            <span class="infobulle" data-tooltip="&#34;L'ordination épiscopale, dite encore consécration ou sacre est la&#xA;                        cérémonique lithurgique au cours de laquelle le sacrement de l'ordre dans sa&#xA;                        plénitude est conféré aux nouveaux évêques.&#34;, Chapeau André. Les ordinations&#xA;                        épiscopales dans l'Église catholique du XVIe siècle à nos jours. In: Revue&#xA;                        d'histoire de l'Église de France, tome 76, n°196, 1990. pp. 73-84.">(explication)</span>.
             Ne serait-ce pas là un message de 
             <a href="#perso-stmartin" goto="autour-legende">Saint-Martin</a> ?
          </p>

@@ -285,6 +285,19 @@
         </xsl:choose>
 
     </xsl:template>
+    
+    <xsl:template match="tei:note">
+<!--        <xsl:element name="span">
+            <xsl:attribute name="class">infobulle</xsl:attribute>
+            <span><xsl:apply-templates/></span>
+            <xsl:text>(explication)</xsl:text>
+        </xsl:element>-->
+        <xsl:element name="span">
+            <xsl:attribute name="class">infobulle</xsl:attribute>
+            <xsl:attribute name="data-tooltip"><xsl:apply-templates/></xsl:attribute>
+            <xsl:text>(explication)</xsl:text>
+        </xsl:element>
+    </xsl:template>
 
 
 </xsl:stylesheet>

@@ -132,26 +132,6 @@
 
   Stamen_Toner.addTo(map); 
 
-
-  //   var sidebar = L.control.sidebar('sidebar', {
-  //     closeButton: true,
-  //     position: 'right',
-  //     autoPan:false
-  //   });
-
-  //   map.addControl(sidebar);
-
-  //   setTimeout(function () {
-  //       sidebar.hide();}, 500);
-
-
-
-  //  function showSideBar () {
-  //     sidebar.show();
-  //   }
-
-  //   var content = document.getElementById("content");
-
   var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(map);
 
   map.on('click', function () {
@@ -223,6 +203,9 @@ function loadPage(href)
     });
 
     var couvent_carmes = L.marker([47.395805, 0.682777], {icon: churchIcon}).addTo(map);
+    var la_souris_blanche = L.marker([47.382467, 0.660568], {icon:castleIcon}).addTo(map);
+    var tombeau_stmartin = L.marker([47.392871, 0.683027]).addTo(map);
+
     couvent_carmes.on('click', function () 
    {        
             var legende = loadPage('Legendes/HTML/couvent_carmes-carte.php');
@@ -234,14 +217,6 @@ function loadPage(href)
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(texteLegende, autourLegende);
 
-            // //home.innerHTML += texteLegende.innerHTML;
-            // profile.innerHTML += autourLegende.innerHTML;
-
-            // for(i = 0; i <= texteLegende.children.length - 1; i++)
-            //   home.appendChild(texteLegende.children[i]);
-
-            // console.log(home.innerHTML);
-
             $(doc).ready(function() {
                 tabAnchor();
             })
@@ -251,8 +226,7 @@ function loadPage(href)
     });
 
 
-    var plessisLesTours = L.marker([47.382467, 0.660568], {icon:castleIcon}).addTo(map);
-    plessisLesTours.on('click', function () 
+    la_souris_blanche.on('click', function () 
    {
             var legende = loadPage('Legendes/HTML/la_souris_blanche-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
@@ -261,15 +235,6 @@ function loadPage(href)
             var autourLegende = doc.getElementById("autour-legende");
             
             spanLeg.innerHTML += titre[0].innerText;
-            //console.log(texteLegende.innerHTML);
-           // home.innerHTML += texteLegende.innerHTML;
-          //  for(i = 0; i <= texteLegende.children.length - 1; i++)
-          //  {
-          //     container1.appendChild(texteLegende.children[i]);
-          //  }
-              
-          //   for(i = 0; i <= autourLegende.children.length - 1; i++)
-          //     container2.appendChild(autourLegende.children[i]);
 
           sidebar.setContent(texteLegende, autourLegende);
 
@@ -277,19 +242,26 @@ function loadPage(href)
                 tabAnchor();
             })
 
-            //console.log(home.innerHTML);
-
-       
-            //sidebar.open("texte-legende");
             sidebar.toggle("texte-legende");
             console.log("actif : " + document.activeElement);
     });
 
-    var tombeauStMartin = L.marker([47.392871, 0.683027]).addTo(map);
-    tombeauStMartin.on('click', function () 
+    tombeau_stmartin.on('click', function () 
    {
-            // content.innerHTML = "<h1>Le tombeau de Saint Martin</h1><p>Lorem ipsum</p>"
-        //    showSideBar();
+            var legende = loadPage('Legendes/HTML/tombeau_stmartin-carte.php');
+            var doc = new DOMParser().parseFromString(legende, "text/html");
+            var texteLegende = doc.getElementById("texte-legende");
+            var titre = texteLegende.getElementsByTagName("h2");
+            var autourLegende = doc.getElementById("autour-legende");
+            
+             spanLeg.innerHTML += titre[0].innerText;
+             sidebar.setContent(texteLegende, autourLegende);
+
+            $(doc).ready(function() {
+                tabAnchor();
+            })
+
+            sidebar.toggle("texte-legende");
     }); 
     
 
