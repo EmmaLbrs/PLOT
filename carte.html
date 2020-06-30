@@ -225,7 +225,7 @@ function loadPage(href)
     var couvent_carmes = L.marker([47.395805, 0.682777], {icon: churchIcon}).addTo(map);
     couventCarme.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/couvent-carmes-carte.php');
+            var legende = loadPage('Legendes/HTML/couvent_carmes-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
@@ -254,7 +254,7 @@ function loadPage(href)
     var plessisLesTours = L.marker([47.382467, 0.660568], {icon:castleIcon}).addTo(map);
     plessisLesTours.on('click', function () 
    {
-            var legende = loadPage('Legendes/HTML/la-souris-blanche-carte.php');
+            var legende = loadPage('Legendes/HTML/la_souris_blanche-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
