@@ -186,8 +186,24 @@
 
                 </head>
                 <body>
+                    
+                    <div id="audio-legende"> 
 
-
+                            
+                            <xsl:element name="audio">
+                                <xsl:attribute name="controls"></xsl:attribute>
+                                <xsl:element name="source">
+                                    <xsl:attribute name="src">
+                                        <xsl:text>Legendes/Audio/</xsl:text>
+                                        <xsl:value-of select="@xml:id"/>
+                                        <xsl:text>.mp3</xsl:text>
+                                    </xsl:attribute>
+                                </xsl:element>
+                                   
+                            </xsl:element>
+                    </div>
+                    
+                    
                     <div id="texte-legende">
                         <header>
                             <xsl:apply-templates
@@ -244,7 +260,7 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="tei:person">
+    <xsl:template match="tei:person|tei:personGrp">
 
         <xsl:element name="p">
             <xsl:attribute name="id">

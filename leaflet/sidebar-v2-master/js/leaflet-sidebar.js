@@ -193,7 +193,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
         return this;
     },
 
-    setContent: function(legende, autour) {
+    setContent: function(audio, legende, autour) {
 
         //console.log("legende (setcontent):" + legende.innerHTML);
         var j = 0;
@@ -216,7 +216,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
                             //console.log("size:" + size);
                             for(incr = 0; incr <= legende.children.length - 1; incr++) {
                                 //console.log("valeur" + incr);
-                                console.log("container-texte : " + legende.children[incr].tagName);
+                                //console.log("container-texte : " + legende.children[incr].tagName);
                                 if (legende.children[incr].tagName == "HEADER") {
                                     continue;
                                 }
@@ -231,6 +231,12 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
                             var size_autour = autour.children.length - 1;
                             for(m = 0; m <= autour.children.length - 1; m++)
                             descendant.appendChild(autour.children[m].cloneNode(1));
+                        }
+                        if (descendant.tagName == 'DIV' &&
+                        L.DomUtil.hasClass(descendant, 'container-audio'))
+                        {
+                            for(m = 0; m <= audio.children.length - 1; m++)
+                            descendant.appendChild(audio.children[m].cloneNode(1));
                         }
                 }
             }
@@ -259,6 +265,13 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
                         }
                         if (descendant.tagName == 'DIV' &&
                         L.DomUtil.hasClass(descendant, 'container-autour'))
+                        {
+                            //var size_2 = descendant.children.length - 1;
+                            for(m = descendant.children.length - 1; m >= 0; m--)
+                            descendant.removeChild(descendant.children[m]);
+                        }
+                        if (descendant.tagName == 'DIV' &&
+                        L.DomUtil.hasClass(descendant, 'container-audio'))
                         {
                             //var size_2 = descendant.children.length - 1;
                             for(m = descendant.children.length - 1; m >= 0; m--)

@@ -74,6 +74,7 @@
                     <span id="span-titre"></span>
                     <span class="sidebar-close" onclick="sidebar.close()"><i class="fa fa-times"></i></span>
                 </h1>
+                <div id="audio-legende" class="container-audio"></div>
                 <div id="container-texte" class="container-texte"></div>
 
             </div>
@@ -168,6 +169,7 @@
   var container1 = document.getElementById("container-texte");
   var container2 = document.getElementById("container-autour");
   var titreLeg = document.getElementById("titre-legende");
+  var audioLeg = document.getElementById("audio-legende");
   var spanLeg = document.getElementById("span-titre");
 
   sidebar.addEventListener("closing", function(event) {
@@ -213,9 +215,13 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
+            var audioLegende = doc.getElementById("audio-legende");
+
+            console.log("audio legende " + audioLegende);
+            console.log("texte legende " + texteLegende);
             
              spanLeg.innerHTML += titre[0].innerText;
-             sidebar.setContent(texteLegende, autourLegende);
+             sidebar.setContent(audioLegende, texteLegende, autourLegende);
 
             $(doc).ready(function() {
                 tabAnchor();
@@ -233,10 +239,11 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
+            var audioLegende = doc.getElementById("audio-legende");
             
             spanLeg.innerHTML += titre[0].innerText;
 
-          sidebar.setContent(texteLegende, autourLegende);
+          sidebar.setContent(audioLegende, texteLegende, autourLegende);
 
             $(doc).ready(function() {
                 tabAnchor();
@@ -253,9 +260,10 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
+            var audioLegende = doc.getElementById("audio-legende");
             
              spanLeg.innerHTML += titre[0].innerText;
-             sidebar.setContent(texteLegende, autourLegende);
+             sidebar.setContent(audioLegende, texteLegende, autourLegende);
 
             $(doc).ready(function() {
                 tabAnchor();
