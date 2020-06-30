@@ -18,11 +18,48 @@
                     <title>
                         <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                     </title>
-                    <!--<link rel="stylesheet" href="../HTML/CSS/style.css"/>-->
+                    <link rel="stylesheet" href="../../css/general.css"/>
+                    <link rel="stylesheet" href="../../css/legendes.css"/>
                 </head>
                 <body>
+                    
+                    <div class="navbar navbar-expand-lg navbar-fixed-top navbar-custom" id="myNavbar">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </a>
+                                <a href="index.html" class="navbar-brand">PLOT</a>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse navbar-right">
+                                <ul class="nav navbar-nav" role="navigation">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="carte.html">Carte</a></li>
+                                    <li class="dropdown nav-item">
+                                        <a class="dropdown-toggle active" data-toggle="dropdown" href="legende.html">Légendes<span class="caret"></span> </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="nav-link active">Textes</a></li>
+                                            <li><a href="#" class="nav-link">Audios</a></li>
+                                            <li><a href="#" class="nav-link">Base de données iconographiques</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown nav-item">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos<span class="caret"></span> </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="nav-link">Sources</a></li>
+                                            <li><a href="#" class="nav-link">Le projet</a></li>
+                                            <li><a href="#" class="nav-link">Contact</a></li>
+                                        </ul>
+                                    </li>          
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="container">
+                    <div class="container-fluid">
 
                         <header>
                             <xsl:apply-templates
@@ -36,12 +73,33 @@
                             </xsl:for-each>
                         </div>
 
-                        <div class="perso-legendes">
+                        <div id="perso-legende">
+                            <h3>Personnages</h3>
                             <xsl:for-each
                                 select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:person">
                                 <xsl:apply-templates select="."/>
                             </xsl:for-each>
                         </div>
+
+                        <footer class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    <a href="#" class="underline--magical">Sources</a><br/>
+                                    <a href="#">Nous contacter</a><br/>
+                                    Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-offset-6 col-md-3 logo-footer">
+                                        <img src="../../images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/>
+                                    </div>
+                                    <div class="col-md-3 logo-footer">
+                                        <img src="../../images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" />
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
 
 
                     </div>

@@ -1,0 +1,30 @@
+.container-fluid {
+    padding-top: 50px;
+}
+
+body p, body h2, body h3{ 
+    padding-left:60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+#texte-legende {
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+#perso-legende {
+    padding-top: 20px;
+}
+
+h3 {
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: black !important;
+    color:white !important;
+}
+
+footer div p, footer div a {
+    color:white !important;
+}
