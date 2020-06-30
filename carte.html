@@ -223,7 +223,7 @@ function loadPage(href)
     });
 
     var couvent_carmes = L.marker([47.395805, 0.682777], {icon: churchIcon}).addTo(map);
-    couventCarme.on('click', function () 
+    couvent_carmes.on('click', function () 
    {        
             var legende = loadPage('Legendes/HTML/couvent_carmes-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
