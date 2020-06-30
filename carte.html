@@ -207,10 +207,82 @@ function loadPage(href)
     var couvent_carmes = L.marker([47.395805, 0.682777], {icon: churchIcon}).addTo(map);
     var la_souris_blanche = L.marker([47.382467, 0.660568], {icon:castleIcon}).addTo(map);
     var tombeau_stmartin = L.marker([47.392871, 0.683027]).addTo(map);
+    var breche_normands = L.marker([47.395693, 0.697903]).addTo(map);
+    var tour_charlemagne = L.marker([47.393293, 0.682506]).addTo(map);
+    var homme_noir = L.marker([47.400387, 0.663333]).addTo(map);
 
     couvent_carmes.on('click', function () 
    {        
             var legende = loadPage('Legendes/HTML/couvent_carmes-carte.php');
+            var doc = new DOMParser().parseFromString(legende, "text/html");
+            var texteLegende = doc.getElementById("texte-legende");
+            var titre = texteLegende.getElementsByTagName("h2");
+            var autourLegende = doc.getElementById("autour-legende");
+            var audioLegende = doc.getElementById("audio-legende");
+
+            console.log("audio legende " + audioLegende);
+            console.log("texte legende " + texteLegende);
+            
+             spanLeg.innerHTML += titre[0].innerText;
+             sidebar.setContent(audioLegende, texteLegende, autourLegende);
+
+            $(doc).ready(function() {
+                tabAnchor();
+            })
+
+            sidebar.toggle("texte-legende");
+
+    });
+
+    homme_noir.on('click', function () 
+   {        
+            var legende = loadPage('Legendes/HTML/homme_noir-carte.php');
+            var doc = new DOMParser().parseFromString(legende, "text/html");
+            var texteLegende = doc.getElementById("texte-legende");
+            var titre = texteLegende.getElementsByTagName("h2");
+            var autourLegende = doc.getElementById("autour-legende");
+            var audioLegende = doc.getElementById("audio-legende");
+
+            console.log("audio legende " + audioLegende);
+            console.log("texte legende " + texteLegende);
+            
+             spanLeg.innerHTML += titre[0].innerText;
+             sidebar.setContent(audioLegende, texteLegende, autourLegende);
+
+            $(doc).ready(function() {
+                tabAnchor();
+            })
+
+            sidebar.toggle("texte-legende");
+
+    });
+
+    tour_charlemagne.on('click', function () 
+   {        
+            var legende = loadPage('Legendes/HTML/tour_charlemagne-carte.php');
+            var doc = new DOMParser().parseFromString(legende, "text/html");
+            var texteLegende = doc.getElementById("texte-legende");
+            var titre = texteLegende.getElementsByTagName("h2");
+            var autourLegende = doc.getElementById("autour-legende");
+            var audioLegende = doc.getElementById("audio-legende");
+
+            console.log("audio legende " + audioLegende);
+            console.log("texte legende " + texteLegende);
+            
+             spanLeg.innerHTML += titre[0].innerText;
+             sidebar.setContent(audioLegende, texteLegende, autourLegende);
+
+            $(doc).ready(function() {
+                tabAnchor();
+            })
+
+            sidebar.toggle("texte-legende");
+
+    });
+
+    breche_normands.on('click', function () 
+   {        
+            var legende = loadPage('Legendes/HTML/breche_normands-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");

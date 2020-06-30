@@ -11,7 +11,7 @@
    <body>
       <div id="audio-legende">
          <audio controls="">
-            <source src="../Audio/breche_normands.mp3"></source>
+            <source src="Legendes/Audio/breche_normands.mp3"></source>
          </audio>
       </div>
       <div id="texte-legende">

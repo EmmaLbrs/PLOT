@@ -9,6 +9,11 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    </head>
    <body>
+      <div id="audio-legende">
+         <audio controls="">
+            <source src="Legendes/Audio/le_roi_hugon.mp3"></source>
+         </audio>
+      </div>
       <div id="texte-legende">
          <header>
             <h2>Le roi Hugon</h2>
