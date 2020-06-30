@@ -71,7 +71,19 @@
                                 <xsl:apply-templates select=".[not(@xml:id) or @xml:id != 'titre']"
                                 />
                             </xsl:for-each>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:text>../PDF/</xsl:text>
+                                    <xsl:value-of select="./@xml:id"/>
+                                    <xsl:text>.pdf</xsl:text>
+                                </xsl:attribute>
+                                <xsl:attribute name="download">
+                                    <xsl:value-of select="./@xml:id"/>
+                                </xsl:attribute>
+                                Télécharger le fichier en PDF
+                            </xsl:element>
                         </div>
+                        
 
                         <div id="perso-legende">
                             <h3>Personnages</h3>
@@ -173,7 +185,6 @@
 
             </html>
 
-            <!--<xsl:processing-instruction name="php">echo 'Hello World';</xsl:processing-instruction>-->
 
         </xsl:result-document>
     </xsl:template>
