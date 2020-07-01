@@ -133,7 +133,23 @@
     <input type="submit" name="valider" value="OK"/>
     </p>
     </form>
+
+
+       <p>Par mot-clé : </p>
+    <form method="post" action="cible_requete.php">
     
+    <p>
+    <select name="motcle">
+        <?php
+            $motcles = $bdd->query('SELECT * from motcle');
+            while ($donnees = $motcles->fetch()) {
+                echo "<option value=".$donnees['id_mc'].">".$donnees['motcle']."</option>";
+            }
+        ?>
+    </select>
+    <input type="submit" name="valider" value="OK"/>
+    </p>
+    </form>
 
 
 

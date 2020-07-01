@@ -26,20 +26,20 @@ a:active, a:visited, a:link  {
 
 /* https://codepen.io/thelittleblacksmith/pen/zXNVvY */
   
-.navbar a {
+.nav-item > a, a.navbar-brand {
     border-bottom: 1px solid red;
     transition: all 0.25s linear;
     position: relative;
   }
 
-.navbar a:before {
+.nav-item > a:before, a.navbar-brand:before {
   
   
     content: "";
     display: block;
     width: 100%;
     height: 3px;
-    background-color:red;
+    background-color:white;
     position: absolute;
     left: 0;
     bottom: -3px; /* this is to match where the border is */
@@ -49,7 +49,7 @@ a:active, a:visited, a:link  {
   
   }
 
-  .nav-item > a, a.navbar-brand {
+.nav-item > a, a.navbar-brand {
     border-bottom: 0px solid white;
     transition: all 0.25s linear;
     position: relative;
@@ -61,7 +61,7 @@ a:active, a:visited, a:link  {
     background-color: white;
   }
 
-  a.active:after {
+.nav-item > a.active:after {
     content: "";
     display: inline-block;
     width: 100%;
@@ -72,11 +72,11 @@ a:active, a:visited, a:link  {
     bottom: 2px; /* this is to match where the border is */
   }
 
-.dropdown-menu a.nav-link, div.hover-mask a {
+.dropdown-menu a.nav-link{
     border-bottom: 0px;
 }
 
-.dropdown-menu a.nav-link:before, div.hover-mask a:before {
+.dropdown-menu a.nav-link:before {
     height:0;
 }
 
