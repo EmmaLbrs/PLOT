@@ -58,9 +58,10 @@
               <li class="dropdown nav-item">
                 <a class="dropdown-toggle active" data-toggle="dropdown" href="legende.html">Légendes<span class="caret"></span> </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#" class="nav-link active">Textes</a></li>
+                  <li><a href="textes.php" class="nav-link active">Textes</a></li>
                   <li><a href="#" class="nav-link">Audios</a></li>
                   <li><a href="#" class="nav-link">Base de données iconographiques</a></li>
+                  <li><a href="acces.php" class="nav-link">Accès thématiques</a></li>
                 </ul>
               </li>
               <li class="dropdown nav-item">
@@ -104,12 +105,14 @@
     $currentdir = basename(__DIR__);
 
     $legendes = $bdd->query('SELECT * from legende');
+    echo "<ul>";
     while ($donnees = $legendes->fetch()) {
         // $posSlash = strpos($donnees['url_texte_simple'], '/');
         // $posSlash = $posSlash+1;
         // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash); 
-        echo "<a href=".$donnees['url_texte_simple'].">".$donnees['titre']."</a>";
+        echo "<li><a href=".$donnees['url_texte_simple'].">".$donnees['titre']."</a></li>";
     }
+    echo "</ul>";
      
      ?>
 
