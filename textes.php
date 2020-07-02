@@ -11,31 +11,9 @@
     <!-- Bootstrap CSS     
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
     <link rel="stylesheet" type="text/css" href="css/general.css">
-  	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  	<link rel="stylesheet" type="text/css" href="css/textesaudios.css">
        <title>PLOT - CESR | Textes</title>
        
-       <style>
-           
-        div.container-fluid {
-            margin-top:50px;
-        }
-
-        aside {
-            border-right:1px solid lightgray;
-        }
-
-        section {
-            text-align: justify;
-        }
-
-        .container-fluid > :not(footer) { margin-left:50px;}
-
-        footer {
-          padding-left:35px;
-          padding-right:35px;
-        }
-
-       </style>
 
   </head>
 
