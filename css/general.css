@@ -96,12 +96,14 @@ a:active, a:visited, a:link  {
     transform: scale(1);
   }
 
-h1 {
-    color: black;
+h1, h2 {
+    color: #A40404;
+    font-family: 'titre';
 }
 
 p { 
     color: black;
+    font-family: 'corps';
 }
 
 
