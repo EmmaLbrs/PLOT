@@ -65,11 +65,13 @@
 
 .jumbotron div h1 {
     text-align: center;
-    color: black;
+    font-family: 'titre';
+    color: #870909;
 }
 
 .jumbotron div p {
     text-align: justify;
+    font-family: 'corps';
 }
 
 /* .jumbotron {
