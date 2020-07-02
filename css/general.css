@@ -114,6 +114,12 @@ p {
 .navbar-custom .navbar-brand {
     color: white;
 }
+
+.navbar-brand img {
+    height: 40px;
+    padding-bottom: 10px;
+}
+
 .navbar-custom .navbar-text {
     color: white;
 }
