@@ -86,6 +86,17 @@
                <br></br>Homme d'état, chef militaire
                <br></br>
             </p>
+            <p id="perso-francs">
+               <a href="cible_requete.php?personnage_id=perso-francs">Les Francs</a>
+               <br></br>Peuple germanique qui a donné son nom à la France et aux
+               français.
+               <br></br>
+            </p>
+            <p id="perso-burgondes">
+               <a href="cible_requete.php?personnage_id=perso-burgondes">Les Burgondes</a>
+               <br></br>Peuple germanique.
+               <br></br>
+            </p>
             <p id="perso-abd-al-rahman">
                <a href="cible_requete.php?personnage_id=perso-abd-al-rahman">Abd al-Rahman</a>
                <br></br>
@@ -98,12 +109,24 @@
                <br></br>Wali d'al-Andalus
                <br></br>
             </p>
+            <p id="perso-omeyyades">
+               <a href="cible_requete.php?personnage_id=perso-omeyyades">Les Omeyyades</a>
+               <br></br>Dynastie arabe qui gouverne le monde musulman puis al-Andalus.
+               <br></br>
+            </p>
             <p id="perso-eudes-aquitaine">
                <a href="cible_requete.php?personnage_id=perso-eudes-aquitaine">Eudes d'Aquitaine</a>
                <br></br>
                An 735
                
                <br></br>Duc d'Aquitaine et de Vasconie
+               <br></br>
+            </p>
+            <p id="perso-aquitains">
+               <a href="cible_requete.php?personnage_id=perso-aquitains">Les Aquitains</a>
+               <br></br>Ensemble de peuples protohistoriques et de l'Antiquité situés entre
+               les Pyrénées occidentales, la rive gauche de la Garonne et l'océan
+               Atlantique.
                <br></br>
             </p>
             <p id="perso-stmartin">

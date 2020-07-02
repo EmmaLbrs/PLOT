@@ -100,7 +100,7 @@
                         <div id="perso-legende">
                             <h3>Personnages</h3>
                             <xsl:for-each
-                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:person">
+                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:*">
                                 <xsl:apply-templates select="." mode="texte"/>
                             </xsl:for-each>
                         </div>
@@ -229,7 +229,7 @@
                         <div id="perso-legende">
                             <h2>Personnages</h2>
                             <xsl:for-each
-                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:person">
+                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/*">
                                 <xsl:apply-templates select="." mode="carte"/>
                             </xsl:for-each>
                         </div>
@@ -268,7 +268,7 @@
             </xsl:attribute>
             <xsl:for-each select="*">
                 <xsl:choose>
-                    <xsl:when test="name() = 'persName'">
+                    <xsl:when test="name() = 'persName' or name() = 'name'">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
                                 <xsl:text>cible_requete.php?personnage_id=</xsl:text>
@@ -294,7 +294,7 @@
             </xsl:attribute>
             <xsl:for-each select="*">
                 <xsl:choose>
-                    <xsl:when test="name() = 'persName'">
+                    <xsl:when test="name() = 'persName' or name() = 'name'">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
                                 <xsl:text>../../cible_requete.php?personnage_id=</xsl:text>

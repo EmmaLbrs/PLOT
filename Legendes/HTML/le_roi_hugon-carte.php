@@ -111,6 +111,17 @@
                <br></br>Né en 823 est le petit fils de Charlemagne et roi des Francs de 843 à 877. 
                <br></br>
             </p>
+            <p id="perso-chretien">
+               <a href="cible_requete.php?personnage_id=perso-chretien">Les chrétiens</a>
+               <br></br>Religion appartenant au christianisme qui reconnait l'autorité du Pape.
+               <br></br>
+            </p>
+            <p id="perso-protestant">
+               <a href="cible_requete.php?personnage_id=perso-protestant">Les protestants</a>
+               <br></br>Religion appartenant au christianisme qui rejette 
+               les fonctions mise en place par le catholicisme durant le Moyen Age
+               <br></br>
+            </p>
          </div>
       </div>
    </body>

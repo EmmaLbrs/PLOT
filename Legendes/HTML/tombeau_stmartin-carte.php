@@ -108,6 +108,16 @@
                <br></br>Saint de la chrétienté et évêque de Tours
                <br></br>
             </p>
+            <p id="perso-moines-tourangeanx">
+               <a href="cible_requete.php?personnage_id=perso-moines-tourangeanx">Les moines Tourangeaux</a>
+               <br></br>Moines de la ville de Tours, dont l'évêque était Saint-Martin.
+               <br></br>
+            </p>
+            <p id="perso-moines-poitevins">
+               <a href="cible_requete.php?personnage_id=perso-moines-poitevins">Les moines Poitevins</a>
+               <br></br>Moines du Poitou.
+               <br></br>
+            </p>
             <p id="perso-stbrice">
                <a href="cible_requete.php?personnage_id=perso-stbrice">Brice de Tours</a>
                <br></br>Vers 377

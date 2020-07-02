@@ -89,6 +89,16 @@
          </div>
          <div id="perso-legende">
             <h2>Personnages</h2>
+            <p id="perso-normands">
+               <a href="cible_requete.php?personnage_id=perso-normands">Les Normands</a>
+               <br></br>Nom autrefois donné aux Vikings.
+               <br></br>
+            </p>
+            <p id="perso-tourangeaux">
+               <a href="cible_requete.php?personnage_id=perso-tourangeaux">Les Tourangeaux</a>
+               <br></br>Habitants de la ville de Tours.
+               <br></br>
+            </p>
             <p id="perso-stmartin">
                <a href="cible_requete.php?personnage_id=perso-stmartin">Saint-Martin de Tours</a>
                <br></br>
