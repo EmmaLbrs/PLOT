@@ -33,7 +33,7 @@
                                     <span class="icon-bar"/>
                                     <span class="icon-bar"/>
                                 </a>
-                                <a href="index.html" class="navbar-brand">PLOT</a>
+                                <a href="../../index.html" class="navbar-brand">PLOT</a>
                             </div>
 
                             <div class="navbar-collapse collapse navbar-right">
@@ -101,7 +101,7 @@
                             <h3>Personnages</h3>
                             <xsl:for-each
                                 select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:person">
-                                <xsl:apply-templates select="."/>
+                                <xsl:apply-templates select="." mode="texte"/>
                             </xsl:for-each>
                         </div>
 
@@ -230,7 +230,7 @@
                             <h2>Personnages</h2>
                             <xsl:for-each
                                 select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:person">
-                                <xsl:apply-templates select="."/>
+                                <xsl:apply-templates select="." mode="carte"/>
                             </xsl:for-each>
                         </div>
 
@@ -260,7 +260,7 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="tei:person|tei:personGrp">
+    <xsl:template match="tei:person|tei:personGrp" mode="carte">
 
         <xsl:element name="p">
             <xsl:attribute name="id">
@@ -272,6 +272,32 @@
                         <xsl:element name="a">
                             <xsl:attribute name="href">
                                 <xsl:text>cible_requete.php?personnage_id=</xsl:text>
+                                <xsl:value-of select="../@xml:id"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="."/>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="."/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <br/>
+            </xsl:for-each>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:person|tei:personGrp" mode="texte">
+        
+        <xsl:element name="p">
+            <xsl:attribute name="id">
+                <xsl:value-of select="./@xml:id"/>
+            </xsl:attribute>
+            <xsl:for-each select="*">
+                <xsl:choose>
+                    <xsl:when test="name() = 'persName'">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>../../cible_requete.php?personnage_id=</xsl:text>
                                 <xsl:value-of select="../@xml:id"/>
                             </xsl:attribute>
                             <xsl:value-of select="."/>
