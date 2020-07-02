@@ -8,33 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS     
-  	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/textesaudios.css">
     <link rel="stylesheet" type="text/css" href="css/general.css">
 
        <title>PLOT - CESR | Résultat de la recherche</title>
-       
-       <style>
-           
-        div.container-fluid {
-            margin-top:50px;
-        }
-
-        aside {
-            border-right:1px solid lightgray;
-        }
-
-        section {
-            text-align: justify;
-        }
-
-        footer {
-            margin-top:150px;
-        }
-
-
-       </style>
 
   </head>
 
@@ -136,10 +113,10 @@
             $legendes->execute();
           
               if ($legendes->rowCount() == 0) {
-                  echo "Aucun résultat ne correspond à la recherche.";
+                  echo "<p>Aucun résultat ne correspond à la recherche.</p>";
               }
               else {
-                  echo "Résultat correspondant à la recherche :";
+                  echo "<p>Résultat correspondant à la recherche :</p>";
                   echo "<ul>";
                   while ($donnees = $legendes->fetch()) {
                       // $posSlash = strpos($donnees['url_texte_simple'], '/');
