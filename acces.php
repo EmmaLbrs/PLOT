@@ -152,6 +152,22 @@
     </p>
     </form>
 
+    <p>Par catégorie : </p>
+    <form method="post" action="cible_requete.php">
+    
+    <p>
+    <select name="categorie">
+        <?php
+            $motcles = $bdd->query('SELECT * from categorie');
+            while ($donnees = $motcles->fetch()) {
+                echo "<option value=".$donnees['id_cat'].">".$donnees['categorie']."</option>";
+            }
+        ?>
+    </select>
+    <input type="submit" name="valider" value="OK"/>
+    </p>
+    </form>
+
 
 
     

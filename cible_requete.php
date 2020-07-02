@@ -125,7 +125,10 @@
       $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, motcle, descriptionmotcle
       WHERE '.$_POST['motcle'].'=fk_idMC AND fk_idLeg = id_leg';
     }
-    
+    else if(isset($_POST['categorie'])) {
+      $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, categorie, appartenancecategorie
+      WHERE '.$_POST['categorie'].'=fk_idCat AND fk_idLeg = id_leg';
+    }    
     ?>
     
         <?php
