@@ -17,6 +17,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
     },
 
     initialize: function (id, options) {
+        console.log("initialize");
         var i, child;
 
         L.setOptions(this, options);
@@ -68,6 +69,8 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * @returns {Sidebar}
      */
     addTo: function (map) {
+
+        console.log('addTo');
         var i, child;
 
         this._map = map;
@@ -133,11 +136,12 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
     open: function(id) {
         var i, child;
 
-        if((id != "texte-legende") && (id != "autour-legende")) {
+        if(id == undefined) {
             this._sidebar.blur();
+            return;
         }
 
-        console.log("open")
+        console.log("open id " + id)
         //console.log(this._sidebar.innerHTML);
 
         // hide old active contents and show new content
@@ -281,7 +285,6 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
             }
         }
 
-        console.log("contenu après reinitialisation "+ this._sidebar.innerHTML);
     },
 
     isCollapsed: function () {
@@ -289,6 +292,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
     },
 
     toggle: function(tab) {
+        console.log("toggle");
         if (this.isCollapsed()) {
             this.open(tab);
         } else {
@@ -300,6 +304,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * @private
      */
     _onClick: function() {
+        console.log("onclick");
         if (L.DomUtil.hasClass(this, 'active'))
             this._sidebar.close();
         else if (!L.DomUtil.hasClass(this, 'disabled'))

@@ -60,7 +60,7 @@
                   <li><a href="textes.php" class="nav-link">Textes</a></li>
                   <li><a href="audios.php" class="nav-link">Audios</a></li>
                   <li><a href="#" class="nav-link">Base de données iconographiques</a></li>
-                  <li><a href="acces.php" class="nav-link">Accès thématiques</a></li>
+                  <li><a href="acces.php" class="nav-link active">Accès thématiques</a></li>
                 </ul>
               </li>
               <li class="dropdown nav-item">
