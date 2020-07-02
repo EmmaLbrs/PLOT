@@ -15,20 +15,41 @@
        
        <style>
            
-        div.container-fluid {
-            margin-top:50px;
-        }
+           select {
+            appearance: none;
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 3px 0;
+            background: transparent;
+            padding: 5px;
+            font-size: inherit;
+            outline: none;
 
-        aside {
-            border-right:1px solid lightgray;
-        }
+           }
 
-        section {
-            text-align: justify;
-        }
+           @media (min-width: 991.98px) { 
+             
+          .main div:first-child,
+           .main div:nth-child(2) {
+             padding-top:25px;
+             padding-bottom:50px;
+           }
 
-        footer {
-        }
+           footer {
+             margin-top:200px;
+           }
+
+            }
+
+
+           input {
+             margin-left: 10px;
+             border:none;
+             background-color: black;
+             color:white;
+           }
+
+
 
 
        </style>
@@ -101,6 +122,8 @@
     }
 
     ?>
+    <div class="row main">
+    <div class="col-md-6">
     <p>Par lieu : </p>
     <form method="post" action="cible_requete.php">
     
@@ -116,24 +139,27 @@
     <input type="submit" name="valider" value="OK"/>
     </p>
     </form>
+          </div>
 
-    <p>Par personnage : </p>
-    <form method="post" action="cible_requete.php">
-    
-    <p>
-    <select name="personnage">
-        <?php
-            $personnages = $bdd->query('SELECT * from personnage');
-            while ($donnees = $personnages->fetch()) {
-                echo "<option value=".$donnees['id_perso'].">".$donnees['nom']."</option>";
-            }
-        ?>
-    </select>
-    <input type="submit" name="valider" value="OK"/>
-    </p>
-    </form>
+          <div class="col-md-6">
+          <p>Par personnage : </p>
+          <form method="post" action="cible_requete.php">
+          
+          <p>
+          <select name="personnage">
+              <?php
+                  $personnages = $bdd->query('SELECT * from personnage');
+                  while ($donnees = $personnages->fetch()) {
+                      echo "<option value=".$donnees['id_perso'].">".$donnees['nom']."</option>";
+                  }
+              ?>
+          </select>
+          <input type="submit" name="valider" value="OK"/>
+          </p>
+          </form>
+          </div>
 
-
+            <div class="col-md-6">
        <p>Par mot-clé : </p>
     <form method="post" action="cible_requete.php">
     
@@ -149,7 +175,9 @@
     <input type="submit" name="valider" value="OK"/>
     </p>
     </form>
+          </div>
 
+          <div class="col-md-6">
     <p>Par catégorie : </p>
     <form method="post" action="cible_requete.php">
     
@@ -165,8 +193,9 @@
     <input type="submit" name="valider" value="OK"/>
     </p>
     </form>
+          </div>
 
-
+          </div>
 
     
      
@@ -174,7 +203,7 @@
 
 
 
-      <footer class="row navbar-fixed-bottom">
+      <footer class="row">
         <div class="col-md-6">
         <p>
           <a href="#" class="underline--magical">Sources</a><br/>
