@@ -48,7 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a href="index.html" class="navbar-brand">PLOT</a>
+          <a href="index.html" class="navbar-brand"><img src="images/logos/logo_plot_couleur_recadre.png" alt="logo de PLOT"></img></a>
         </div>
         
         <div class="navbar-collapse collapse navbar-right">

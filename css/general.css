@@ -12,6 +12,7 @@
 
 body {
     overflow-x: hidden;    
+    font-family: 'corps';
 }
 
 body, body section, body .jumbotron, body footer {

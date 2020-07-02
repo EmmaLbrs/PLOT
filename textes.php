@@ -28,10 +28,12 @@
             text-align: justify;
         }
 
-        footer {
-            margin-top:150px;
-        }
+        .container-fluid > :not(footer) { margin-left:50px;}
 
+        footer {
+          padding-left:35px;
+          padding-right:35px;
+        }
 
        </style>
 
@@ -48,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a href="index.html" class="navbar-brand">PLOT</a>
+          <a href="index.html" class="navbar-brand"><img src="images/logos/logo_plot_couleur_recadre.png" alt="logo de PLOT"></img></a>
         </div>
         
         <div class="navbar-collapse collapse navbar-right">
@@ -118,7 +120,7 @@
 
 
 
-      <footer class="row">
+      <footer class="row navbar-fixed-bottom">
         <div class="col-md-6">
         <p>
           <a href="#" class="underline--magical">Sources</a><br/>
