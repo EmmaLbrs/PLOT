@@ -36,7 +36,9 @@
            }
 
            footer {
-             margin-top:200px;
+             position:absolute;
+             bottom:0;
+             width:100%;
            }
 
             }
