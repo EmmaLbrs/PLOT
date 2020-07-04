@@ -70,13 +70,15 @@
 
         <!-- Tab panes -->
         <div class="sidebar-content">
+
             <div id="texte-legende" class="sidebar-pane">
+
                 <h1 class="sidebar-header" id="titre-legende">
                     <span id="span-titre"></span>
                     <span class="sidebar-close" onclick="sidebar.close()"><i class="fa fa-times"></i></span>
                 </h1>
-                <div id="audio-legende" class="container-audio"></div>
-                <div id="container-texte" class="container-texte"></div>
+                <div class="container-audio"></div>
+                <div class="container-texte"></div>
 
             </div>
 
@@ -84,7 +86,7 @@
                 <h1 class="sidebar-header">Autour de la légende<span class="sidebar-close" onclick="sidebar.close()">
                     <i class="fa fa-times"></i></span>
                 </h1>
-                <div id="container-autour" class="container-autour"></div>
+                <div class="container-autour"></div>
             </div>
 
         </div>
@@ -113,6 +115,7 @@
     <script>
 
 
+      // Création de la carte
     var map = L.map('map').setView([47.390140, 0.688091],15);
     
     var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
@@ -130,17 +133,23 @@
       maxZoom: 22
   });
 
+  // Ajout du layer à notre carte
   Stamen_Toner.addTo(map); 
 
+
+  // Création de la sidebar
   var sidebar = L.control.sidebar('sidebar', {position: 'right'}).addTo(map);
 
+
+  // Ferme la sidebar lorsqu'on clique sur un endroit de la carte
   map.on('click', function () {
        sidebar.close();
      })
 
 
-  var navbar = document.getElementById("myNavbar");
+  // Patch permettant de régler le problème d'ouverture non voulue de la sidebar
 
+  var navbar = document.getElementById("myNavbar");
   navbar.addEventListener("click", function(event) {
     console.log("click navbar")
     event = event || window.event;
@@ -151,9 +160,9 @@
     }
   });
   
-
+  // Patch permettant de régler le problème d'ouverture non voulue de la sidebar
   map.addEventListener("click", function(event) {
-    console.log("click");
+    //console.log("click");
     event.stopPropagation();
     event.preventDefault();
     sidebar.close();
@@ -164,25 +173,14 @@
     }
   })
   
-
-  var home = document.getElementById("texte-legende");
-  var profile = document.getElementById("autour-legende");
-  var container1 = document.getElementById("container-texte");
-  var container2 = document.getElementById("container-autour");
-  var titreLeg = document.getElementById("titre-legende");
-  var audioLeg = document.getElementById("audio-legende");
   var spanLeg = document.getElementById("span-titre");
-
+// Permet de réinitialiser le header de la sidebar
   sidebar.addEventListener("closing", function(event) {
-    console.log("closing");
     spanLeg.innerHTML = null;
   })
 
 
-  sidebar.addEventListener('focus', (event) => {
-    console.log("focus");   
-}, true);
-
+// Permet de charger le contenu des pages des légendes et de retourner ce contenu en string
 function loadPage(href)
     {
       console.log("loadPAge");
@@ -192,6 +190,8 @@ function loadPage(href)
         return xmlhttp.responseText;
     };
 
+
+    // Définition des icones pour marqueur
 
     var tourRouge = L.icon({
       iconUrl: 'images/icons/tour-rouge.svg',
@@ -230,6 +230,9 @@ function loadPage(href)
       iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
     });
 
+
+    // Tous les marqueurs de lieux
+
     var couvent_carmes = L.marker([47.395805, 0.682777], {icon: eglise9Rouge}).addTo(map);
     var la_souris_blanche = L.marker([47.382467, 0.660568], {icon:chateau1Rouge}).addTo(map);
     var tombeau_stmartin = L.marker([47.392871, 0.683027], {icon:eglise8Rouge}).addTo(map);
@@ -240,6 +243,9 @@ function loadPage(href)
     var tour_guise = L.marker([47.397266, 0.693704], {icon: tourRouge}).addTo(map);
     var roi_hugon =  L.marker([47.397580, 0.698629], {icon: tourRouge}).addTo(map);
 
+
+    // Ouverture de la sidebar lors de l'événement de clic sur le marqueur
+
     bataille_tours.on('click', function () 
    {        
             var legende = loadPage('Legendes/HTML/bataille_tours-carte.php');
@@ -248,9 +254,6 @@ function loadPage(href)
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende");
-
-            console.log("audio legende " + audioLegende);
-            console.log("texte legende " + texteLegende);
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
@@ -270,10 +273,7 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
-            var audioLegende = doc.getElementById("audio-legende");
-
-            console.log("audio legende " + audioLegende);
-            console.log("texte legende " + texteLegende);
+            var audioLegende = doc.getElementById("audio-legende")
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
@@ -294,10 +294,7 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
-            var audioLegende = doc.getElementById("audio-legende");
-
-            console.log("audio legende " + audioLegende);
-            console.log("texte legende " + texteLegende);
+            var audioLegende = doc.getElementById("audio-legende")
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
@@ -317,10 +314,7 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
-            var audioLegende = doc.getElementById("audio-legende");
-
-            console.log("audio legende " + audioLegende);
-            console.log("texte legende " + texteLegende);
+            var audioLegende = doc.getElementById("audio-legende")
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
@@ -340,10 +334,7 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
-            var audioLegende = doc.getElementById("audio-legende");
-
-            console.log("audio legende " + audioLegende);
-            console.log("texte legende " + texteLegende);
+            var audioLegende = doc.getElementById("audio-legende")
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
@@ -363,10 +354,7 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
-            var audioLegende = doc.getElementById("audio-legende");
-
-            console.log("audio legende " + audioLegende);
-            console.log("texte legende " + texteLegende);
+            var audioLegende = doc.getElementById("audio-legende")
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
@@ -386,10 +374,7 @@ function loadPage(href)
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
-            var audioLegende = doc.getElementById("audio-legende");
-
-            console.log("audio legende " + audioLegende);
-            console.log("texte legende " + texteLegende);
+            var audioLegende = doc.getElementById("audio-legende")
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
