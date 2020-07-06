@@ -14,7 +14,7 @@ div.container-fluid {
     z-index: 1;
 }
 
-div.container-texte, div.container-autour{
+div.container-texte, div.container-autour, div#container-galerie{
     margin-top:10px;
     text-align: justify;
     padding-right: 10px;

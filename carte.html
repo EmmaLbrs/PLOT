@@ -65,6 +65,8 @@
             <ul role="tablist" class="tabs">
                 <li><a href="#texte-legende" role="tab"><i class="fa fa-quote-right"></i></a></li>
                 <li><a href="#autour-legende" role="tab"><i class="fa fa-info-circle"></i></a></li>
+                <li><a href="#galerie-legende" role="tab"><i class="fa fa-picture-o"></i></a></li>
+
             </ul>
         </div>
 
@@ -88,6 +90,13 @@
                 </h1>
                 <div class="container-autour"></div>
             </div>
+
+            <div id="galerie-legende" class="sidebar-pane">
+              <h1 class="sidebar-header">Galerie<span class="sidebar-close" onclick="sidebar.close()">
+                  <i class="fa fa-times"></i></span>
+              </h1>
+              <div id="container-galerie"></div>
+          </div>
 
         </div>
     </div>
@@ -174,10 +183,14 @@
   })
   
   var spanLeg = document.getElementById("span-titre");
+  var galerieLeg = document.getElementById("container-galerie");
+
 // Permet de réinitialiser le header de la sidebar
   sidebar.addEventListener("closing", function(event) {
     spanLeg.innerHTML = null;
+    galerieLeg.innerHTML = null;
   })
+
 
 
 // Permet de charger le contenu des pages des légendes et de retourner ce contenu en string
@@ -375,6 +388,10 @@ function loadPage(href)
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende")
+
+            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/breche_normands/breche_normands-2.jpg"><img src="Legendes/Images_Legendes/breche_normands/breche_normands-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/breche_normands/breche_normands-1.jpg"><img src="Legendes/Images_Legendes/breche_normands/breche_normands-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            galerieLeg.innerHTML = galerie;
+              
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
