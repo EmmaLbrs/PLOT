@@ -72,14 +72,10 @@
     $legendes = $bdd->query('SELECT * from legende');
     echo "<ul>";
     while ($donnees = $legendes->fetch()) {
-        // $posSlash = strpos($donnees['url_texte_simple'], '/');
-        // $posSlash = $posSlash+1;
-        // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash); 
         echo "<li><a href=".$donnees['url_texte_simple'].">".$donnees['titre']."</a></li>";
     }
     echo "</ul>";
-     
-     ?>
+    ?>
 
 
 
