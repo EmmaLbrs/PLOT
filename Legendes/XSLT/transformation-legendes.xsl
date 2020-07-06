@@ -16,6 +16,7 @@
                     <meta name="viewport"
                         content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
                     <title>
+                        <xsl:text>PLOT - CESR | </xsl:text>
                         <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                     </title>
                     <link rel="stylesheet" href="../../css/general.css"/>
@@ -95,7 +96,7 @@
                     <div class="container-fluid">
                         
                         <div class="fil_ariane">
-                            <p><a href="../../index.html">PLOT</a> > <a href="../../legendes.html">Légendes</a> > <a href="../../textes.php">Textes</a> > 
+                            <p><a href="../../index.html">PLOT</a> > <a href="../../legende.html">Légendes</a> > <a href="../../textes.php">Textes</a> > 
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
                                     #        

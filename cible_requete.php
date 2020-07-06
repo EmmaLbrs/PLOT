@@ -61,7 +61,7 @@
 
     
     <div class="fil_ariane">
-            <p><a href="index">PLOT</a> > <a href="legendes.html">Légendes</a> > <a href="cible_requete.php">Résultats de la recherche</a></p>
+            <p><a href="index.html">PLOT</a> > <a href="legende.html">Légendes</a> > <a href="cible_requete.php">Résultats de la recherche</a></p>
         </div>
 
     <header>

@@ -95,7 +95,7 @@
     <div class="container-fluid">
 
     <div class="fil_ariane">
-            <p><a href="index">PLOT</a> > <a href="legendes.html">Légendes</a> > <a href="acces.php">Accès thématiques</a></p>
+            <p><a href="index.html">PLOT</a> > <a href="legende.html">Légendes</a> > <a href="acces.php">Accès thématiques</a></p>
         </div>
 
     <header>
