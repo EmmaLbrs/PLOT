@@ -18,9 +18,24 @@
              margin-top:50px;
          }
 
-         section {
+         @media (min-width: 992px) {
+            .container-fluid aside, .container-fluid section {
              padding-left: 50px;
          }
+          }
+
+
+
+         ul {
+             list-style-type: none;
+             text-align: justify;
+         }
+
+         li > ul{
+             list-style-type:lower-roman;
+         }
+
+
      </style>
 
   </head>
@@ -68,15 +83,16 @@
     
     <div class="container-fluid">
 
-
-      <section class="row">
-
-        <h1 class="col-md-12">Sources</h1>
-        <div class="col-md-6">
+        <aside>
+        <h1>Sources</h1>
             <p>Dans le cadre de ce projet, nous avons réutilisé de nombreuses ressources libres de droit. </p>
-            <ul><h2>Musiques et bruitages</h2>
-                <li>
-                    <h3>La Tour Charlemagne</h3>
+        </aside>
+
+        <section>
+            <h2>Musiques et bruitages</h2>
+            <ul class="row">
+                <li class="col-md-6">
+                    <h3>La tour Charlemagne</h3>
                     <ul>
                         <li>Jesse Gallagher - Spirit of fire</li>
                         <li>Jesse Gallagher - Spenta Mainyu </li>
@@ -87,8 +103,8 @@
                         <li>Bruitage par Alexa Darmagnac</li>
                     </ul>
                 </li>
-                <li>
-                    <h3>Le Couvent des Carmes</h3>
+                <li class="col-md-6">
+                    <h3>Le couvent des Carmes</h3>
                     <ul>
                         <li>Doug Maxwell - Lost in prayer : https://www.youtube.com/watch?v=VX8D2mf5wrg</li>
                         <li>Musique proposée par La Musique Libre<br/>
@@ -103,11 +119,78 @@
                         <li>Bruitage 'pas dans les feuilles' : https://lasonotheque.org/detail-0137-pas-dans-les-feuilles.html</li>
                     </ul>
                 </li>
+                <li class="col-md-6">
+                    <h3>La tour de Guise</h3>
+                    <ul>
+                        <li>Rafael Krux - Big eyes : https://www.youtube.com/watch?v=c5je8q-x3mo</li>
+                        <li>Musique proposée par La Musique Libre<br/>
+                            魔界Symphony - Brave Soul : https://youtu.be/4rAGTpYw_lY<br/>
+                            魔界Symphony : https://soundcloud.com/makai-symphony</li>
+                        <li>
+                            Musique proposée par La Musique Libre<br/>
+                            JediProd - Rumbling Valley : https://youtu.be/ee4XIyCLmqc<br/>
+                            JediProd : https://soundcloud.com/jediprod</li>
+                        <li>Bruitage 'pas, chaussure sur escalier pierre' : https://lasonotheque.org/detail-0606-pas-chaussure-sur-escalier-en-pierre.html</li>
+                        <li>Bruitage 'galop de cheval sur sol dur' : https://lasonotheque.org/detail-0611-galop-de-cheval-sur-sol-dur.html</li>
+                    </ul>
+                </li>
+                <li class="col-md-6">
+                    <h3>La brèche des normands</h3>
+                    <ul>
+                        <li>Musique proposée par La Musique Libre<br/>
+                            Tristan Lohengrin -  A Peaceful Sanctuary : https://youtu.be/GFI4wgF2PuI<br/>
+                            Tristan Lohengrin : https://www.youtube.com/tristanlohengrin</li>
+                        <li>
+                            Musique proposée par La Musique Libre<br/>
+                            JediProd - Rumbling Valley : https://youtu.be/ee4XIyCLmqc<br/>
+                            JediProd : https://soundcloud.com/jediprod</li>
+                        <li>Jesse Gallagher - Maestro Trakael : https://www.youtube.com/audiolibrary/music?feature=blog&nv=1
+                            </li>
+                    </ul>
+                </li>
+                <li class="col-md-offset-3 col-md-6 col-md-offset-3">
+                    <h3>L'homme noir</h3>
+                    <ul>
+                        <li>Audionautix - Horror Music<br/>
+                            Téléchargement gratuit : https://www.youtube.com/audiolibrary_...<br/>
+                            Musique proposée par Audio Libre : https://youtu.be/lEeUkhwaj0c</li>
+                        <li>Otto Halmen - Airship Thunderchild<br/>
+                            Téléchargement gratuit : https://bit.ly/3aVd2bt<br/>
+                            Musique proposée par Audio Libre : https://youtu.be/NJpQa_5nQPQ</li>
+                        <li>Bruitage 'hibou' : https://lasonotheque.org</li>
+                        <li>Bruitage 'cheval au trot' : https://lasonotheque.org</li>
+                    </ul>
+                </li>
             </ul>
-        </div>
 
 
       </section>
+
+      <section>
+          <h2>Images et pictogrammes</h2>
+          <ul class="row">
+              <li class="col-md-6">
+                  <h3>Pictogrammes de la carte</h3>
+                  <ul>
+                    <li> <a href="https://www.vecteezy.com/free-vector/church">Church Vectors par Vecteezy</a></li>
+                    <li><a href="https://www.vecteezy.com/free-vector/castle">Castle Vectors par Vecteezy</a></li>
+                    <li><a href="https://www.vecteezy.com/free-vector/building-icon">Building Icon Vectors par Vecteezy</a></li>
+                  </ul>
+              </li>
+              <li class="col-md-6">
+                  <h3>Images de la page d'accueil</h3>
+                  <ul>
+                    <li><span>Photo de <a href="https://unsplash.com/@iammrcup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mr Cup / Fabien Barral</a> sur <a href="https://unsplash.com/@iammrcup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></li>
+                    <li><span>Photo de <a href="https://unsplash.com/@cristina_gottardi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cristina Gottardi</a> sur <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></li>
+                    <li><span>Photo d'<a href="https://unsplash.com/@koalamoose?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Agnieszka Kowalczyk</a> sur <a href="https://unsplash.com/s/photos/vinyl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></li>
+                    <li><span>Photo de <a href="https://unsplash.com/@tjump?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nik Shuliahin</a> sur <a href="https://unsplash.com/@tjump?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></li>
+                </ul>
+
+              </li>
+          </ul>
+          
+      </section>
+           
 
 
 
