@@ -1,7 +1,16 @@
 .container-fluid {
-    padding-top: 50px;
+    margin-top:75px;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+  }
+  
+  @media (min-width: 992px) {
+    .container-fluid > :not(footer) {
+     padding-left: 50px;
+  }
 }
-
+  
 body p, body h2, body h3, body ul{ 
     padding-left:60px;
     padding-right: 60px;
@@ -27,6 +36,7 @@ h3 {
 }
 
 footer {
+    margin-top:10px;
     background-color: black !important;
     color:white !important;
 }

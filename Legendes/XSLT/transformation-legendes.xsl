@@ -33,7 +33,10 @@
                                     <span class="icon-bar"/>
                                     <span class="icon-bar"/>
                                 </a>
-                                <a href="../../index.html" class="navbar-brand"><img src="../../images/logos/logo_plot_couleur_recadre.png" alt="logo de PLOT"></img></a>
+                                <a href="../../index.html" class="navbar-brand">
+                                    <img src="../../images/logos/logo_plot_couleur_recadre.png"
+                                        alt="logo de PLOT"/>
+                                </a>
                             </div>
 
                             <div class="navbar-collapse collapse navbar-right">
@@ -50,15 +53,22 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="#" class="nav-link active">Textes</a>
+                                                <a href="../../textes.php" class="nav-link active"
+                                                  >Textes</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="nav-link">Audios</a>
+                                                <a href="../../audios.php" class="nav-link"
+                                                  >Audios</a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link">Base de données
                                                   iconographiques</a>
                                             </li>
+                                            <li>
+                                                <a href="../../acces.php" class="nav-link">Accès
+                                                  thématiques</a>
+                                            </li>
+
                                         </ul>
                                     </li>
                                     <li class="dropdown nav-item">
@@ -67,13 +77,13 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="#" class="nav-link">Sources</a>
+                                                <a href="../../sources.html" class="nav-link">Sources</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="nav-link">Le projet</a>
+                                                <a href="../../leprojet.html" class="nav-link">Le projet</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="nav-link">Contact</a>
+                                                <a href="../../contact.php" class="nav-link">Contact</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -133,33 +143,33 @@
                                 </li>
                             </ul>
                         </div>
+                        
+                    </div>
 
-                        <footer class="row">
-                            <div class="col-md-6">
-                                <p>
-                                    <a href="#" class="underline--magical">Sources</a><br/>
-                                    <a href="#">Nous contacter</a><br/> Mentions légales -- Centre
-                                    d'Etudes Supérieures de la Renaissance -- 2020 </p>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-offset-6 col-md-3 logo-footer">
-                                        <img src="../../images/logos/logo_cesr.gif"
-                                            class="img-responsive" alt="Logo du CESR"/>
-                                    </div>
-                                    <div class="col-md-3 logo-footer">
-                                        <img src="../../images/logos/logo_univ_tours.png"
-                                            class="img-responsive"
-                                            alt="Logo de l'Université de Tours"/>
-                                    </div>
+                    <footer class="row">
+                        <div class="col-md-6">
+                            <p>
+                                <a href="../../sources.html">Sources</a><br/>
+                                <a href="../../contact.php">Nous contacter</a><br/>
+                                Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-offset-6 col-md-3 logo-footer">
+                                    <a href="https://cesr.cnrs.fr/"><img src="../../images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/></a>
+                                </div>
+                                <div class="col-md-3 logo-footer">
+                                    <a href="https://www.univ-tours.fr/"><img src="../../images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" /></a>
                                 </div>
                             </div>
-                        </footer>
+                        </div>
+                    </footer>
 
 
-                    </div>
-                    <script type="text/javascript" src="../../bootstrap/js/jquery-3.4.1.js"></script>
-                    <script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
+                    
+                    <script type="text/javascript" src="../../bootstrap/js/jquery-3.4.1.js"/>
+                    <script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"/>
 
                 </body>
 
@@ -187,24 +197,24 @@
 
                 </head>
                 <body>
-                    
-                    <div id="audio-legende"> 
 
-                            
-                            <xsl:element name="audio">
-                                <xsl:attribute name="controls"></xsl:attribute>
-                                <xsl:element name="source">
-                                    <xsl:attribute name="src">
-                                        <xsl:text>Legendes/Audio/</xsl:text>
-                                        <xsl:value-of select="@xml:id"/>
-                                        <xsl:text>.mp3</xsl:text>
-                                    </xsl:attribute>
-                                </xsl:element>
-                                   
+                    <div id="audio-legende">
+
+
+                        <xsl:element name="audio">
+                            <xsl:attribute name="controls"/>
+                            <xsl:element name="source">
+                                <xsl:attribute name="src">
+                                    <xsl:text>Legendes/Audio/</xsl:text>
+                                    <xsl:value-of select="@xml:id"/>
+                                    <xsl:text>.mp3</xsl:text>
+                                </xsl:attribute>
                             </xsl:element>
+
+                        </xsl:element>
                     </div>
-                    
-                    
+
+
                     <div id="texte-legende">
                         <header>
                             <xsl:apply-templates
@@ -249,7 +259,7 @@
         </xsl:result-document>
     </xsl:template>
 
-    <xsl:template match="tei:persName|tei:name">
+    <xsl:template match="tei:persName | tei:name">
         <xsl:element name="a">
             <xsl:attribute name="href">
                 <xsl:value-of select="./@ref"/>
@@ -261,7 +271,7 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="tei:person|tei:personGrp" mode="carte">
+    <xsl:template match="tei:person | tei:personGrp" mode="carte">
 
         <xsl:element name="p">
             <xsl:attribute name="id">
@@ -286,9 +296,9 @@
             </xsl:for-each>
         </xsl:element>
     </xsl:template>
-    
-    <xsl:template match="tei:person|tei:personGrp" mode="texte">
-        
+
+    <xsl:template match="tei:person | tei:personGrp" mode="texte">
+
         <xsl:element name="p">
             <xsl:attribute name="id">
                 <xsl:value-of select="./@xml:id"/>
@@ -328,16 +338,18 @@
         </xsl:choose>
 
     </xsl:template>
-    
+
     <xsl:template match="tei:note">
-<!--        <xsl:element name="span">
+        <!--        <xsl:element name="span">
             <xsl:attribute name="class">infobulle</xsl:attribute>
             <span><xsl:apply-templates/></span>
             <xsl:text>(explication)</xsl:text>
         </xsl:element>-->
         <xsl:element name="span">
             <xsl:attribute name="class">infobulle</xsl:attribute>
-            <xsl:attribute name="data-tooltip"><xsl:apply-templates/></xsl:attribute>
+            <xsl:attribute name="data-tooltip">
+                <xsl:apply-templates/>
+            </xsl:attribute>
             <xsl:text>(explication)</xsl:text>
         </xsl:element>
     </xsl:template>
