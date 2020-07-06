@@ -12,7 +12,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/legendes_apropos.css">
-     <title>PLOT - CESR | Accueil</title>
+     <title>PLOT - CESR | Nous contacter</title>
      
      <style>
             section {
