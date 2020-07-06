@@ -93,6 +93,16 @@
                     </div>
 
                     <div class="container-fluid">
+                        
+                        <div class="fil_ariane">
+                            <p><a href="../../index.html">PLOT</a> > <a href="../../legendes.html">Légendes</a> > <a href="../../textes.php">Textes</a> > 
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    #        
+                                </xsl:attribute>
+                                <xsl:value-of select="tei:text/tei:body/tei:sp/tei:p[@xml:id = 'titre']"/>
+                            </xsl:element></p>
+                        </div>
 
                         <header>
                             <xsl:apply-templates
