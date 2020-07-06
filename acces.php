@@ -112,23 +112,23 @@
 
     ?>
     <div class="row main">
-    <div class="col-md-6">
-    <p>Par lieu : </p>
-    <form method="post" action="cible_requete.php">
-    
-    <p>
-    <select name="lieu">
-        <?php
-            $lieux = $bdd->query('SELECT * from lieu');
-            while ($donnees = $lieux->fetch()) {
-                echo "<option value=".$donnees['id_lieu'].">".$donnees['nom']."</option>";
-            }
-        ?>
-    </select>
-    <input type="submit" name="valider" value="OK"/>
-    </p>
-    </form>
-          </div>
+      <div class="col-md-6"> 
+        <p>Par lieu : </p>
+        <form method="post" action="cible_requete.php">
+        
+        <p>
+        <select name="lieu">
+            <?php
+                $lieux = $bdd->query('SELECT * from lieu');
+                while ($donnees = $lieux->fetch()) {
+                    echo "<option value=".$donnees['id_lieu'].">".$donnees['nom']."</option>";
+                }
+            ?>
+        </select>
+        <input type="submit" name="valider" value="OK"/>
+        </p>
+        </form>
+      </div>
 
           <div class="col-md-6">
           <p>Par personnage : </p>

@@ -65,16 +65,15 @@
     </header>
 
 
-     <?php 
-     
-     include_once "connexionbdd.php";
+     <?php      
+        include_once "connexionbdd.php";
 
-    $legendes = $bdd->query('SELECT * from legende');
-    echo "<ul>";
-    while ($donnees = $legendes->fetch()) {
-        echo "<li><a href=".$donnees['url_texte_simple'].">".$donnees['titre']."</a></li>";
-    }
-    echo "</ul>";
+        $legendes = $bdd->query('SELECT * from legende');
+        echo "<ul>";
+        while ($donnees = $legendes->fetch()) {
+            echo "<li><a href=".$donnees['url_texte_simple'].">".$donnees['titre']."</a></li>";
+        }
+        echo "</ul>";
     ?>
 
 
