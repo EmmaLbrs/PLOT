@@ -69,7 +69,7 @@
      
     include_once "connexionbdd.php";
 
-    $legendes = $bdd->query('SELECT titre, url_audio from legende, audio WHERE fk_idAudio != 0 AND fk_idAudio = id_audio');
+    $legendes = $bdd->query('SELECT titre, url_audio from legende, audio WHERE fk_idAudio != 0 AND fk_idAudio = id_audio ORDER BY titre');
     echo "<ul>";
     while ($donnees = $legendes->fetch()) {
         // $posSlash = strpos($donnees['url_texte_simple'], '/');

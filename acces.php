@@ -119,7 +119,7 @@
         <p>
         <select name="lieu">
             <?php
-                $lieux = $bdd->query('SELECT * from lieu');
+                $lieux = $bdd->query('SELECT * from lieu ORDER BY nom');
                 while ($donnees = $lieux->fetch()) {
                     echo "<option value=".$donnees['id_lieu'].">".$donnees['nom']."</option>";
                 }
@@ -137,7 +137,7 @@
           <p>
           <select name="personnage">
               <?php
-                  $personnages = $bdd->query('SELECT * from personnage');
+                  $personnages = $bdd->query('SELECT * from personnage ORDER BY nom');
                   while ($donnees = $personnages->fetch()) {
                       echo "<option value=".$donnees['id_perso'].">".$donnees['nom']."</option>";
                   }
@@ -155,7 +155,7 @@
     <p>
     <select name="motcle">
         <?php
-            $motcles = $bdd->query('SELECT * from motcle');
+            $motcles = $bdd->query('SELECT * from motcle ORDER BY motcle');
             while ($donnees = $motcles->fetch()) {
                 echo "<option value=".$donnees['id_mc'].">".$donnees['motcle']."</option>";
             }
@@ -173,7 +173,7 @@
     <p>
     <select name="categorie">
         <?php
-            $motcles = $bdd->query('SELECT * from categorie');
+            $motcles = $bdd->query('SELECT * from categorie ORDER BY categorie');
             while ($donnees = $motcles->fetch()) {
                 echo "<option value=".$donnees['id_cat'].">".$donnees['categorie']."</option>";
             }

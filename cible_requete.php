@@ -69,25 +69,25 @@
     
     if (isset($_POST['lieu'])) {
         $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, legendementionnerlieu
-        WHERE ' .$_POST['lieu']. '= fk_idLieuPrincipal OR (' .$_POST['lieu'].' = fk_idLieuSecondaire AND fk_idLeg = id_leg)';
+        WHERE ' .$_POST['lieu']. '= fk_idLieuPrincipal OR (' .$_POST['lieu'].' = fk_idLieuSecondaire AND fk_idLeg = id_leg) ORDER BY titre';
     }
     else if (isset($_POST['personnage'])) {
       $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, possederpersonnage
-      WHERE ' .$_POST['personnage']. '= fk_idPerso AND fk_idLeg = id_leg';
+      WHERE ' .$_POST['personnage']. '= fk_idPerso AND fk_idLeg = id_leg ORDER BY titre';
     }
     else if(isset($_GET['personnage_id']))
     {
       $string = htmlspecialchars($_GET['personnage_id']);
       $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, possederpersonnage, personnage
-      WHERE "' .$string. '"= id_persotei AND fk_idPerso = id_perso AND fk_idLeg = id_leg';
+      WHERE "' .$string. '"= id_persotei AND fk_idPerso = id_perso AND fk_idLeg = id_leg ORDER BY titre';
     }
     else if(isset($_POST['motcle'])) {
       $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, motcle, descriptionmotcle
-      WHERE '.$_POST['motcle'].'=fk_idMC AND fk_idLeg = id_leg';
+      WHERE '.$_POST['motcle'].'=fk_idMC AND fk_idLeg = id_leg ORDER BY titre';
     }
     else if(isset($_POST['categorie'])) {
       $query = 'SELECT DISTINCT id_leg, titre, url_texte_simple from legende, categorie, appartenancecategorie
-      WHERE '.$_POST['categorie'].'=fk_idCat AND fk_idLeg = id_leg';
+      WHERE '.$_POST['categorie'].'=fk_idCat AND fk_idLeg = id_leg ORDER BY titre';
     }    
     ?>
     

@@ -68,7 +68,7 @@
      <?php      
         include_once "connexionbdd.php";
 
-        $legendes = $bdd->query('SELECT * from legende');
+        $legendes = $bdd->query('SELECT * from legende ORDER BY titre');
         echo "<ul>";
         while ($donnees = $legendes->fetch()) {
             echo "<li><a href=".$donnees['url_texte_simple'].">".$donnees['titre']."</a></li>";
