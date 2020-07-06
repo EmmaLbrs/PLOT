@@ -18,14 +18,17 @@
          <header>
             <h2>La brèche des Normands</h2>
          </header>
-         <p>Vers la fin du IXᵉ siècle, les Normands se
+         <p>Vers la fin du IXᵉ siècle, 
+            <a href="#perso-normands" goto="autour-legende">les Normands</a> se
             firent plusieurs fois remarquer en remontant la
             Loire dans le but de piller les richesses de la région,
             notamment dans les monastères, couvents et églises. L’histoire qui suit provient
             de l’une de leurs expéditions.
          </p>
-         <p>Un jour, vers le milieu du IXe siècle, on vit les
-            Normands arriver, dans des embarcations fines et légères, capable de
+         <p>Un jour, vers le milieu du IXe siècle, on vit 
+            <a href="#perso-normands" goto="autour-legende">les
+               Normands
+            </a> arriver, dans des embarcations fines et légères, capable de
             naviguer les plus petits cours d’eau. De la sorte, ils installèrent leur
             quartier général sur l’île de
             Noirmoutier, leur permettant ainsi de rallier plus facilement
@@ -35,38 +38,50 @@
             attaques, suivi par Marmoutier,
             qui était le monastère le plus important de la région. Ce fut un véritable
             carnage et seulement quelques moines réussirent à se cacher des truands ou
-            s’échapper par des voies dérobées. Cette victoire permit aux Normands de se ravitailler autant que
+            s’échapper par des voies dérobées. Cette victoire permit aux 
+            <a href="#perso-normands" goto="autour-legende">Normands</a> de se ravitailler autant que
             nécessaire avant de se tourner vers leur prochain objectif : la ville de Tours.
          </p>
          <p>Les fortifications étaient
-            cependant trop solides pour que les Normands
+            cependant trop solides pour que 
+            <a href="#perso-normands" goto="autour-legende">les Normands</a>
             puissent envahir la ville dès leur
             arrivée. Ils établirent alors un siège tout autour des remparts, le temps de trouver
             comment rentrer.
          </p>
-         <p>Malgré de nombreuses tentatives, les Normands
+         <p>Malgré de nombreuses tentatives, 
+            <a href="#perso-normands" goto="autour-legende">les Normands</a>
             restaient coincés aux portes de la
-            ville : les Tourangeaux
+            ville : 
+            <a href="#perso-tourangeaux" goto="autour-legende">les Tourangeaux</a>
             repoussaient les attaques et faisaient tomber les échelles vacillantes encore et
-            encore. Lassés de ces échecs, les hommes du
-            nord contournèrent la
+            encore. Lassés de ces échecs, 
+            <a href="#perso-normands" goto="autour-legende">les hommes du
+               nord
+            </a> contournèrent la
             muraille, pour rejoindre l’endroit où elle était la plus fine et
             commencèrent à la défaire, pierre par pierre.
          </p>
          <p>Voyant les remparts
-            s’affaiblir et la brèche s’agrandir sous les coups de bélier, les Tourangeaux craignirent que les Normands réussissent finalement à pénétrer
+            s’affaiblir et la brèche s’agrandir sous les coups de bélier, 
+            <a href="#perso-tourangeaux" goto="autour-legende">les Tourangeaux</a> craignirent que 
+            <a href="#perso-normands" goto="autour-legende">les Normands</a> réussissent finalement à pénétrer
             la ville. Ils étaient parfaitement
             conscients que leur défense ne tiendrait plus longtemps face aux assauts répétés
-            des ennemis.
+            
+            <a href="#perso-normands" goto="autour-legende">des ennemis</a>.
          </p>
-         <p>Le 12 Mai 903, au bout de douze longs jours de siège, les combattants reprirent courage. En effet,
+         <p>Le 12 Mai 903, au bout de douze longs jours de siège, 
+            <a href="#perso-tourangeaux" goto="autour-legende">les combattants</a> reprirent courage. En effet,
             un cortège imposant diligenté par les prêtres, déposa sur les murs un coffre les
             reliques de 
             <a href="#perso-stmartin" goto="autour-legende">Saint-Martin</a>, protecteur
             de Tours.
          </p>
-         <p>Aussitôt, les Normands prirent peur et firent
-            demi-tour, laissant les Tourangeaux
+         <p>Aussitôt, 
+            <a href="#perso-normands" goto="autour-legende">les Normands</a> prirent peur et firent
+            demi-tour, laissant 
+            <a href="#perso-tourangeaux" goto="autour-legende">les Tourangeaux</a>
             victorieux et reconnaissants envers 
             <a href="#perso-stmartin" goto="autour-legende">Saint-Martin</a>.
          </p>

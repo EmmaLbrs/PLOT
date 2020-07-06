@@ -249,7 +249,7 @@
         </xsl:result-document>
     </xsl:template>
 
-    <xsl:template match="tei:persName">
+    <xsl:template match="tei:persName|tei:name">
         <xsl:element name="a">
             <xsl:attribute name="href">
                 <xsl:value-of select="./@ref"/>
