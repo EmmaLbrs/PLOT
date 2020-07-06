@@ -11,18 +11,10 @@
     <!-- Bootstrap CSS     
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
     <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/textesaudios.css">
      <title>PLOT - CESR | Accueil</title>
      
      <style>
-         .container-fluid {
-             margin-top:90px;
-         }
-
-         @media (min-width: 992px) {
-            .container-fluid > :not(footer) {
-             padding-left: 50px;
-         }
-
             section {
                 text-align: justify;
             }
@@ -119,29 +111,29 @@
         </div>
            
 
+        </div>
 
 
       <footer class="row">
         <div class="col-md-6">
         <p>
-          <a href="#">Sources</a><br/>
-          <a href="#">Nous contacter</a><br/>
+          <a href="sources.html">Sources</a><br/>
+          <a href="contact.php">Nous contacter</a><br/>
           Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
         </p>
       </div>
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-offset-6 col-md-3 logo-footer">
-              <img src="images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/>
+                <a href="https://cesr.cnrs.fr/"><img src="images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/></a>
             </div>
             <div class="col-md-3 logo-footer">
-              <img src="images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" />
+              <a href="https://www.univ-tours.fr/"><img src="images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" /></a>
             </div>
           </div>
         </div>
       </footer>
 
-    </div>
 
 
 

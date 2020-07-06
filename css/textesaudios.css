@@ -1,9 +1,11 @@
-div.container-fluid {
-            margin-top:50px;
-        }
-.container-fluid > :not(footer) { margin-left:50px;}
+.container-fluid {
+  margin-top:75px;
+  margin-left:0;
+  margin-right:0;
+  margin-bottom:0;
+}
 
-footer {
-          padding-left:35px;
-          padding-right:35px;
-        }
+@media (min-width: 992px) {
+  .container-fluid > :not(footer) {
+   padding-left: 50px;
+}

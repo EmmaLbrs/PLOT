@@ -58,6 +58,11 @@
 
     <div class="container-fluid">
 
+    
+    <div class="fil_ariane">
+            <p><a href="index">PLOT</a> > <a href="legendes.html">Légendes</a> > <a href="cible_requete.php">Résultats de la recherche</a></p>
+        </div>
+
     <header>
         <h1>Résultat de la recherche</h1>
     </header>
@@ -119,29 +124,29 @@
      
     
 
+    </div>
 
 
-      <footer class="row navbar-fixed-bottom">
+    <footer class="row">
         <div class="col-md-6">
         <p>
-          <a href="#" class="underline--magical">Sources</a><br/>
-          <a href="#">Nous contacter</a><br/>
+          <a href="sources.html">Sources</a><br/>
+          <a href="contact.php">Nous contacter</a><br/>
           Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
         </p>
       </div>
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-offset-6 col-md-3 logo-footer">
-              <img src="images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/>
+                <a href="https://cesr.cnrs.fr/"><img src="images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/></a>
             </div>
             <div class="col-md-3 logo-footer">
-              <img src="images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" />
+              <a href="https://www.univ-tours.fr/"><img src="images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" /></a>
             </div>
           </div>
         </div>
       </footer>
 
-    </div>
 
 
 
