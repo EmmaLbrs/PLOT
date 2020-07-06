@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="css/general.css">
-    <link rel="stylesheet" type="text/css" href="css/textesaudios.css">
+    <link rel="stylesheet" type="text/css" href="css/legendes_apropos.css">
 
 
        <title>PLOT - CESR | Résultat de la recherche</title>
