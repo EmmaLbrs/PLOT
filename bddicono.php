@@ -13,6 +13,13 @@
     <link rel="stylesheet" type="text/css" href="css/general.css">
   	<link rel="stylesheet" type="text/css" href="css/legendes_apropos.css">
        <title>PLOT - CESR | Base de données iconographique</title>
+
+       <style>
+.img-responsive {
+    width: 100px;
+}
+
+       </style>
       
 
   </head>
@@ -68,20 +75,29 @@
         <h1>Base de données iconographique</h1>
     </header>
 
-
      <?php 
      
     include_once "connexionbdd.php";
 
-    $legendes = $bdd->query('SELECT DISTINCT nom, url_img from lieu, image, imgassocierlieu WHERE fk_idLieu = id_lieu AND fk_idImg = id_img ORDER BY nom');
-    echo "<ul>";
+    $legendes = $bdd->query('SELECT DISTINCT id_lieu, nom from lieu, imgassocierlieu WHERE fk_idLieu = id_lieu');
+    //echo "<ul>";
     while ($donnees = $legendes->fetch()) {
-        // $posSlash = strpos($donnees['url_texte_simple'], '/');
-        // $posSlash = $posSlash+1;
-        // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash); 
-        echo "<li><a href=".$donnees['url_img'].">".$donnees['nom']."</a></li>";
+        $legendes_bis = $bdd->query('SELECT DISTINCT url_img from lieu, image, imgassocierlieu WHERE fk_idLieu ='.$donnees['id_lieu'].' AND fk_idImg = id_img');
+        if ($legendes_bis->rowCount() != 0) {
+            echo "<div class='row'>";
+            echo "<h3>".$donnees['nom']."</h3>";
+            while($images = $legendes_bis->fetch()) {
+                echo "<div class='col-md-3'>";
+                echo "<a href='".$images['url_img']."'><img src='".$images['url_img']."' class='img-responsive img-thumbnail''/></a>";
+                echo "</div>";
+            }
+            echo "</div>";
+
+        }
+
+        //echo "<li><a href=".$donnees['url_img'].">".$donnees['nom']."</a></li>";
     }
-    echo "</ul>";
+    //echo "</ul>";
      
      ?>
 
