@@ -11,7 +11,7 @@ tabId = $(window.location.hash).closest('.sidebar-pane').attr('id');
 $tabs.find('a[href^=\\#' + tabId + ']').click();
 // console.log($tabs.find('a[href^=\\#' + tabId + ']'));
 
-$('a').not('.tabs li a, .container-autour a').on('click', function(evt) {
+$('a').not('.tabs li a, .container-autour a, #container-galerie a').on('click', function(evt) {
 evt.preventDefault();
 var whereTo = $(this).attr('goto');
 $tabs = $("ul.tabs li");
