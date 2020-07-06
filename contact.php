@@ -26,7 +26,13 @@
             section {
                 text-align: justify;
             }
+
+            .formulaire {
+                width:600px;
+            }
           }
+
+
 
 
      </style>
@@ -77,28 +83,38 @@
     <div class="container-fluid">
 
         <div class="fil_ariane">
-            <p><a href="index">PLOT</a> > <a href="#">A propos</a> > <a href="leprojet.html">Le projet</a></p>
+            <p><a href="index">PLOT</a> > <a href="#">A propos</a> > <a href="contact.php">Nous contacter</a></p>
         </div>
 
-        <div class="row">
+        <div class="formulaire">
 
-            <section class="col-md-6">
-                <h1>Le projet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non molestie ex, id consectetur turpis. Donec a pellentesque turpis, tristique blandit nunc. Mauris convallis velit vel nunc aliquet aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ut dolor id nisl fermentum luctus. Aenean finibus, urna eget lobortis ultricies, mauris quam suscipit mi, vitae feugiat nisl magna at nunc. Maecenas in arcu a eros vulputate malesuada ut sit amet libero. Praesent aliquet ornare augue sit amet euismod. Sed sem felis, mattis eu arcu ac, venenatis suscipit lectus.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non molestie ex, id consectetur turpis. Donec a pellentesque turpis, tristique blandit nunc. Mauris convallis velit vel nunc aliquet aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ut dolor id nisl fermentum luctus. Aenean finibus, urna eget lobortis ultricies, mauris quam suscipit mi, vitae feugiat nisl magna at nunc. Maecenas in arcu a eros vulputate malesuada ut sit amet libero. Praesent aliquet ornare augue sit amet euismod. Sed sem felis, mattis eu arcu ac, venenatis suscipit lectus.
-                </p>
-                
-    
-            </section>
-    
-    
-          <section class="col-md-6">
-              <h1>Nos partenaires</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non molestie ex, id consectetur turpis. Donec a pellentesque turpis, tristique blandit nunc. Mauris convallis velit vel nunc aliquet aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ut dolor id nisl fermentum luctus. Aenean finibus, urna eget lobortis ultricies, mauris quam suscipit mi, vitae feugiat nisl magna at nunc. Maecenas in arcu a eros vulputate malesuada ut sit amet libero. Praesent aliquet ornare augue sit amet euismod. Sed sem felis, mattis eu arcu ac, venenatis suscipit lectus.
-            </p>
-    
-          </section>
+        <h1>Nous contacter</h1>
+            <form method="post">
+            <div class="form-group">
+                <label for="emailInput">Adresse mail</label>
+                <input type="email" name="email" class="form-control" id="emailInput" placeholder="name@exemple.com">
+            </div>
+            <div class="form-group">
+                <label for="textInput">Message</label>
+                <textarea name="message" class="form-control" id="textInput" rows="3"></textarea>
+            </div>
+                <input type="submit">
+            </form>
+            <?php
+                if (isset($_POST['message'])) {
+                    $position_arobase = strpos($_POST['email'], '@');
+                    if ($position_arobase === false)
+                        echo '<p>Votre email doit comporter un arobase.</p>';
+                    else {
+                        // $retour = mail('jules@free.fr', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+                        // if($retour)
+                        //     echo '<p>Votre message a été envoyé.</p>';
+                        // else
+                        //     echo '<p>Erreur.</p>';
+                        echo "<p>Votre message a bien été envoyé.</p>";
+                    }
+                }
+    ?>
 
         </div>
            
