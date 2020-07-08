@@ -15,14 +15,53 @@
      <title>PLOT - CESR | Nous contacter</title>
      
      <style>
-            section {
+            body {
                 text-align: justify;
             }
 
+      
+          @media (min-width: 992px) {
+
+            /* .container-fluid .row {
+              padding-left: 10%;
+            } */
+
             .formulaire {
-                width:600px;
+                padding-top: 15px;
+                padding-left:80px;
+                padding-right:50px;
+            }
+
+            .container-fluid .row div:first-child {
+              max-width:600px;
+              /* margin-right:50px; */
+            }
+
+            .container-fluid .row div:first-child p {
+              padding-top: 15px;
             }
           }
+          .form-control {
+            border:none;
+            box-shadow: none;
+            border-radius:0;}
+
+          .form-group {
+            max-width: 500px;
+            border:none;
+          }
+          .form-group input, .form-group textarea {
+            appearance: none;
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 1px 0;
+            background: transparent;
+            padding: 5px;
+            max-width:500px;
+            font-size: inherit;
+            outline: none;
+
+           }
 
 
 
@@ -78,17 +117,30 @@
             <p><a href="index.html">PLOT</a> > <a href="#">A propos</a> > <a href="contact.php">Nous contacter</a></p>
         </div>
 
-        <div class="formulaire">
-
+        <div class="row">
+        <div class="col-md-6">
         <h1>Nous contacter</h1>
+          <p>Vous avez aperçu une erreur ? Vous avez une légende à nous proposer ? Quelqu'en soit la raison, n'hésitez pas à nous envoyer un message via ce formulaire de contact. Notre équipe vous répondra au plus vite ! </p>
+        </div>
+
+        <div class="formulaire col-md-6">
+            <h3>Formulaire de contact</h3>
             <form method="post">
+            <div class="form-group">
+                <label for="nameInput">Nom</label>
+                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="firstnameInput">Prénom</label>
+                <input type="text" name="firstName" class="form-control" id="firstnameInput" placeholder="Votre prénom">
+            </div>
             <div class="form-group">
                 <label for="emailInput">Adresse mail</label>
                 <input type="email" name="email" class="form-control" id="emailInput" placeholder="name@exemple.com">
             </div>
             <div class="form-group">
                 <label for="textInput">Message</label>
-                <textarea name="message" class="form-control" id="textInput" rows="3"></textarea>
+                <textarea name="message" class="form-control" id="textInput" rows="3" placeholder="Votre message"></textarea>
             </div>
                 <input type="submit">
             </form>
@@ -108,10 +160,11 @@
                 }
     ?>
 
-        </div>
+        </div> <!-- div formulaire -->
+              </div> <!-- div row -->
            
 
-        </div>
+        </div> <!-- div container fluid -->
 
 
       <footer class="row">
