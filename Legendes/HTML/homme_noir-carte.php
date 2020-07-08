@@ -152,26 +152,26 @@
          </div>
          <div id="perso-legende">
             <h2>Personnages</h2>
-            <p id="perso-edith">
+            <ul id="perso-edith">
                <a href="cible_requete.php?personnage_id=perso-edith">Edith</a>
                <li>Occupation : Fille de chevalier et d'une grande beauté</li>
                <br></br>
-            </p>
-            <p id="perso-didier">
+            </ul>
+            <ul id="perso-didier">
                <a href="cible_requete.php?personnage_id=perso-didier">Didier</a>
                <li>Occupation : Amoureux d'Edith</li>
                <br></br>
-            </p>
-            <p id="perso-gontran">
+            </ul>
+            <ul id="perso-gontran">
                <a href="cible_requete.php?personnage_id=perso-gontran">Gontran</a>
                <li>Occupation : Seigneur très riche</li>
                <br></br>
-            </p>
-            <p id="perso-homme-noir">
+            </ul>
+            <ul id="perso-homme-noir">
                <a href="cible_requete.php?personnage_id=perso-homme-noir">Homme Noir</a>
                <li>Occupation : Seigneur, magicien</li>
                <br></br>
-            </p>
+            </ul>
          </div>
       </div>
    </body>

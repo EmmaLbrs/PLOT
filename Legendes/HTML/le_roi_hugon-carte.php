@@ -85,34 +85,34 @@
          </div>
          <div id="perso-legende">
             <h2>Personnages</h2>
-            <p id="perso-roi-hugon">
+            <ul id="perso-roi-hugon">
                <a href="cible_requete.php?personnage_id=perso-roi-hugon">Le roi Hugon</a>
                <li>Occupation : Hugon Ier, comte de Tours au IXème s, envoyé par Charles le
                   Chauve de fortifier la ville de Tours.
                </li>
                <br></br>
-            </p>
-            <p id="perso-charles-le-chauve">
+            </ul>
+            <ul id="perso-charles-le-chauve">
                <a href="cible_requete.php?personnage_id=perso-charles-le-chauve">Charles le Chauve</a>
                <li>Occupation : Né en 823 est le petit fils de Charlemagne et roi des Francs de
                   843 à 877. 
                </li>
                <br></br>
-            </p>
-            <p id="perso-chretien">
+            </ul>
+            <ul id="perso-chretien">
                <a href="cible_requete.php?personnage_id=perso-chretien">Les chrétiens</a>
                <li>Religion appartenant au christianisme qui reconnait l'autorité du
                   Pape.
                </li>
                <br></br>
-            </p>
-            <p id="perso-protestant">
+            </ul>
+            <ul id="perso-protestant">
                <a href="cible_requete.php?personnage_id=perso-protestant">Les protestants</a>
                <li>Religion appartenant au christianisme qui rejette les fonctions mise
                   en place par le catholicisme durant le Moyen Age
                </li>
                <br></br>
-            </p>
+            </ul>
          </div>
       </div>
    </body>

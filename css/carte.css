@@ -33,8 +33,13 @@ h2 {
     text-decoration: underline;
 }
 
-#perso-legende p {
+#perso-legende ul {
     border-bottom: 1px solid lightgray;
+    margin-top:3px;
+}
+
+#perso-legende ul > a {
+  font-weight: bold;
 }
 
 

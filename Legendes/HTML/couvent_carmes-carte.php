@@ -143,32 +143,32 @@
          </div>
          <div id="perso-legende">
             <h2>Personnages</h2>
-            <p id="perso-Louis-XI">
+            <ul id="perso-Louis-XI">
                <a href="cible_requete.php?personnage_id=perso-Louis-XI">Louis XI</a>
                <li>Occupation : Né en 1423 à Bourges est roi de France de 1461 à 1484.
                   Appertenant à la famille des Valois.
                </li>
                <br></br>
-            </p>
-            <p id="perso-moine-queteur">
+            </ul>
+            <ul id="perso-moine-queteur">
                <a href="cible_requete.php?personnage_id=perso-moine-queteur">moine queteur</a>
                <li>Occupation : Moine carme qui quête pour son couvent</li>
                <br></br>
-            </p>
-            <p id="perso-moine">
+            </ul>
+            <ul id="perso-moine">
                <a href="cible_requete.php?personnage_id=perso-moine">Moine Carme</a>
                <li>Occupation : Ordre religieux catholique contemplatif qui ont comme père
                   spirituel le prophète Elie
                </li>
                <br></br>
-            </p>
-            <p id="perso-tristan">
+            </ul>
+            <ul id="perso-tristan">
                <a href="cible_requete.php?personnage_id=perso-tristan">Tristan</a>
                <li>Occupation : Louis Tritan l'Hermite était maitre de l'artillerie puis grand
                   prévot du roi Louis XI.
                </li>
                <br></br>
-            </p>
+            </ul>
          </div>
       </div>
    </body>

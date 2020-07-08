@@ -292,7 +292,7 @@
 
     <xsl:template match="tei:person | tei:personGrp" mode="carte">
 
-        <xsl:element name="p">
+        <xsl:element name="ul">
             <xsl:attribute name="id">
                 <xsl:value-of select="./@xml:id"/>
             </xsl:attribute>

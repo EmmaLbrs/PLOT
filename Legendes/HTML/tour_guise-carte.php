@@ -128,7 +128,7 @@
          </div>
          <div id="perso-legende">
             <h2>Personnages</h2>
-            <p id="perso-henriIII">
+            <ul id="perso-henriIII">
                <a href="cible_requete.php?personnage_id=perso-henriIII">Henri III</a>
                <li>Date de naissance : 19 Septembre 1551</li>
                <li>Lieu de naissance : Château de Fontainebleau, France</li>
@@ -136,8 +136,8 @@
                <li>Lieu de décès : Château de Saint-Cloud, France</li>
                <li>Occupation : Roi de France</li>
                <br></br>
-            </p>
-            <p id="perso-henri-lorraine">
+            </ul>
+            <ul id="perso-henri-lorraine">
                <a href="cible_requete.php?personnage_id=perso-henri-lorraine">Henri Ier de Lorraine</a>
                <li>Date de naissance : 31 Décembre 1550</li>
                <li>Lieu de naissance : Joinville, France</li>
@@ -146,8 +146,8 @@
                <li>Occupation : Duc de Guise</li>
                <li>Autrement appelé Henri le Balafré</li>
                <br></br>
-            </p>
-            <p id="perso-charles-mayenne">
+            </ul>
+            <ul id="perso-charles-mayenne">
                <a href="cible_requete.php?personnage_id=perso-charles-mayenne">Charles de Mayenne</a>
                <li>Date de naissance : 26 Mars 1554</li>
                <li>Lieu de naissance : Alençon, France</li>
@@ -161,8 +161,8 @@
                   <a href="#perso-henri-lorraine" goto="autour-legende">Henri de Lorraine</a>.
                </li>
                <br></br>
-            </p>
-            <p id="perso-charlesI-guise">
+            </ul>
+            <ul id="perso-charlesI-guise">
                <a href="cible_requete.php?personnage_id=perso-charlesI-guise">Charles de Lorraine</a>
                <li>Date de naissance : 2 Août 1571</li>
                <li>Lieu de naissance : Joinville, France</li>
@@ -176,7 +176,7 @@
                   <a href="#perso-charles-mayenne" goto="autour-legende">Charles de Mayenne</a>.
                </li>
                <br></br>
-            </p>
+            </ul>
          </div>
       </div>
    </body>

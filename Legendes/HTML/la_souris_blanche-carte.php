@@ -165,35 +165,35 @@
          </div>
          <div id="perso-legende">
             <h2>Personnages</h2>
-            <p id="perso-louisXI">
+            <ul id="perso-louisXI">
                <a href="cible_requete.php?personnage_id=perso-louisXI">Louis XI</a>
                <li>Occupation : Né en 1423 à Bourges est roi de France de 1461 à 1484.
                   Appertenant à la famille des Valois.
                </li>
                <br></br>
-            </p>
-            <p id="perso-charlesVIII">
+            </ul>
+            <ul id="perso-charlesVIII">
                <a href="cible_requete.php?personnage_id=perso-charlesVIII">Charles VIII</a>
                <li>Occupation : Né en 1470, est roi de France de 1483 à 1498. Il est le dernier
                   roi de la branche des Valois. 
                </li>
                <br></br>
-            </p>
-            <p id="perso-jacques-darmagnac">
+            </ul>
+            <ul id="perso-jacques-darmagnac">
                <a href="cible_requete.php?personnage_id=perso-jacques-darmagnac">Jacques d'Armagnac de Nemours</a>
                <li>Occupation : Comte de Pardiac et duc de Nemours de 1462 à 1477.</li>
                <br></br>
-            </p>
-            <p id="perso-fils-darmagnac">
+            </ul>
+            <ul id="perso-fils-darmagnac">
                <a href="cible_requete.php?personnage_id=perso-fils-darmagnac">Fils du duc d'Armagnac</a>
                <li>Occupation : Duc de Nemours à la mort de son père.</li>
                <br></br>
-            </p>
-            <p id="perso-blanchette">
+            </ul>
+            <ul id="perso-blanchette">
                <a href="cible_requete.php?personnage_id=perso-blanchette">Blanchette/Angelina</a>
                <li>Occupation : Une souris blanche/fée, amie de Charles VIII</li>
                <br></br>
-            </p>
+            </ul>
          </div>
       </div>
    </body>
