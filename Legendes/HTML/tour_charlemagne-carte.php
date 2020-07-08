@@ -94,20 +94,24 @@
             <h2>Personnages</h2>
             <p id="perso-charlemagne">
                <a href="cible_requete.php?personnage_id=perso-charlemagne">Charlemagne</a>
-               <br></br>Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis Empereur d'Occident
-               en 800.
+               <li>Occupation : Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis
+                  Empereur d'Occident en 800.
+               </li>
                <br></br>
             </p>
             <p id="perso-luitgarde">
                <a href="cible_requete.php?personnage_id=perso-luitgarde">Luitgarde</a>
-               <br></br>Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une princesse germanique
-               et également la 4ème épouse du roi des Francs, Charlemagne
+               <li>Occupation : Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une
+                  princesse germanique et également la 4ème épouse du roi des Francs,
+                  Charlemagne
+               </li>
                <br></br>
             </p>
             <p id="perso-stmartin">
                <a href="cible_requete.php?personnage_id=perso-stmartin">Saint-Martin</a>
-               <br></br>Né en 316 et décédé en 397. Un des principaux saints de la chrétienté et évèque de
-               Tours.
+               <li>Occupation : Né en 316 et décédé en 397. Un des principaux saints de la
+                  chrétienté et évèque de Tours.
+               </li>
                <br></br>
             </p>
          </div>

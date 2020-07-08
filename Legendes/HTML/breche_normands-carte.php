@@ -106,25 +106,21 @@
             <h2>Personnages</h2>
             <p id="perso-normands">
                <a href="cible_requete.php?personnage_id=perso-normands">Les Normands</a>
-               <br></br>Nom autrefois donné aux Vikings.
+               <li>Nom autrefois donné aux Vikings.</li>
                <br></br>
             </p>
             <p id="perso-tourangeaux">
                <a href="cible_requete.php?personnage_id=perso-tourangeaux">Les Tourangeaux</a>
-               <br></br>Habitants de la ville de Tours.
+               <li>Habitants de la ville de Tours.</li>
                <br></br>
             </p>
             <p id="perso-stmartin">
                <a href="cible_requete.php?personnage_id=perso-stmartin">Saint-Martin de Tours</a>
-               <br></br>
-               An 316
-               Sabaria de Pannonie (ajd. Szombathely, Hongrie)
-               
-               <br></br>
-               An 397
-               Candes, France
-               
-               <br></br>Saint de la chrétienté et évêque de Tours
+               <li>Date de naissance : An 316</li>
+               <li>Lieu de naissance : Sabaria de Pannonie (ajd. Szombathely, Hongrie)</li>
+               <li>Date de décès : An 397</li>
+               <li>Lieu de décès : Candes, France</li>
+               <li>Occupation : Saint de la chrétienté et évêque de Tours</li>
                <br></br>
             </p>
          </div>

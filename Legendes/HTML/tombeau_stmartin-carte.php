@@ -109,50 +109,40 @@
             <h2>Personnages</h2>
             <p id="perso-stmartin">
                <a href="cible_requete.php?personnage_id=perso-stmartin">Saint-Martin de Tours</a>
-               <br></br>
-               An 316
-               Sabaria de Pannonie (ajd. Szombathely, Hongrie)
-               
-               <br></br>
-               An 397
-               Candes, France
-               
-               <br></br>Saint de la chrétienté et évêque de Tours
+               <li>Date de naissance : An 316</li>
+               <li>Lieu de naissance : Sabaria de Pannonie (ajd. Szombathely, Hongrie)</li>
+               <li>Date de décès : An 397</li>
+               <li>Lieu de décès : Candes, France</li>
+               <li>Occupation : Saint de la chrétienté et évêque de Tours</li>
                <br></br>
             </p>
             <p id="perso-moines-tourangeanx">
                <a href="cible_requete.php?personnage_id=perso-moines-tourangeanx">Les moines Tourangeaux</a>
-               <br></br>Moines de la ville de Tours, dont l'évêque était Saint-Martin.
+               <li>Moines de la ville de Tours, dont l'évêque était Saint-Martin.</li>
                <br></br>
             </p>
             <p id="perso-moines-poitevins">
                <a href="cible_requete.php?personnage_id=perso-moines-poitevins">Les moines Poitevins</a>
-               <br></br>Moines du Poitou.
+               <li>Moines du Poitou.</li>
                <br></br>
             </p>
             <p id="perso-stbrice">
                <a href="cible_requete.php?personnage_id=perso-stbrice">Brice de Tours</a>
-               <br></br>Vers 377
-               <br></br>
-               An 444
-               Tours, France
-               
-               <br></br>Evêque de Tours
-               <br></br>4ème évêque de Tours, a succédé à Saint-Martin. Devenu
-               Saint-Brice
+               <li>Date de décès : An 444</li>
+               <li>Lieu de décès : Tours, France</li>
+               <li>Occupation : Evêque de Tours</li>
+               <li>4ème évêque de Tours, a succédé à Saint-Martin. Devenu
+                  Saint-Brice
+               </li>
                <br></br>
             </p>
             <p id="perso-stperpet">
                <a href="cible_requete.php?personnage_id=perso-stperpet">Perpet de Tours</a>
-               <br></br>
-               Auvergne, France
-               
-               <br></br>
-               8 Avril 491
-               Tours, France
-               
-               <br></br>Evêque de Tours
-               <br></br>6ème évêque de Tours. Devenu Saint Perpet
+               <li>Lieu de naissance : Auvergne, France</li>
+               <li>Date de décès : 8 Avril 491</li>
+               <li>Lieu de décès : Tours, France</li>
+               <li>Occupation : Evêque de Tours</li>
+               <li>6ème évêque de Tours. Devenu Saint Perpet</li>
                <br></br>
             </p>
          </div>

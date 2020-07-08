@@ -130,59 +130,51 @@
             <h2>Personnages</h2>
             <p id="perso-henriIII">
                <a href="cible_requete.php?personnage_id=perso-henriIII">Henri III</a>
-               <br></br>
-               19 Septembre 1551
-               Château de Fontainebleau, France
-               
-               <br></br>
-               2 Août 1589
-               Château de Saint-Cloud, France
-               
-               <br></br>Roi de France
+               <li>Date de naissance : 19 Septembre 1551</li>
+               <li>Lieu de naissance : Château de Fontainebleau, France</li>
+               <li>Date de décès : 2 Août 1589</li>
+               <li>Lieu de décès : Château de Saint-Cloud, France</li>
+               <li>Occupation : Roi de France</li>
                <br></br>
             </p>
             <p id="perso-henri-lorraine">
                <a href="cible_requete.php?personnage_id=perso-henri-lorraine">Henri Ier de Lorraine</a>
-               <br></br>
-               31 Décembre 1550
-               Joinville, France
-               
-               <br></br>
-               23 Décembre 1588
-               Blois, France
-               
-               <br></br>Duc de Guise
-               <br></br>Autrement appelé Henri le Balafré
+               <li>Date de naissance : 31 Décembre 1550</li>
+               <li>Lieu de naissance : Joinville, France</li>
+               <li>Date de décès : 23 Décembre 1588</li>
+               <li>Lieu de décès : Blois, France</li>
+               <li>Occupation : Duc de Guise</li>
+               <li>Autrement appelé Henri le Balafré</li>
                <br></br>
             </p>
             <p id="perso-charles-mayenne">
                <a href="cible_requete.php?personnage_id=perso-charles-mayenne">Charles de Mayenne</a>
-               <br></br>
-               26 Mars 1554
-               Alençon, France
-               
-               <br></br>
-               3 Octobre 1611
-               Soissons, France
-               
-               <br></br>Duc de Mayenne
-               <br></br>Oncle de Charle de
-               Guise, frère de feu Henri de Lorraine.
+               <li>Date de naissance : 26 Mars 1554</li>
+               <li>Lieu de naissance : Alençon, France</li>
+               <li>Date de décès : 3 Octobre 1611</li>
+               <li>Lieu de décès : Soissons, France</li>
+               <li>Occupation : Duc de Mayenne</li>
+               <li>Oncle de 
+                  <a href="#perso-charlesI-guise" goto="autour-legende">Charle de
+                     Guise
+                  </a>, frère de feu 
+                  <a href="#perso-henri-lorraine" goto="autour-legende">Henri de Lorraine</a>.
+               </li>
                <br></br>
             </p>
             <p id="perso-charlesI-guise">
                <a href="cible_requete.php?personnage_id=perso-charlesI-guise">Charles de Lorraine</a>
-               <br></br>
-               2 Août 1571
-               Joinville, France
-               
-               <br></br>
-               30 Septembre 1640
-               Cuna, Italie
-               
-               <br></br>Prince de Joinville puis, à la mort de son père, Duc de
-               Guise
-               <br></br>Charles Ier de Guise. Fils de Henri de Lorraine, neveu de Charles de Mayenne.
+               <li>Date de naissance : 2 Août 1571</li>
+               <li>Lieu de naissance : Joinville, France</li>
+               <li>Date de décès : 30 Septembre 1640</li>
+               <li>Lieu de décès : Cuna, Italie</li>
+               <li>Occupation : Prince de Joinville puis, à la mort de son père, Duc de
+                  Guise
+               </li>
+               <li>Charles Ier de Guise. Fils de 
+                  <a href="#perso-henri-lorraine" goto="autour-legende">Henri de Lorraine</a>, neveu de 
+                  <a href="#perso-charles-mayenne" goto="autour-legende">Charles de Mayenne</a>.
+               </li>
                <br></br>
             </p>
          </div>

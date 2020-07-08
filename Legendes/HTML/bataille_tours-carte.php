@@ -81,71 +81,59 @@
             <h2>Personnages</h2>
             <p id="perso-charles-martel">
                <a href="cible_requete.php?personnage_id=perso-charles-martel">Charles Martel</a>
-               <br></br>
-               An 688
-               Andenne, Belgique
-               
-               <br></br>
-               22 Octobre 741
-               Quierzy, France
-               
-               <br></br>Homme d'état, chef militaire
+               <li>Date de naissance : An 688</li>
+               <li>Lieu de naissance : Andenne, Belgique</li>
+               <li>Date de décès : 22 Octobre 741</li>
+               <li>Lieu de décès : Quierzy, France</li>
+               <li>Occupation : Homme d'état, chef militaire</li>
                <br></br>
             </p>
             <p id="perso-francs">
                <a href="cible_requete.php?personnage_id=perso-francs">Les Francs</a>
-               <br></br>Peuple germanique qui a donné son nom à la France et aux
-               français.
+               <li>Peuple germanique qui a donné son nom à la France et aux
+                  français.
+               </li>
                <br></br>
             </p>
             <p id="perso-burgondes">
                <a href="cible_requete.php?personnage_id=perso-burgondes">Les Burgondes</a>
-               <br></br>Peuple germanique.
+               <li>Peuple germanique.</li>
                <br></br>
             </p>
             <p id="perso-abd-al-rahman">
                <a href="cible_requete.php?personnage_id=perso-abd-al-rahman">Abd al-Rahman</a>
-               <br></br>
-               Tihama
-               
-               <br></br>
-               An 732
-               Poitiers, France
-               
-               <br></br>Wali d'al-Andalus
+               <li>Lieu de naissance : Tihama</li>
+               <li>Date de décès : An 732</li>
+               <li>Lieu de décès : Poitiers, France</li>
+               <li>Occupation : Wali d'al-Andalus</li>
                <br></br>
             </p>
             <p id="perso-omeyyades">
                <a href="cible_requete.php?personnage_id=perso-omeyyades">Les Omeyyades</a>
-               <br></br>Dynastie arabe qui gouverne le monde musulman puis al-Andalus.
+               <li>Dynastie arabe qui gouverne le monde musulman puis al-Andalus.</li>
                <br></br>
             </p>
             <p id="perso-eudes-aquitaine">
                <a href="cible_requete.php?personnage_id=perso-eudes-aquitaine">Eudes d'Aquitaine</a>
-               <br></br>
-               An 735
-               
-               <br></br>Duc d'Aquitaine et de Vasconie
+               <li>Date de décès : An 735</li>
+               <li>Occupation : Duc d'Aquitaine et de Vasconie</li>
                <br></br>
             </p>
             <p id="perso-aquitains">
                <a href="cible_requete.php?personnage_id=perso-aquitains">Les Aquitains</a>
-               <br></br>Ensemble de peuples protohistoriques et de l'Antiquité situés entre
-               les Pyrénées occidentales, la rive gauche de la Garonne et l'océan
-               Atlantique.
+               <li>Ensemble de peuples protohistoriques et de l'Antiquité situés entre
+                  les Pyrénées occidentales, la rive gauche de la Garonne et l'océan
+                  Atlantique.
+               </li>
                <br></br>
             </p>
             <p id="perso-stmartin">
                <a href="cible_requete.php?personnage_id=perso-stmartin">Saint-Martin de Tours</a>
-               <br></br>
-               An 316
-               Sabaria de Pannonie (ajd. Szombathely, Hongrie)
-               
-               <br></br>
-               An 397
-               Candes, France
-               
-               <br></br>Saint de la chrétienté et évêque de Tours
+               <li>Date de naissance : An 316</li>
+               <li>Lieu de naissance : Sabaria de Pannonie (ajd. Szombathely, Hongrie)</li>
+               <li>Date de décès : An 397</li>
+               <li>Lieu de décès : Candes, France</li>
+               <li>Occupation : Saint de la chrétienté et évêque de Tours</li>
                <br></br>
             </p>
          </div>
