@@ -9,6 +9,17 @@
     .container-fluid > :not(footer) {
      padding-left: 50px;
   }
+
+  .row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #perso-legende, #lieux-legendes, #categories, #motcle {
+      border-right: 1px solid lightgray;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
 }
   
 body p, body h2, body h3, body ul{ 

@@ -120,7 +120,7 @@
                         </div>
 
 
-                        <div class="row">
+                        <div class="row display-flex">
                             <div id="perso-legende" class="col-md-3">
                                 <h3>Personnages</h3>
                                 <xsl:for-each
