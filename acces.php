@@ -20,6 +20,7 @@
             border-style: solid;
             border-color: black;
             border-width: 0 0 3px 0;
+            width:250px;
             background: transparent;
             padding: 5px;
             font-size: inherit;
