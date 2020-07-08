@@ -19,6 +19,10 @@
     width: 200px;
 }
 
+.modal-content img {
+    /* object-fit: cover; */
+  }
+
        </style>
       
 
@@ -82,15 +86,21 @@
     $legendes = $bdd->query('SELECT DISTINCT id_lieu, nom from lieu, imgassocierlieu WHERE fk_idLieu = id_lieu');
     //echo "<ul>";
     while ($donnees = $legendes->fetch()) {
-        $legendes_bis = $bdd->query('SELECT DISTINCT url_img, desc_img from lieu, image, imgassocierlieu WHERE fk_idLieu ='.$donnees['id_lieu'].' AND fk_idImg = id_img');
+        $legendes_bis = $bdd->query('SELECT DISTINCT id_img, url_img, desc_img from lieu, image, imgassocierlieu WHERE fk_idLieu ='.$donnees['id_lieu'].' AND fk_idImg = id_img');
         if ($legendes_bis->rowCount() != 0) {
             echo "<div class='row'>";
             echo "<h3>".$donnees['nom']."</h3>";
             while($images = $legendes_bis->fetch()) {
                 echo "<div class='col-md-3'>";
-                echo "<a href='".$images['url_img']."'><img src='".$images['url_img']."' class='img-responsive img-thumbnail'></img></a>";
-                echo '<div class="caption"><p>'.$images['desc_img'].'</p></div>';
-                echo "</div>";
+                echo "<a data-toggle='modal' data-target='#".$images['id_img']."'><img src='".$images['url_img']."' class='img-responsive img-thumbnail'></img></a>";
+                echo "<div id='".$images['id_img']."' class='modal fade' role='dialog'>";
+                echo '<div class="modal-dialog">';
+                echo  '<div class="modal-content">';
+                echo '<div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">';
+                echo "<img src='".$images['url_img']."' class='img-responsive'></img>";
+                echo'<p>'.$images['desc_img'].'</p>';
+                echo '</div></div></div></div></div>';
             }
             echo "</div>";
 
