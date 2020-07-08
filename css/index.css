@@ -70,13 +70,11 @@
 }
 
 .jumbotron div p {
-    text-align: justify;
+    text-align: center;
     font-family: 'corps';
+    padding-top: 50px;
 }
 
-/* .jumbotron {
-    background-color: white;
-} */
 
 /* Section */
 
