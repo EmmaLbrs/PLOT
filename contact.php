@@ -121,7 +121,7 @@
     <div class="container-fluid">
 
         <div class="fil_ariane">
-            <p><a href="index.html">PLOT</a> > <a href="#">A propos</a> > <a href="contact.php">Nous contacter</a></p>
+            <p><a href="index.html">PLOT</a> > <a href="apropos.html">A propos</a> > <a href="contact.php">Nous contacter</a></p>
         </div>
 
         <div class="row">
