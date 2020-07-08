@@ -44,7 +44,7 @@
                 </ul>
               </li>
               <li class="dropdown nav-item">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos<span class="caret"></span> </a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="apropos.html">A propos<span class="caret"></span> </a>
                 <ul class="dropdown-menu">
                   <li><a href="sources.html" class="nav-link">Sources</a></li>
                   <li><a href="leprojet.html" class="nav-link">Le projet</a></li>
