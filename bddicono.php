@@ -88,7 +88,7 @@
             echo "<h3>".$donnees['nom']."</h3>";
             while($images = $legendes_bis->fetch()) {
                 echo "<div class='col-md-3'>";
-                echo "<a href='".$images['url_img']."'><img src='".$images['url_img']."' class='img-responsive img-thumbnail''/></a>";
+                echo "<a href='".$images['url_img']."'><img src='".$images['url_img']."' class='img-responsive img-thumbnail'></img></a>";
                 echo "</div>";
             }
             echo "</div>";
