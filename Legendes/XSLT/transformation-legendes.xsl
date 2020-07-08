@@ -61,7 +61,7 @@
                                                   >Audios</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="nav-link">Base de données
+                                                <a href="../../bddicono.php" class="nav-link">Base de données
                                                   iconographiques</a>
                                             </li>
                                             <li>
@@ -72,7 +72,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown nav-item">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">A
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="../../apropos.html">A
                                                 propos<span class="caret"/>
                                         </a>
                                         <ul class="dropdown-menu">
