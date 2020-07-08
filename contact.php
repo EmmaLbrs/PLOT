@@ -63,6 +63,13 @@
 
            }
 
+           input[type='submit'] {
+            border:none;
+            background-color: black;
+            color:white;
+           }
+
+
 
 
 
