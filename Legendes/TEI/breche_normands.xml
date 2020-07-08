@@ -60,29 +60,57 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours</placeName>
+                        <placeName>Tours<address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                                <addrLine>Centre-Val-de-Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-remparts-tours">
-                        <placeName>Les remparts de Tours</placeName>
+                        <placeName>Les remparts de Tours <address>
+                                <addrLine>2 rue des Ursulines</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address>
+                        </placeName>
                     </place>
                     <place type="batiment" xml:id="place-cathedrale-stgatien">
-                        <placeName>Cathédrale Saint-Gatien</placeName>
+                        <placeName>Cathédrale Saint-Gatien <address>
+                                <addrLine>Place de la Cathédrale</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address>
+                        </placeName>
                     </place>
                     <place type="batiment" xml:id="place-amphi">
-                        <placeName>Amphithéâtre de Tours</placeName>
+                        <placeName>Amphithéâtre de Tours <address>
+                                <addrLine>3 Rue Manceau</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address>
+                        </placeName>
                         <note>Ancien amphithéâtre transformé en place forte.</note>
                     </place>
                     <place type="fleuve" xml:id="place-loire">
                         <placeName>La Loire</placeName>
                     </place>
                     <place type="ile" xml:id="place-noirmoutier">
-                        <placeName>L'île de Noirmoutier</placeName>
+                        <placeName>L'île de Noirmoutier<address>
+                                <addrLine>Vendée</addrLine>
+                                <addrLine>Pays de la Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-nantes">
-                        <placeName>Nantes</placeName>
+                        <placeName>Nantes<address>
+                                <addrLine>Loire-Atlantique</addrLine>
+                                <addrLine>Pays de la Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-marmoutier">
-                        <placeName>Monastère de Marmoutier</placeName>
+                        <placeName>Monastère de Marmoutier <address>
+                                <addrLine>17 Quai de Marmoutier</addrLine>
+                                <addrLine>37100</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address></placeName>
                     </place>
                 </listPlace>
             </sourceDesc>
@@ -123,9 +151,8 @@
             <textClass>
                 <keywords scheme="#RAMEAU">
                     <term>Martin (0316?-0397 ; saint)</term>
-                    <term>Normands</term>
-                    <term>Vikings</term>
-                    <term>Tours (Indre-et-Loire ; région)</term>
+                    <term>Guerres</term>
+                    <term>Batailles</term>
                 </keywords>
                 <catRef scheme="#taxo-cat" target="#cat-hist #cat-rel"/>
             </textClass>

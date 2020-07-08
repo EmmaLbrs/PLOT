@@ -39,27 +39,46 @@
                 <listPerson type="personnages">
                     <person xml:id="perso-charlemagne">
                         <persName>Charlemagne</persName>
-                        <occupation>Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis Empereur d'Occident en 800.</occupation>
+                        <occupation>Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis
+                            Empereur d'Occident en 800.</occupation>
                     </person>
                     <person xml:id="perso-luitgarde">
                         <persName>Luitgarde</persName>
-                        <occupation>Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une princesse germanique
-                            et également la 4ème épouse du roi des Francs, Charlemagne</occupation>
+                        <occupation>Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une
+                            princesse germanique et également la 4ème épouse du roi des Francs,
+                            Charlemagne</occupation>
                     </person>
                     <person xml:id="perso-stmartin">
                         <persName>Saint-Martin</persName>
-                        <occupation>Né en 316 et décédé en 397. Un des principaux saints de la chrétienté et évèque de Tours.</occupation>
+                        <occupation>Né en 316 et décédé en 397. Un des principaux saints de la
+                            chrétienté et évèque de Tours.</occupation>
                     </person>
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours</placeName>
+                        <placeName>Tours
+                            <address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                            </address>
+                        </placeName>
                     </place>
                     <place type="batiment" xml:id="place-basilique-stmartin">
-                        <placeName>Basilique Saint-Martin</placeName>
+                        <placeName>Basilique Saint-Martin
+                            <address>
+                                <addrLine>7 Rue Baleschoux</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address>
+                        </placeName>
                     </place>
                     <place type="batiment" xml:id="place-tour-charlemagne">
-                        <placeName>Tour Charlemagne</placeName>
+                        <placeName>Tour Charlemagne
+                            <address>
+                                <addrLine>Rue des Halles</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address>
+                        </placeName>
                     </place>
                 </listPlace>
             </sourceDesc>
@@ -85,10 +104,9 @@
                     </category>
                 </taxonomy>
                 <taxonomy xml:id="RAMEAU">
-                    <bibl>
-                        Répertoire d'autorité-matière encyclopédique et alphabétique unifié
-                        (RAMEAU) de la Bibliothèque nationale de France. 
-                        <ptr target="http://rameau.bnf.fr/"/>
+                    <bibl> Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France. <ptr
+                            target="http://rameau.bnf.fr/"/>
                     </bibl>
                 </taxonomy>
             </classDecl>

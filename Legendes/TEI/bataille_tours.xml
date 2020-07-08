@@ -98,10 +98,17 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours</placeName>
+                        <placeName>Tours<address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                                <addrLine>Centre-Val-de-Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-poitiers">
-                        <placeName>Poitiers</placeName>
+                        <placeName>Poitiers <address>
+                                <addrLine>Vienne</addrLine>
+                                <addrLine>Nouvelle-Acquitaine</addrLine>
+                            </address>
+                        </placeName>
                     </place>
                 </listPlace>
             </sourceDesc>
@@ -141,9 +148,9 @@
             </langUsage>
             <textClass>
                 <keywords scheme="#RAMEAU">
-                    <term>Bataille de Poitiers (732)</term>
-                    <term>Charles Martel (0688?-0741)</term>
-                    <term>Ġāfiqī, ʿAbd al-Raḥmān ibn ʿAbd Allāh ibn Bišr al- (06..-0732)</term>
+                    <term>Guerres</term>
+                    <term>Batailles</term>
+                    <term>Rois et souverains</term>
                 </keywords>
                 <catRef scheme="#taxo-cat" target="#cat-hist"/>
             </textClass>
