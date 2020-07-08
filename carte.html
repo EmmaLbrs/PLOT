@@ -375,6 +375,10 @@ function loadPage(href)
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende");
             
+
+            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-2.jpg"><img src="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-1.jpg"><img src="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            galerieLeg.innerHTML = galerie;
+            
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
 
@@ -440,6 +444,9 @@ function loadPage(href)
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende");
+
+            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-2.jpg"><img src="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-1.jpg"><img src="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            galerieLeg.innerHTML = galerie;
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
