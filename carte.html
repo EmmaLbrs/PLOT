@@ -328,6 +328,9 @@ function loadPage(href)
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende")
+
+            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-3.jpg"><img src="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-3.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-2.jpg"><img src="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-12"><a href="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-1.jpg"><img src="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            galerieLeg.innerHTML = galerie;
             
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
@@ -348,7 +351,7 @@ function loadPage(href)
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende")
-            
+
              spanLeg.innerHTML += titre[0].innerText;
              sidebar.setContent(audioLegende, texteLegende, autourLegende);
 

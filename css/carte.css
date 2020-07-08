@@ -125,3 +125,8 @@ span.infobulle {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
+
+  .img-thumbnail {
+    width: 150px;
+    margin-bottom:5px;
+  }
