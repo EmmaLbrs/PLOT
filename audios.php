@@ -73,13 +73,13 @@
      
     include_once "connexionbdd.php";
 
-    $legendes = $bdd->query('SELECT titre, url_audio from legende, audio WHERE fk_idAudio != 0 AND fk_idAudio = id_audio ORDER BY titre');
+    $legendes = $bdd->query('SELECT titre, url_audio, nom_nar, prenom_nar from legende, audio, audioracontepar, narrateur WHERE legende.fk_idAudio != 0 AND legende.fk_idAudio = id_audio AND audioracontepar.fk_IdAudio = id_audio AND fk_idNar = id_nar ORDER BY titre');
     echo "<ul>";
     while ($donnees = $legendes->fetch()) {
         // $posSlash = strpos($donnees['url_texte_simple'], '/');
         // $posSlash = $posSlash+1;
         // $subStringUrl = substr($donnees['url_texte_simple'], $posSlash); 
-        echo "<li><a href=".$donnees['url_audio'].">".$donnees['titre']."</a></li>";
+        echo "<li><a href=".$donnees['url_audio'].">".$donnees['titre']."</a> par ".$donnees['prenom_nar']." ".$donnees['nom_nar']."</li>";
     }
     echo "</ul>";
      
