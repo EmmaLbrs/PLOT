@@ -15,8 +15,8 @@
        <title>PLOT - CESR | Base de données iconographique</title>
 
        <style>
-.img-responsive {
-    width: 100px;
+.img-thumbnail {
+    width: 150px;
 }
 
        </style>
