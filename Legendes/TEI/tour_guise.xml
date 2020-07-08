@@ -96,16 +96,27 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours</placeName>
+                        <placeName>Tours<address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                                <addrLine>Centre-Val-de-Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="fleuve" xml:id="place-loire">
                         <placeName>La Loire</placeName>
                     </place>
                     <place type="batiment" xml:id="place-chateau-tours">
-                        <placeName>Château de Tours</placeName>
+                        <placeName>Château de Tours<address>
+                                <addrLine>25 Avenue André Malraux</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-notre-dame-la-riche">
-                        <placeName>Notre-Dame-la-Riche</placeName>
+                        <placeName>Notre-Dame-la-Riche<address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                                <addrLine>Centre-Val-de-Loire</addrLine>
+                            </address>
+                        </placeName>
                     </place>
                     <place type="riviere" xml:id="place-cher">
                         <placeName>Le Cher</placeName>
@@ -138,7 +149,7 @@
                         (RAMEAU) de la Bibliothèque nationale de France <ptr
                             target="https://rameau.bnf.fr/"/></bibl>
                 </taxonomy>
-                </classDecl>
+            </classDecl>
         </encodingDesc>
         <profileDesc>
             <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
@@ -148,9 +159,9 @@
             </langUsage>
             <textClass>
                 <keywords scheme="#RAMEAU">
-                    <term>Guise, Charles de Lorraine duc de (1571-1640)</term>
-                    <term>Guise (famille)</term>
-                    <term>Château de Tours</term>
+                    <term>Rois et souverains</term>
+                    <term>Évasions</term>
+                    <term>Emprisonnement</term>
                 </keywords>
                 <catRef scheme="#taxo-cat" target="#cat-hist"/>
             </textClass>

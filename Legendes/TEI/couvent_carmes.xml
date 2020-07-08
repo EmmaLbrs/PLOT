@@ -39,7 +39,8 @@
                 <listPerson type="personnages">
                     <person xml:id="perso-Louis-XI">
                         <persName>Louis XI</persName>
-                        <occupation>Né en 1423 à Bourges est roi de France de 1461 à 1484. Appertenant à la famille des Valois.</occupation>
+                        <occupation>Né en 1423 à Bourges est roi de France de 1461 à 1484.
+                            Appertenant à la famille des Valois.</occupation>
                     </person>
                     <person xml:id="perso-moine-queteur">
                         <persName>moine queteur</persName>
@@ -52,18 +53,30 @@
                     </person>
                     <person xml:id="perso-tristan">
                         <persName>Tristan</persName>
-                        <occupation>Louis Tritan l'Hermite était maitre de l'artillerie puis grand prévot du roi Louis XI.</occupation>
+                        <occupation>Louis Tritan l'Hermite était maitre de l'artillerie puis grand
+                            prévot du roi Louis XI.</occupation>
                     </person>
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours</placeName>
+                        <placeName>Tours<address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                                <addrLine>Centre-Val-de-Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-couvent-saint-anne">
-                        <placeName>Couvent Sainte Anne</placeName>
+                        <placeName>Couvent Sainte Anne<address>
+                                <addrLine>Quartier Riche Sainte-Anne</addrLine>
+                                <addrLine>37520</addrLine>
+                                <addrLine>La Riche</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-monastere-carmes">
-                        <placeName>Monastères des Carmes de Tours</placeName>
+                        <placeName>Monastères des Carmes de Tours<address>
+                                <addrLine>1 rue des Tanneurs</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address></placeName>
                     </place>
                 </listPlace>
             </sourceDesc>
@@ -89,10 +102,9 @@
                     </category>
                 </taxonomy>
                 <taxonomy xml:id="RAMEAU">
-                    <bibl>
-                        Répertoire d'autorité-matière encyclopédique et alphabétique unifié
-                        (RAMEAU) de la Bibliothèque nationale de France. 
-                        <ptr target="http://rameau.bnf.fr/"/>
+                    <bibl> Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France. <ptr
+                            target="http://rameau.bnf.fr/"/>
                     </bibl>
                 </taxonomy>
             </classDecl>
@@ -139,91 +151,93 @@
             <sp who="#Frederique-Menicot">
                 <speaker>Frédérique Ménicot</speaker>
                 <p xml:id="titre">Le couvent des Carmes</p>
-                
-                <p> Le <persName ref="#perso-Louis-XI">roi Louis XI </persName> était en balade au bord du canal entre la Loire et le Cher à
-                    <placeName ref="#place-tours">Tours</placeName>. Il admirait ce beau canal qu’il avait fait construire pour que les
-                    Tourangeaux les plus fortunés puissent jouir d’un nouveau moyen de transport. Il
-                    continua à admirer le paysage de son pays, se posant des questions, cherchant
-                    comment améliorer la Touraine et la rendre plus importante encore qu’elle ne le
-                    fût.<persName ref="#perso-Louis-XI"> Louis XI </persName> était un roi qui aimait conquérir des territoires, s’agrandir
-                    toujours plus, pour plus de puissance.
-                    
-                    « - J’aimerais conquérir la Brenne, c’est une petite rivière peut-être, mais elle serait utile. » dit le <persName ref="#perso-Louis-XI">roi</persName>. 
-                </p>
-                <p>
-                    Durant ces contemplations le <persName ref="#perso-Louis-XI">roi</persName> entendit bientôt des bruits de pas. Il se demanda qui
-                    pouvait venir le déranger durant sa balade et qui pouvait donc venir si près du
-                    domaine royal. Bientôt, il vit apparaître un <persName ref="#perso-moine-queteur">moine</persName> accompagné d’un âne. 
-                    C’était un <persName ref="#perso-moine-queteur">mendiant carme</persName>, 
-                    un des <persName ref="#perso-moine">moines</persName> de cet ordre catholique. 
-                    Mais ce <persName ref="#perso-moine-queteur">moine</persName> passa
-                    devant le roi sans le saluer. Il ne le regarda que de travers, pressant son âne
-                    d’aller plus vite. Il voulait alors fuir l’étranger devant lequel il passait. 
-                    
-                    «- Hé ! Là-bas, le <persName ref="#perso-moine-queteur">moine</persName>, écoute-moi. » 
-                    Le <persName ref="#perso-moine-queteur">moine</persName> s’arrêta pour écouter ce que voulait ce drôle d’homme. 
-                    « - Je veux rentrer, donne-moi donc ton âne pour que je puisse aller plus vite, ordonna le roi 
-                    - Cet âne est le mien, et, je ne le laisserai pas sur l’honneur de notre bon roi saint Louis se 
-                    défendit le <persName ref="#perso-moine-queteur">moine</persName>.
-                    - Et moi par Saint-Martin, patron des ânes, je le prendrai ! 
-                    - Seul le roi pourrait me donner cet ordre, car c’est le roi qui décide ici. 
-                    - Donc mon cher <persName ref="#perso-moine-queteur">moine</persName>, tu respectes le roi ? 
-                    - Oui, bien sûr, c’est notre maître, il nous a défendus quand il le fallait, nous a donnés certains privilèges. 
-                    Et il aime même les pauvres. 
-                    - Donc les <persName ref="#perso-moine">moines</persName> carmes comme toi respectent le roi ? 
-                    - Oui nous sommes pour le roi ! 
-                    - Très bien, <persName ref="#perso-moine-queteur">moine</persName>, tu peux partir. Je dirai quelques mots au roi sur toi et tes frères. » 
-                </p>
-                <p>
-                    Le <persName ref="#perso-moine-queteur">moine</persName> repartit en se demandant qui pouvait
-                    bien être ce drôle d’homme qui lui demandait son âne et après changeait d’avis.
-                </p>
-                <p>
-                    Dans le <placeName ref="#place-couvent-saint-anne">couvent de Sainte-Anne</placeName>,
-                    près de <placeName ref="#place-tours">Tours</placeName>, les <persName ref="#perso-moine">carmes</persName> étaient en pleine
-                    prière. Ils étaient très pieux et ne demandaient qu’un peu de pain.
-                    Malheureusement pour le couvent, ils étaient à court de farine. Leur âne, qui
-                    transportait les vivres, était revenu sans rien. Chacun décida de se séparer
+
+                <p> Le <persName ref="#perso-Louis-XI">roi Louis XI </persName> était en balade au
+                    bord du canal entre la Loire et le Cher à <placeName ref="#place-tours"
+                        >Tours</placeName>. Il admirait ce beau canal qu’il avait fait construire
+                    pour que les Tourangeaux les plus fortunés puissent jouir d’un nouveau moyen de
+                    transport. Il continua à admirer le paysage de son pays, se posant des
+                    questions, cherchant comment améliorer la Touraine et la rendre plus importante
+                    encore qu’elle ne le fût.<persName ref="#perso-Louis-XI"> Louis XI </persName>
+                    était un roi qui aimait conquérir des territoires, s’agrandir toujours plus,
+                    pour plus de puissance. « - J’aimerais conquérir la Brenne, c’est une petite
+                    rivière peut-être, mais elle serait utile. » dit le <persName
+                        ref="#perso-Louis-XI">roi</persName>. </p>
+                <p> Durant ces contemplations le <persName ref="#perso-Louis-XI">roi</persName>
+                    entendit bientôt des bruits de pas. Il se demanda qui pouvait venir le déranger
+                    durant sa balade et qui pouvait donc venir si près du domaine royal. Bientôt, il
+                    vit apparaître un <persName ref="#perso-moine-queteur">moine</persName>
+                    accompagné d’un âne. C’était un <persName ref="#perso-moine-queteur">mendiant
+                        carme</persName>, un des <persName ref="#perso-moine">moines</persName> de
+                    cet ordre catholique. Mais ce <persName ref="#perso-moine-queteur"
+                        >moine</persName> passa devant le roi sans le saluer. Il ne le regarda que
+                    de travers, pressant son âne d’aller plus vite. Il voulait alors fuir l’étranger
+                    devant lequel il passait. «- Hé ! Là-bas, le <persName
+                        ref="#perso-moine-queteur">moine</persName>, écoute-moi. » Le <persName
+                        ref="#perso-moine-queteur">moine</persName> s’arrêta pour écouter ce que
+                    voulait ce drôle d’homme. « - Je veux rentrer, donne-moi donc ton âne pour que
+                    je puisse aller plus vite, ordonna le roi - Cet âne est le mien, et, je ne le
+                    laisserai pas sur l’honneur de notre bon roi saint Louis se défendit le
+                        <persName ref="#perso-moine-queteur">moine</persName>. - Et moi par
+                    Saint-Martin, patron des ânes, je le prendrai ! - Seul le roi pourrait me donner
+                    cet ordre, car c’est le roi qui décide ici. - Donc mon cher <persName
+                        ref="#perso-moine-queteur">moine</persName>, tu respectes le roi ? - Oui,
+                    bien sûr, c’est notre maître, il nous a défendus quand il le fallait, nous a
+                    donnés certains privilèges. Et il aime même les pauvres. - Donc les <persName
+                        ref="#perso-moine">moines</persName> carmes comme toi respectent le roi ? -
+                    Oui nous sommes pour le roi ! - Très bien, <persName ref="#perso-moine-queteur"
+                        >moine</persName>, tu peux partir. Je dirai quelques mots au roi sur toi et
+                    tes frères. » </p>
+                <p> Le <persName ref="#perso-moine-queteur">moine</persName> repartit en se
+                    demandant qui pouvait bien être ce drôle d’homme qui lui demandait son âne et
+                    après changeait d’avis. </p>
+                <p> Dans le <placeName ref="#place-couvent-saint-anne">couvent de
+                        Sainte-Anne</placeName>, près de <placeName ref="#place-tours"
+                        >Tours</placeName>, les <persName ref="#perso-moine">carmes</persName>
+                    étaient en pleine prière. Ils étaient très pieux et ne demandaient qu’un peu de
+                    pain. Malheureusement pour le couvent, ils étaient à court de farine. Leur âne,
+                    qui transportait les vivres, était revenu sans rien. Chacun décida de se séparer
                     pour quérir un peu d’argent, de nourriture ou bien encore prier. Quand tout d’un
-                    coup le frère portier vint prévenir ses frères.
-                    
-                    « - Des cavaliers, des cavaliers ! Ils sont devant notre maison et viennent ici au nom du <persName ref="#perso-louisXI">roi</persName>. 
-                    Ils disent qu’ils sont là sous un ordre royal qui nous concerne, ils enfonceront la porte si nous ne leur ouvrons pas ! 
-                    - Mes frères, mes frères, agenouillons-nous et prions. Notre dernière heure est venue. 
-                    <persName ref="#perso-tristan">Tristan</persName> le prévôt est là avec ses bourreaux et
-                    peut-être que bientôt nous devrons comparaître devant le tribunal de Dieu, après
-                    que son armée nous ait brulés, noyés ou encore pendus. 
-                    - Mais qu’avons-nous fait de mal ? » 
-                </p>  
+                    coup le frère portier vint prévenir ses frères. « - Des cavaliers, des cavaliers
+                    ! Ils sont devant notre maison et viennent ici au nom du <persName
+                        ref="#perso-louisXI">roi</persName>. Ils disent qu’ils sont là sous un ordre
+                    royal qui nous concerne, ils enfonceront la porte si nous ne leur ouvrons pas !
+                    - Mes frères, mes frères, agenouillons-nous et prions. Notre dernière heure est
+                    venue. <persName ref="#perso-tristan">Tristan</persName> le prévôt est là avec
+                    ses bourreaux et peut-être que bientôt nous devrons comparaître devant le
+                    tribunal de Dieu, après que son armée nous ait brulés, noyés ou encore pendus. -
+                    Mais qu’avons-nous fait de mal ? » </p>
+                <p> Les <persName ref="#perso-moine">moines</persName> étaient effrayés par la
+                    situation, chacun se demandait ce qu’ils avaient bien pu faire pour mériter une
+                    conclusion comme celle-là. D’autres se préparaient à fuir pour échapper à la
+                    sentence. Quand <persName ref="#perso-tristan">Tristan</persName> apparut dans
+                    le couvent avec un air sévère. « - Voilà, dit-il, les ordres du <persName
+                        ref="#perso-louisxi">roi</persName>… Vous allez… - Seigneur ! Pitié, pitié !
+                    dirent les <persName ref="#perso-moine">moines</persName> agenouillés.
+                    Laissez-nous une journée pour que nous puissions faire pénitence. - Laissez-moi
+                    vendre d’abord mon âne, dit l’un des <persName ref="#perso-moine"
+                        >moines</persName>. - Priez, suppliez, criez,sanglotez, clama <persName
+                        ref="#perso-tristan">Tristan</persName>, d’un air heureux, le <persName
+                        ref="#perso-louisxi">roi</persName> m’envoie pour… » </p>
                 <p>
-                    Les <persName ref="#perso-moine">moines</persName> étaient effrayés par la situation, chacun se demandait ce
-                    qu’ils avaient bien pu faire pour mériter une conclusion comme celle-là.
-                    D’autres se préparaient à fuir pour échapper à la sentence. Quand <persName ref="#perso-tristan">Tristan</persName>
-                    apparut dans le couvent avec un air sévère. 
-                    
-                    « - Voilà, dit-il, les ordres du <persName ref="#perso-louisxi">roi</persName>… Vous allez… 
-                    - Seigneur ! Pitié, pitié ! dirent les <persName ref="#perso-moine">moines</persName> agenouillés. 
-                    Laissez-nous une journée pour que nous puissions faire pénitence. 
-                    - Laissez-moi vendre d’abord mon âne, dit l’un des <persName ref="#perso-moine">moines</persName>. 
-                    - Priez, suppliez, criez,sanglotez, clama <persName ref="#perso-tristan">Tristan</persName>, d’un air heureux,
-                    le <persName ref="#perso-louisxi">roi</persName> m’envoie pour… »
-                  </p>
-                <p>  
-                    <persName ref="#perso-tristan">Tristan</persName> se mit alors à rire fortement. 
-                    Les <persName ref="#perso-moine">moines</persName> prirent de plus en plus peur au fil des
-                    rires de leur bourreau. 
-                 
-                    « - Le <persName ref="#perso-louisXI">roi</persName> m’envoie vous dire qu’il vous donne le poids de l’âne en argent. Ce même 
-                    âne appartenant au <persName ref="#perso-moine-queteur">moine quêteur</persName> qui seulement au 
-                    <persName ref="#perso-louisxi">roi</persName> aurait donné sa bête. Pour ma part, j’aurais pris plaisir à le faire pendre, 
-                    mais le <persName ref="#perso-louisxi">roi</persName> veut qu’il vive avec ses frères.
-                    Priez en paix et avec l’argent, construisez un autre monastère ici même à Tours. C’est le désir du <persName ref="#perso-louisxi">roi</persName>. » 
-                  </p> 
-                <p>
-                    Les <persName ref="#perso-moine">moines</persName>, surpris, n’en croyant pas leurs yeux ni leurs oreilles, félicitèrent
-                    leur <persName ref="#perso-moine-queteur">frère quêteur</persName> qui s’en voulut de ne pas avoir reconnu son souverain. Le
-                    couvent obéit à <persName ref="#perso-louisXI">Louis XI</persName> et fit construire un nouveau monastère dans le centre
-                    de Tours : <placeName ref="#place-monastere-carmes">Le monastère des Carmes de Tours</placeName>. </p>
+                    <persName ref="#perso-tristan">Tristan</persName> se mit alors à rire fortement.
+                    Les <persName ref="#perso-moine">moines</persName> prirent de plus en plus peur
+                    au fil des rires de leur bourreau. « - Le <persName ref="#perso-louisXI"
+                        >roi</persName> m’envoie vous dire qu’il vous donne le poids de l’âne en
+                    argent. Ce même âne appartenant au <persName ref="#perso-moine-queteur">moine
+                        quêteur</persName> qui seulement au <persName ref="#perso-louisxi"
+                        >roi</persName> aurait donné sa bête. Pour ma part, j’aurais pris plaisir à
+                    le faire pendre, mais le <persName ref="#perso-louisxi">roi</persName> veut
+                    qu’il vive avec ses frères. Priez en paix et avec l’argent, construisez un autre
+                    monastère ici même à Tours. C’est le désir du <persName ref="#perso-louisxi"
+                        >roi</persName>. » </p>
+                <p> Les <persName ref="#perso-moine">moines</persName>, surpris, n’en croyant pas
+                    leurs yeux ni leurs oreilles, félicitèrent leur <persName
+                        ref="#perso-moine-queteur">frère quêteur</persName> qui s’en voulut de ne
+                    pas avoir reconnu son souverain. Le couvent obéit à <persName
+                        ref="#perso-louisXI">Louis XI</persName> et fit construire un nouveau
+                    monastère dans le centre de Tours : <placeName ref="#place-monastere-carmes">Le
+                        monastère des Carmes de Tours</placeName>. </p>
             </sp>
         </body>
     </text>

@@ -58,7 +58,11 @@
                 </listPerson>
                 <listPlace>
                     <place type="batiment" xml:id="place-chateau-homme-noir">
-                        <placeName>Chateau de l'Homme Noir</placeName>
+                        <placeName>Chateau de l'Homme Noir<address>
+                                <addrLine>Allée de l'Homme Noir</addrLine>
+                                <addrLine>37540</addrLine>
+                                <addrLine>Saint-Cyr-sur-Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-chateau-gontran">
                         <placeName>Chateau en Touraine du seigneur Gontran</placeName>
@@ -87,10 +91,9 @@
                     </category>
                 </taxonomy>
                 <taxonomy xml:id="RAMEAU">
-                    <bibl>
-                        Répertoire d'autorité-matière encyclopédique et alphabétique unifié
-                        (RAMEAU) de la Bibliothèque nationale de France. 
-                        <ptr target="http://rameau.bnf.fr/"/>
+                    <bibl> Répertoire d'autorité-matière encyclopédique et alphabétique unifié
+                        (RAMEAU) de la Bibliothèque nationale de France. <ptr
+                            target="http://rameau.bnf.fr/"/>
                     </bibl>
                 </taxonomy>
             </classDecl>
@@ -143,99 +146,91 @@
                 <speaker>Rayann Kobi</speaker>
                 <p xml:id="titre">L'Homme Noir</p>
 
-                <p> Il était une fois un chevalier et sa fille, <persName ref="#perso-edith">Edith</persName>, 
-                    d’une beauté remarquable.Celle-ci était telle qu’un jour le <persName ref="#perso-gontran">seigneur</persName> 
-                    de la région aperçut la <persName ref="#perso-edith">jeune femme</persName>
-                    et en tomba amoureux instantanément. Cependant, <persName ref="#perso-edith">Edith</persName> 
-                    aimait un autre – Didier – et refusa d’épouser le <persName ref="#perso-gontran">seigneur Gontran</persName>,
-                    aussi grande fusse sa richesse. Celui-ci décida alors d’enlever <persName ref="#perso-edith">Edith</persName>
-                    et de l’emmener dans l’un de ses <placeName ref="#place-chateau-gontran">châteaux en Touraine</placeName>.
-                    Une nuit, il s’introduisit dans sa chambre et l’arracha à son lit,
-                    puis la porta jusqu’à son cheval. Ils s’engagèrent ensuite par la route qui
-                    traversait la forêt.
-                    
-                    « Où me conduisez-vous ? demanda <persName ref="#perso-edith">Edith</persName>, inquiète. 
-                    - Dans mon <placeName ref="#place-chateau-gontran">château</placeName>, 
-                    plus grand et beau qu’aucun autre. Je ferai de toi ma compagne et t’obligerai à m’aimer. 
-                    - Nous sommes sur une route maudite, et serons arrêtés en chemin par <persName ref="#perso-edith">l’Homme Noir</persName>. 
-                    Jamais nous n’atteindrons ce château ! »
-                </p>
-                 <p>
-                    <persName ref="#perso-homme-noir">L’Homme Noir</persName>, en effet, était le sujet 
-                    de bon nombre d’histoires et de légendes mais <persName ref="#perso-gontran">Gontran</persName>
-                    ne croyait pas en son existence. Or, alors que l’aube pointait, ils
-                    rencontrèrent à un carrefour un homme fort sinistre – vêtu de noir et se tenant
-                    sur un cheval aussi sombre que lui. Le <persName ref="#perso-gontran">seigneur</persName>
-                    tenta de dégainer son épée mais son bras, sans force, se laissa choir. 
-                </p>
+                <p> Il était une fois un chevalier et sa fille, <persName ref="#perso-edith"
+                        >Edith</persName>, d’une beauté remarquable.Celle-ci était telle qu’un jour
+                    le <persName ref="#perso-gontran">seigneur</persName> de la région aperçut la
+                        <persName ref="#perso-edith">jeune femme</persName> et en tomba amoureux
+                    instantanément. Cependant, <persName ref="#perso-edith">Edith</persName> aimait
+                    un autre – Didier – et refusa d’épouser le <persName ref="#perso-gontran"
+                        >seigneur Gontran</persName>, aussi grande fusse sa richesse. Celui-ci
+                    décida alors d’enlever <persName ref="#perso-edith">Edith</persName> et de
+                    l’emmener dans l’un de ses <placeName ref="#place-chateau-gontran">châteaux en
+                        Touraine</placeName>. Une nuit, il s’introduisit dans sa chambre et
+                    l’arracha à son lit, puis la porta jusqu’à son cheval. Ils s’engagèrent ensuite
+                    par la route qui traversait la forêt. « Où me conduisez-vous ? demanda <persName
+                        ref="#perso-edith">Edith</persName>, inquiète. - Dans mon <placeName
+                        ref="#place-chateau-gontran">château</placeName>, plus grand et beau
+                    qu’aucun autre. Je ferai de toi ma compagne et t’obligerai à m’aimer. - Nous
+                    sommes sur une route maudite, et serons arrêtés en chemin par <persName
+                        ref="#perso-edith">l’Homme Noir</persName>. Jamais nous n’atteindrons ce
+                    château ! » </p>
+                <p>
+                    <persName ref="#perso-homme-noir">L’Homme Noir</persName>, en effet, était le
+                    sujet de bon nombre d’histoires et de légendes mais <persName
+                        ref="#perso-gontran">Gontran</persName> ne croyait pas en son existence. Or,
+                    alors que l’aube pointait, ils rencontrèrent à un carrefour un homme fort
+                    sinistre – vêtu de noir et se tenant sur un cheval aussi sombre que lui. Le
+                        <persName ref="#perso-gontran">seigneur</persName> tenta de dégainer son
+                    épée mais son bras, sans force, se laissa choir. </p>
                 <p>
                     <persName ref="#perso-edith">L’Homme Noir</persName>, sans prononcer un mot, les
-                    guida jusqu’à son <placeName ref="#place-chateau-homme-noir"></placeName>château. 
-                    <persName ref="#perso-gontran">Gontran</persName> – accompagné d’<persName ref="#perso-edith">Edith</persName>,
-                    évanouie – le suivit sans aucune résistance.
-                </p>
+                    guida jusqu’à son <placeName ref="#place-chateau-homme-noir"/>château. <persName
+                        ref="#perso-gontran">Gontran</persName> – accompagné d’<persName
+                        ref="#perso-edith">Edith</persName>, évanouie – le suivit sans aucune
+                    résistance. </p>
+                <p> Arrivés au <placeName ref="#place-chateau-homme-noir">château</placeName>,
+                        <persName ref="#perso-homme-noir">l’Homme Noir</persName> les conduisit
+                    jusqu’à une grande salle, dans laquelle trônait une vaste table. De nombreux
+                    seigneurs siégeaient autour de celle-ci et s’enivraient, servis par des jeunes
+                    femmes qui versaient du vin vermeil dans leurs coupes. Sous l’ordre de <persName
+                        ref="#perso-homme-noir">l’Homme Noir</persName>, <persName
+                        ref="#perso-gontran">Gontran</persName> prit place parmi les invités et
+                        <persName ref="#perso-edith">Edith</persName>, soudainement, fut changée
+                    dans le même habit dont étaient vêtues les autres femmes. Elle aussi se mit à
+                    remplir de vin les coupes que les convives lui tendaient. </p>
+                <p> A la fin du repas, des Bohémiens furent invités à jongler pour amuser les
+                    invités. Puis, les seigneurs se prosternèrent devant <persName
+                        ref="#perso-homme-noir">l’Homme Noir</persName> avant de reprendre leur
+                    place dans des cages de fer. Il s’agissait là de tous les voyageurs et leurs
+                    dames qui avaient été enlevés dans la forêt. </p>
                 <p>
-                    Arrivés au <placeName ref="#place-chateau-homme-noir">château</placeName>,
-                    <persName ref="#perso-homme-noir">l’Homme Noir</persName> les conduisit jusqu’à
-                    une grande salle, dans laquelle trônait une vaste table. De nombreux seigneurs
-                    siégeaient autour de celle-ci et s’enivraient, servis par des jeunes femmes qui
-                    versaient du vin vermeil dans leurs coupes. Sous l’ordre de 
-                    <persName ref="#perso-homme-noir">l’Homme Noir</persName>,
-                    <persName ref="#perso-gontran">Gontran</persName> prit place parmi les invités et 
-                    <persName ref="#perso-edith">Edith</persName>, soudainement, fut changée dans le
-                    même habit dont étaient vêtues les autres femmes. Elle aussi se mit à remplir de
-                    vin les coupes que les convives lui tendaient.
-                </p>
-                <p> 
-                    A la fin du repas, des Bohémiens furent invités à jongler pour amuser les invités.
-                    Puis, les seigneurs se prosternèrent devant <persName ref="#perso-homme-noir">l’Homme Noir</persName> 
-                    avant de reprendre leur place dans des cages de fer. 
-                    Il s’agissait là de tous les voyageurs et leurs dames qui avaient été enlevés dans la forêt.
-                </p>
+                    <persName ref="#perso-didier">Didier</persName>, l’aimé d’<persName
+                        ref="#perso-edith">Edith</persName>, comprit bien vite que la <persName
+                        ref="#perso-edith">jeune femme</persName> avait été capturée par l’<persName
+                        ref="#perso-homme-noir">Homme Noir</persName> et se résolut à la sauver. Il
+                    se vêtit comme un Bohémien et, lorsque la nuit tomba, il s’engagea sur le chemin
+                    de la forêt. Bientôt, l’<persName ref="#perso-homme-noir">Homme
+                    Noir</persName>vînt à sa rencontre. « Qui es-tu ? lui demanda-t-il. - Je suis un
+                    guérisseur et je coupe là une fleur qui me permettra de finir une potion
+                    d’immortalité. - Viens. Si tu dis vrai, je te ferai riche. Mais si tu mens, je
+                    te tuerai. » </p>
                 <p>
-                    <persName ref="#perso-didier">Didier</persName>, l’aimé d’<persName ref="#perso-edith">Edith</persName>,
-                    comprit bien vite que la <persName ref="#perso-edith">jeune femme</persName> avait été
-                    capturée par l’<persName ref="#perso-homme-noir">Homme Noir</persName> et se résolut à la sauver.
-                    Il se vêtit comme un Bohémien et, lorsque la nuit tomba, il s’engagea sur le chemin de la
-                    forêt. Bientôt, l’<persName ref="#perso-homme-noir">Homme Noir</persName>vînt à sa rencontre. 
-                    
-                    « Qui es-tu ? lui demanda-t-il. 
-                    - Je suis un guérisseur et je coupe là une fleur qui me permettra de finir une potion d’immortalité. 
-                    - Viens. Si tu dis vrai, je te ferai riche. Mais si tu mens, je te tuerai. » 
-                </p> 
+                    <persName ref="#perso-didier">Didier</persName> accepta l’offre et suivit
+                        l’<persName ref="#perso-homme-noir">Homme Noir</persName> jusqu’à son
+                        <placeName ref="#place-chateau-homme-noir"/>château. Lorsqu’il arriva dans
+                    la salle du festin, les prisonniers étaient encore là. Son entrée attisa la
+                    curiosité des invités. <persName ref="#perso-didier">Didier</persName> leur
+                    répéta ce qu’il avait dit plus tôt : « Apportez-moi un animal mourant. Je vous
+                    montrerai l’efficacité de mon philtre. » </p>
+                <p> Un lévrier souffrant de paralysie fut amené devant <persName ref="#perso-edith"
+                        >Didier</persName>. Celui-ci versa quelques gouttes de la potion sur la
+                    langue du chien et, immédiatement, l’animal fut guéri – ses membres s’animèrent
+                    et il put enfin se relever. </p>
                 <p>
-                    <persName ref="#perso-didier">Didier</persName> accepta l’offre et suivit 
-                    l’<persName ref="#perso-homme-noir">Homme Noir</persName>
-                    jusqu’à son <placeName ref="#place-chateau-homme-noir"></placeName>château. 
-                    Lorsqu’il arriva dans la salle du festin, les prisonniers
-                    étaient encore là. Son entrée attisa la curiosité des invités. 
-                    <persName ref="#perso-didier">Didier</persName> leur répéta ce qu’il avait dit plus tôt : 
-                    
-                    « Apportez-moi un animal mourant. Je vous montrerai l’efficacité de mon philtre. » 
-                 </p>
+                    <persName ref="#perso-homme-noir">L’Homme Noir</persName>, alors convaincu,
+                    tendit sa coupe au faux Bohémien. Cependant, <persName ref="#perso-didier"
+                        >Didier</persName> avait furtivement remplacé le philtre par un poison
+                    violent et agissant rapidement. Ainsi, après avoir bu seulement quelques gouttes
+                    du breuvage, <persName ref="#perso-homme-noir">l’Homme Noir</persName> tomba
+                    inanimé sur le sol. </p>
+                <p> La salle se transforma alors complètement. Les femmes se retrouvèrent de nouveau
+                    vêtues des robes qu’elles portaient lors de leur enlèvement dans la forêt et les
+                    hommes regagnèrent leur force perdue. </p>
                 <p>
-                    Un lévrier souffrant de paralysie fut amené devant <persName ref="#perso-edith">Didier</persName>. 
-                    Celui-ci versa quelques gouttes de la potion sur la langue du chien et, immédiatement,
-                    l’animal fut guéri – ses membres s’animèrent et il put enfin se relever. 
-                </p>    
-                 <p>
-                    <persName ref="#perso-homme-noir">L’Homme Noir</persName>, alors convaincu, 
-                    tendit sa coupe au faux Bohémien. Cependant, <persName ref="#perso-didier">Didier</persName>
-                    avait furtivement remplacé le philtre par un poison violent et agissant rapidement.
-                    Ainsi, après avoir bu seulement quelques gouttes du breuvage, 
-                    <persName ref="#perso-homme-noir">l’Homme Noir</persName> tomba inanimé sur le sol.
-                </p>
-                <p>
-                    La salle se transforma alors complètement. Les femmes se retrouvèrent de nouveau vêtues des robes qu’elles
-                    portaient lors de leur enlèvement dans la forêt et les hommes regagnèrent leur
-                    force perdue. 
-                </p>
-                <p>
-                    <persName ref="#perso-homme-noir">L’Homme Noir</persName> ainsi que tous ses serviteurs furent pendus. 
-                    <persName ref="#perso-didier">Didier</persName> fut célébré comme un héros
-                    et épousa <persName ref="#perso-edith">Edith</persName>, 
-                    à laquelle <persName ref="#perso-gontran">Gontran</persName> avait renoncé.
-                </p>
+                    <persName ref="#perso-homme-noir">L’Homme Noir</persName> ainsi que tous ses
+                    serviteurs furent pendus. <persName ref="#perso-didier">Didier</persName> fut
+                    célébré comme un héros et épousa <persName ref="#perso-edith">Edith</persName>,
+                    à laquelle <persName ref="#perso-gontran">Gontran</persName> avait renoncé. </p>
             </sp>
         </body>
     </text>

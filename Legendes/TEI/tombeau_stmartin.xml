@@ -24,7 +24,8 @@
                 <listBibl>
                     <biblStruct>
                         <analytic>
-                            <title>INFOS A RETROUVER</title>
+                            <title>Chapitre VI : De la translation du bienheureux corps de
+                                Saint-Martin</title>
                             <author>Grégoire de Tours</author>
                         </analytic>
                         <monogr>
@@ -32,9 +33,8 @@
                             <imprint>
                                 <publisher>ed. Paleo, Collection Source de l'histoire de
                                     France</publisher>
-                                <pubPlace>A RETROUVER</pubPlace>
                             </imprint>
-                            <biblScope>A RETROUVER</biblScope>
+                            <biblScope unit="page" n="21">p. 21</biblScope>
                         </monogr>
                     </biblStruct>
                     <biblStruct>
@@ -100,16 +100,29 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours</placeName>
+                        <placeName>Tours<address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                                <addrLine>Centre-Val-de-Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-marmoutier">
-                        <placeName>Monastère de Marmoutier</placeName>
+                        <placeName>Monastère de Marmoutier<address>
+                                <addrLine>Vendée</addrLine>
+                                <addrLine>Pays de la Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-candes">
-                        <placeName>Candes</placeName>
+                        <placeName>Candes-Saint-Martin<address>
+                                <addrLine>Indre-et-Loire</addrLine>
+                                <addrLine>Centre-Val-de-Loire</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-basilique-tours">
-                        <placeName>Basilique Saint-Martin de Tours</placeName>
+                        <placeName>Basilique Saint-Martin de Tours<address>
+                                <addrLine>7 Rue Baleschoux</addrLine>
+                                <addrLine>37000</addrLine>
+                                <addrLine>Tours</addrLine>
+                            </address></placeName>
                     </place>
                     <place type="fleuve" xml:id="place-loire">
                         <placeName>La Loire</placeName>
@@ -142,7 +155,7 @@
                         (RAMEAU) de la Bibliothèque nationale de France <ptr
                             target="https://rameau.bnf.fr/"/></bibl>
                 </taxonomy>
-               </classDecl>
+            </classDecl>
         </encodingDesc>
         <profileDesc>
             <creation>Texte créé dans le cadre du projet PLOT, basé sur les écrits de Jacques-Marie
@@ -153,7 +166,8 @@
             <textClass>
                 <keywords scheme="#RAMEAU">
                     <term>Martin (0316?-0397 ; saint)</term>
-                    <term>Tours (Indre-et-Loire) -- Basilique Saint-Martin</term>
+                    <term>Ordination épiscopale</term>
+                    <term>Moines</term>
                 </keywords>
                 <catRef scheme="#taxo-cat" target="#cat-rel #cat-hist"/>
             </textClass>
@@ -185,7 +199,8 @@
         <body>
             <sp who="#narrateur">
                 <speaker>EN ATTENTE D'UN NARRATEUR</speaker>
-                <p xml:id="titre">Le tombeau de <persName ref="#perso-stmartin">Saint-Martin</persName></p>
+                <p xml:id="titre">Le tombeau de <persName ref="#perso-stmartin"
+                        >Saint-Martin</persName></p>
                 <p>Alors qu’il tentait de réconcilier <name ref="#perso-moines-tourangeanx">les
                         moines Tourangeaux</name> et <name ref="#perso-moines-poitevins">les moines
                         Poitevins</name>, <persName ref="#perso-stmartin">Saint-Martin</persName>

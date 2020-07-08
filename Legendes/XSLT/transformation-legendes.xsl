@@ -4,7 +4,6 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0">
 
     <xsl:template match="tei:TEI">
-
         <xsl:result-document href="../HTML/{@xml:id}-txt.html" method="xhtml"
             doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
             exclude-result-prefixes="xs tei" omit-xml-declaration="yes">
@@ -78,13 +77,16 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="../../sources.html" class="nav-link">Sources</a>
+                                                <a href="../../sources.html" class="nav-link"
+                                                  >Sources</a>
                                             </li>
                                             <li>
-                                                <a href="../../leprojet.html" class="nav-link">Le projet</a>
+                                                <a href="../../leprojet.html" class="nav-link">Le
+                                                  projet</a>
                                             </li>
                                             <li>
-                                                <a href="../../contact.php" class="nav-link">Contact</a>
+                                                <a href="../../contact.php" class="nav-link"
+                                                  >Contact</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -94,15 +96,15 @@
                     </div>
 
                     <div class="container-fluid">
-                        
+
                         <div class="fil_ariane">
-                            <p><a href="../../index.html">PLOT</a> > <a href="../../legende.html">Légendes</a> > <a href="../../textes.php">Textes</a> > 
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    #        
-                                </xsl:attribute>
-                                <xsl:value-of select="tei:text/tei:body/tei:sp/tei:p[@xml:id = 'titre']"/>
-                            </xsl:element></p>
+                            <p><a href="../../index.html">PLOT</a> > <a href="../../legende.html"
+                                    >Légendes</a> > <a href="../../textes.php">Textes</a> >
+                                    <xsl:element name="a">
+                                    <xsl:attribute name="href"> # </xsl:attribute>
+                                    <xsl:value-of
+                                        select="tei:text/tei:body/tei:sp/tei:p[@xml:id = 'titre']"/>
+                                </xsl:element></p>
                         </div>
 
                         <header>
@@ -154,31 +156,37 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
 
                     <footer class="row">
                         <div class="col-md-6">
                             <p>
                                 <a href="../../sources.html">Sources</a><br/>
-                                <a href="../../contact.php">Nous contacter</a><br/>
-                                Mentions légales -- Centre d'Etudes Supérieures de la Renaissance -- 2020
-                            </p>
+                                <a href="../../contact.php">Nous contacter</a><br/> Mentions légales
+                                -- Centre d'Etudes Supérieures de la Renaissance -- 2020 </p>
                         </div>
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-offset-6 col-md-3 logo-footer">
-                                    <a href="https://cesr.cnrs.fr/"><img src="../../images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/></a>
+                                    <a href="https://cesr.cnrs.fr/">
+                                        <img src="../../images/logos/logo_cesr.gif"
+                                            class="img-responsive" alt="Logo du CESR"/>
+                                    </a>
                                 </div>
                                 <div class="col-md-3 logo-footer">
-                                    <a href="https://www.univ-tours.fr/"><img src="../../images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" /></a>
+                                    <a href="https://www.univ-tours.fr/">
+                                        <img src="../../images/logos/logo_univ_tours.png"
+                                            class="img-responsive"
+                                            alt="Logo de l'Université de Tours"/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </footer>
 
 
-                    
+
                     <script type="text/javascript" src="../../bootstrap/js/jquery-3.4.1.js"/>
                     <script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"/>
 
@@ -300,16 +308,42 @@
                         </xsl:element>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="."/>
+                        <xsl:choose>
+                            <xsl:when test="name() = 'birth'">
+                                <xsl:if test="tei:date">
+                                    <li>Date de naissance : <xsl:value-of select="tei:date"/></li>
+                                </xsl:if>
+                                <xsl:if test="tei:placeName">
+                                    <li>Lieu de naissance : <xsl:value-of select="tei:placeName"
+                                        /></li>
+                                </xsl:if>
+                            </xsl:when>
+                            <xsl:when test="name() = 'death'">
+                                <xsl:if test="tei:date">
+                                    <li>Date de décès : <xsl:value-of select="tei:date"/></li>
+                                </xsl:if>
+                                <xsl:if test="tei:placeName">
+                                    <li>Lieu de décès : <xsl:value-of select="tei:placeName"/></li>
+                                </xsl:if>
+                            </xsl:when>
+                            <xsl:when test="name() = 'occupation'">
+                                <li>Occupation : <xsl:apply-templates/></li>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <li>
+                                    <xsl:apply-templates/>
+                                </li>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:otherwise>
                 </xsl:choose>
-                <br/>
+
             </xsl:for-each>
+            <br/>
         </xsl:element>
     </xsl:template>
 
     <xsl:template match="tei:person | tei:personGrp" mode="texte">
-
         <xsl:element name="p">
             <xsl:attribute name="id">
                 <xsl:value-of select="./@xml:id"/>
@@ -326,11 +360,37 @@
                         </xsl:element>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="."/>
+                        <xsl:choose>
+                            <xsl:when test="name() = 'birth'">
+                                <xsl:if test="tei:date">
+                                    <li>Date de naissance : <xsl:value-of select="tei:date"/></li>
+                                </xsl:if>
+                                <xsl:if test="tei:placeName">
+                                    <li>Lieu de naissance : <xsl:value-of select="tei:placeName"
+                                        /></li>
+                                </xsl:if>
+                            </xsl:when>
+                            <xsl:when test="name() = 'death'">
+                                <xsl:if test="tei:date">
+                                    <li>Date de décès : <xsl:value-of select="tei:date"/></li>
+                                </xsl:if>
+                                <xsl:if test="tei:placeName">
+                                    <li>Lieu de décès : <xsl:value-of select="tei:placeName"/></li>
+                                </xsl:if>
+                            </xsl:when>
+                            <xsl:when test="name() = 'occupation'">
+                                <li>Occupation : <xsl:apply-templates/></li>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <li>
+                                    <xsl:apply-templates/>
+                                </li>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:otherwise>
                 </xsl:choose>
-                <br/>
             </xsl:for-each>
+            <br/>
         </xsl:element>
     </xsl:template>
 
