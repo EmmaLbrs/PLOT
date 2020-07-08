@@ -13,6 +13,7 @@
          <audio controls="">
             <source src="Legendes/Audio/tour_guise.mp3"></source>
          </audio>
+         <p>Narration : Alexandre Castanet</p>
       </div>
       <div id="texte-legende">
          <header>

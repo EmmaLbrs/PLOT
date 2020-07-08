@@ -13,6 +13,7 @@
          <audio controls="">
             <source src="Legendes/Audio/bataille_tours.mp3"></source>
          </audio>
+         <p>Narration : EN ATTENTE D'UN NARRATEUR</p>
       </div>
       <div id="texte-legende">
          <header>

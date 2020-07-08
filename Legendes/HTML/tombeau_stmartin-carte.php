@@ -13,6 +13,7 @@
          <audio controls="">
             <source src="Legendes/Audio/tombeau_stmartin.mp3"></source>
          </audio>
+         <p>Narration : EN ATTENTE D'UN NARRATEUR</p>
       </div>
       <div id="texte-legende">
          <header>

@@ -13,6 +13,7 @@
          <audio controls="">
             <source src="Legendes/Audio/la_souris_blanche.mp3"></source>
          </audio>
+         <p>Narration : En attente d'un narrateur.</p>
       </div>
       <div id="texte-legende">
          <header>

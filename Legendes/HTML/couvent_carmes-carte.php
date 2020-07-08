@@ -13,6 +13,7 @@
          <audio controls="">
             <source src="Legendes/Audio/couvent_carmes.mp3"></source>
          </audio>
+         <p>Narration : Frédérique Ménicot</p>
       </div>
       <div id="texte-legende">
          <header>

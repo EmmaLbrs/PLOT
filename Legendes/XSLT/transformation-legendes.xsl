@@ -231,6 +231,7 @@
                             </xsl:element>
 
                         </xsl:element>
+                        <p>Narration : <xsl:value-of select="tei:text/tei:body/tei:sp/tei:speaker"/></p>
                     </div>
 
 

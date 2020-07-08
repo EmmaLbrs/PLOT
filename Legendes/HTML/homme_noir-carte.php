@@ -13,6 +13,7 @@
          <audio controls="">
             <source src="Legendes/Audio/homme_noir.mp3"></source>
          </audio>
+         <p>Narration : Rayann Kobi</p>
       </div>
       <div id="texte-legende">
          <header>

@@ -13,6 +13,7 @@
          <audio controls="">
             <source src="Legendes/Audio/tour_charlemagne.mp3"></source>
          </audio>
+         <p>Narration : Frédérique Ménicot</p>
       </div>
       <div id="texte-legende">
          <header>
