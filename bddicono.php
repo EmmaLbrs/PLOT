@@ -15,8 +15,8 @@
        <title>PLOT - CESR | Base de données iconographique</title>
 
        <style>
-.img-thumbnail {
-    width: 150px;
+.img-thumbnail, .caption {
+    width: 200px;
 }
 
        </style>
@@ -82,13 +82,14 @@
     $legendes = $bdd->query('SELECT DISTINCT id_lieu, nom from lieu, imgassocierlieu WHERE fk_idLieu = id_lieu');
     //echo "<ul>";
     while ($donnees = $legendes->fetch()) {
-        $legendes_bis = $bdd->query('SELECT DISTINCT url_img from lieu, image, imgassocierlieu WHERE fk_idLieu ='.$donnees['id_lieu'].' AND fk_idImg = id_img');
+        $legendes_bis = $bdd->query('SELECT DISTINCT url_img, desc_img from lieu, image, imgassocierlieu WHERE fk_idLieu ='.$donnees['id_lieu'].' AND fk_idImg = id_img');
         if ($legendes_bis->rowCount() != 0) {
             echo "<div class='row'>";
             echo "<h3>".$donnees['nom']."</h3>";
             while($images = $legendes_bis->fetch()) {
                 echo "<div class='col-md-3'>";
                 echo "<a href='".$images['url_img']."'><img src='".$images['url_img']."' class='img-responsive img-thumbnail'></img></a>";
+                echo '<div class="caption"><p>'.$images['desc_img'].'</p></div>';
                 echo "</div>";
             }
             echo "</div>";
