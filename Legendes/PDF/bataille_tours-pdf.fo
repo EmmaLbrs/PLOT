@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4"
+                             page-width="210mm"
+                             page-height="297mm"
+                             margin-top="1cm"
+                             margin-bottom="1cm"
+                             margin-left="1cm"
+                             margin-right="1cm">
+         <fo:region-body margin="2cm"/>
+         <fo:region-before extent="2cm"/>
+         <fo:region-after extent="2cm"/>
+         <fo:region-start extent="2cm"/>
+         <fo:region-end extent="2cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="xx-large" text-align="center" font-weight="bold">La bataille de Tours</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="small" font-style="italic">Editrice : Emma Lesburgueres</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" font-style="italic" text-align="justify">Contexte : La bataille de Tours, plutôt connue en
+                    France sous le nom de bataille de Poitiers, opposa Charles
+                        Martel, dirigeant les Francs et
+                        Burgondes, et Abd al-Rahman, à la tête des Omeyyades.</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" text-align="justify">&#x2028;En l’année 732, deux armées – celles de Charles Martel et d’Abd
+                        al-Rahman – se rencontrèrent devant les remparts de Tours. En effet, la ville renfermait le tombeau de Saint Martin qui regorgeait de trésors et
+                    fascinait les Sarrasins. Ceux-ci avaient
+                    établi leur camp non loin de là et offraient un spectacle singulier aux hommes
+                    de Charles Martel. Des drapeaux
+                    noirs et blancs flottaient au-dessus des rangs, des chameaux se reposaient entre
+                    les tentes orientales et les soldats – leur front orné d’un turban –
+                    s’entraînaient avec leur cimeterre.&#x2028;Durant six jours, nul ne fit un mouvement. Cependant, au septième jour, Charles ordonna à ses troupes de se
+                    ranger en bataille. Les cavaliers d’Abd
+                        al-Rahman, fulgurants, chargèrent les premiers. Mais les soldats
+                    de Charles Martel résistèrent
+                    grâce à leur bouclier et leur armure et parvinrent à contenir l’offensive
+                    ennemie. Ils tendaient leur lance vers les
+                        Omeyyades et se dressaient ainsi, comme un rempart.&#x2028;Peu à peu, la fatigue s’emparait de la cavalerie. Charles Martel, profitant de cette
+                    brèche, donna le signal à ses soldats. Aussitôt, des hurlements retentirent. Des
+                    flammes engloutissaient le camp des
+                        Sarrasins ; les Aquitains,
+                    dirigés par Eudes d’Aquitaine,
+                    étaient arrivés par l’arrière de l’armée d’Abd al-Rahman et avaient ainsi semé la confusion.&#x2028;Les soldats furent alors pris en étau et frappés de tous côtés. Abd al-Rahman s’écroula sur ce champ
+                    de bataille, abattu par Charles
+                        Martel. &#x2028;</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Charles Martel</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de naissance : An 688</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Andenne, Belgique</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : 22 Octobre 741</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Homme d'état, chef militaire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les Francs</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Peuple germanique qui a donné son nom à la France et aux
+                            français.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les Burgondes</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Peuple germanique.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Abd al-Rahman</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Tihama</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : An 732</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Wali d'al-Andalus</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les Omeyyades</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Dynastie arabe qui gouverne le monde musulman puis al-Andalus.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Eudes d'Aquitaine</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : An 735</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Duc d'Aquitaine et de Vasconie</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les Aquitains</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Ensemble de peuples protohistoriques et de l'Antiquité situés entre
+                            les Pyrénées occidentales, la rive gauche de la Garonne et l'océan
+                            Atlantique.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Saint-Martin de Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de naissance : An 316</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Sabaria de Pannonie (ajd. Szombathely, Hongrie)</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : An 397</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Saint de la chrétienté et évêque de Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Poitiers</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Vienne</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Nouvelle-Acquitaine</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4"
+                             page-width="210mm"
+                             page-height="297mm"
+                             margin-top="1cm"
+                             margin-bottom="1cm"
+                             margin-left="1cm"
+                             margin-right="1cm">
+         <fo:region-body margin="2cm"/>
+         <fo:region-before extent="2cm"/>
+         <fo:region-after extent="2cm"/>
+         <fo:region-start extent="2cm"/>
+         <fo:region-end extent="2cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="xx-large" text-align="center" font-weight="bold">La Tour de Guise</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="small" font-style="italic">Editrice : Valentine Castanet--Bihan</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" font-style="italic" text-align="justify">Contexte : En 1588, en pleine guerre de religion, le roi de
+                        France Henri III fait assassiner Henri de Lorraine, duc de Guise, dit le
+                        Balafré. Le duc de
+                        Mayenne, membre de la famille réussit à s’enfuir, mais Henri III fait tout de même arrêter
+                        Charles Ier, fils ainé du
+                    défunt duc de Guise et le reste
+                    de sa famille.  Charles Ier, prince de Joinville
+                    se fait ainsi enfermer dans le donjon du château de Tours. On raconte que son évasion fut spectaculaire.
+                </fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" text-align="justify">&#x2028;Dans le donjon du château de
+                        Tours était enfermé le
+                        jeune duc Charles Ier de Guise, prisonnier du roi Henri III.&#x2028;Un soir d’août 1591, au milieu des sons des batraciens, un croassement plutôt
+                    humain se fit entendre. Le jeune
+                        duc appelait et très vite une voix fluette répondit. Une jeune
+                    lavandière du château se tenait en face au bout du pont. Armée d’une fronde,
+                    elle lança un message lesté d’une pierre qui passa entre les barreaux de la
+                    fenêtre. Le jeune duc se hâta
+                    de le lire. « A demain, Monseigneur ! ».&#x2028;Charles de Guise songea qu’il
+                    serait peut-être libre le lendemain, bien que lui-même n’en soit pas sûr. Après
+                    tout, la tour était très haute et de nombreux gardes surveillaient les sorties
+                    et l’extérieur, il s‘empressa cependant de manger le papier, faisant ainsi
+                    disparaitre toute preuve les incriminant.&#x2028;Ressassant ainsi les risques d’une évasion, il se rendit compte que la lavandière
+                    avait dissimulé une longue et solide corde dans sa corbeille à linge. Périlleux,
+                    pensa-t-il, mais avait-il vraiment le choix ? Il devait faire confiance à la
+                    blanchisseuse, sinon il ne sortirait jamais de sa prison.&#x2028;Ce ne fût que le lendemain qu’il comprit le choix de cette date : le 15 août,
+                    jour de l’Assomption, les gardes seraient occupés à se régaler autour d’un
+                    banquet, l’atmosphère serait à la détente et aux jeux. Il s’agissait là de
+                    l’unique chance du duc de Guise
+                    de tromper leur vigilance.&#x2028;Afin d'occuper les gardes jouant au bilboquet ou aux osselet dans la cour,
+                        Charles leur lança un défi
+                    :&#x2028;« Celui qui réussira à monter le plus vite à cloche-pied l’escalier de la tour
+                    gagne. » annonça-t-il.&#x2028;Dans un élan de compétition ils se précipitèrent dans cette course bancale.
+                    Pendant ce temps, le jeune duc
+                    courut à sa chambre, confiant à un serviteur l’importante mission de détourner
+                    l’attention des geôliers, en portant de fausses accusations : « Celui-ci a
+                    triché ! ».&#x2028;Pendant que les gardes se défendaient et punissaient le serviteur, le duc avait d’ores et déjà
+                    solidement accroché la corde aux barreaux de sa fenêtre et entamé sa descente.
+                    Mais il restait un veilleur… Celui-ci apercevant le duc, arma son arquebuse et
+                    tira. Effrayé, Charles lâcha la
+                    corde et fit une chute d’environ cinq mètres. Fort heureusement, l’atterrissage
+                    se fit sans trop de mal, malgré quelques légères blessures.&#x2028;Charles de Guise fuit et le
+                    temps que les gardes se rassemblent pour le poursuivre, il avait déjà rejoint
+                        les rives de la Loire en direction
+                    de Notre-Dame-la-Riche.
+                    La lavandière ayant tout prévu, un cheval l’y attendait. Il se hâta de le
+                    monter, alors qu’encore on le poursuivait. Sur le chemin, une vieille femme le
+                    reconnut et alerta ses poursuivants. Mais le duc de Guise réussit à les semer en traversant le Cher avec l’aide d’un passeur.&#x2028;Enfin en sécurité, le duc se demanda ce qu’il allait faire désormais. Ce qu’il ne
+                    savait pas encore, c’est que la lavandière l’attendait, accompagnée de tous les
+                    hommes soutenant sa cause.&#x2028;Lorsqu’il aperçut sa jolie complice, Charles la remercia d’un chaste baiser. Puis comprenant que le
+                    temps lui manquait, il reprit la route suivi de deux-cents hommes et de ses
+                    partisans, pour rejoindre son oncle, le
+                        duc de Mayenne. Il laissa derrière lui la blanchisseuse, encore
+                    surprise du baiser.&#x2028;Très vite, la rumeur de l’évasion de Charles Ier de Guise se répandit dans la ville et les habitants se mirent à appeler
+                    le donjon du château par ce
+                    nom, encore utilisé aujourd’hui : la Tour de Guise. &#x2028;</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Henri III</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de naissance : 19 Septembre 1551</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Château de Fontainebleau, France</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : 2 Août 1589</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Roi de France</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Henri Ier de Lorraine</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de naissance : 31 Décembre 1550</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Joinville, France</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : 23 Décembre 1588</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Duc de Guise</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Autrement appelé Henri le Balafré</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Charles de Mayenne</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de naissance : 26 Mars 1554</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Alençon, France</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : 3 Octobre 1611</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Duc de Mayenne</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Oncle de Charle de
+                                Guise, frère de feu Henri de Lorraine.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Charles de Lorraine</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de naissance : 2 Août 1571</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Joinville, France</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : 30 Septembre 1640</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Prince de Joinville puis, à la mort de son père, Duc de
+                            Guise</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Charles Ier de Guise. Fils de Henri de Lorraine, neveu de Charles de Mayenne.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">La Loire</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Château de Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>25 Avenue André Malraux</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>37000</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Notre-Dame-la-Riche</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Le Cher</fo:block>
+         <fo:block>&#x2028;</fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

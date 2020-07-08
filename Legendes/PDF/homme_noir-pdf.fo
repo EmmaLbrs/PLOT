@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4"
+                             page-width="210mm"
+                             page-height="297mm"
+                             margin-top="1cm"
+                             margin-bottom="1cm"
+                             margin-left="1cm"
+                             margin-right="1cm">
+         <fo:region-body margin="2cm"/>
+         <fo:region-before extent="2cm"/>
+         <fo:region-after extent="2cm"/>
+         <fo:region-start extent="2cm"/>
+         <fo:region-end extent="2cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="xx-large" text-align="center" font-weight="bold">L'homme noir</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="small" font-style="italic">Editrice : Alexa Darmagnac</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" font-style="italic" text-align="justify">Contexte :  L’Homme Noir est un conte similaire à celui d’autres cultures – Barbe Bleue par
+                    exemple. La version tourangelle de cette légende prend place à
+                    Saint-Cyr-sur-Loire, proche de la forêt de Montboyau (Fondettes). Cette version
+                    inclut des détails dont l’origine est sans doute à chercher dans le contexte
+                    historique de la ville. Ainsi, la figure de l’Homme Noir a probablement été
+                    influencée par la proximité de Plessis-les-Tours et la réputation de Louis XI –
+                    qui, par exemple, invitait des Bohémiens pour le divertir. Prosper Suzanne (dans
+                    Plessis-lès-Tours et les Contes de Charles Perrault) voit également dans l’image
+                    des festins donnés par l’Homme Noir une évocation des fêtes qu’organisait Henri
+                    III. </fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" text-align="justify">&#x2028; Il était une fois un chevalier et sa fille, Edith, d’une beauté remarquable.Celle-ci était telle qu’un jour
+                    le seigneur de la région aperçut la
+                        jeune femme et en tomba amoureux
+                    instantanément. Cependant, Edith aimait
+                    un autre – Didier – et refusa d’épouser le seigneur Gontran, aussi grande fusse sa richesse. Celui-ci
+                    décida alors d’enlever Edith et de
+                    l’emmener dans l’un de ses châteaux en
+                        Touraine. Une nuit, il s’introduisit dans sa chambre et
+                    l’arracha à son lit, puis la porta jusqu’à son cheval. Ils s’engagèrent ensuite
+                    par la route qui traversait la forêt. « Où me conduisez-vous ? demanda Edith, inquiète. - Dans mon château, plus grand et beau
+                    qu’aucun autre. Je ferai de toi ma compagne et t’obligerai à m’aimer. - Nous
+                    sommes sur une route maudite, et serons arrêtés en chemin par l’Homme Noir. Jamais nous n’atteindrons ce
+                    château ! » &#x2028;
+                    L’Homme Noir, en effet, était le
+                    sujet de bon nombre d’histoires et de légendes mais Gontran ne croyait pas en son existence. Or,
+                    alors que l’aube pointait, ils rencontrèrent à un carrefour un homme fort
+                    sinistre – vêtu de noir et se tenant sur un cheval aussi sombre que lui. Le
+                        seigneur tenta de dégainer son
+                    épée mais son bras, sans force, se laissa choir. &#x2028;
+                    L’Homme Noir, sans prononcer un mot, les
+                    guida jusqu’à son château. Gontran – accompagné d’Edith, évanouie – le suivit sans aucune
+                    résistance. &#x2028; Arrivés au château,
+                        l’Homme Noir les conduisit
+                    jusqu’à une grande salle, dans laquelle trônait une vaste table. De nombreux
+                    seigneurs siégeaient autour de celle-ci et s’enivraient, servis par des jeunes
+                    femmes qui versaient du vin vermeil dans leurs coupes. Sous l’ordre de l’Homme Noir, Gontran prit place parmi les invités et
+                        Edith, soudainement, fut changée
+                    dans le même habit dont étaient vêtues les autres femmes. Elle aussi se mit à
+                    remplir de vin les coupes que les convives lui tendaient. &#x2028; A la fin du repas, des Bohémiens furent invités à jongler pour amuser les
+                    invités. Puis, les seigneurs se prosternèrent devant l’Homme Noir avant de reprendre leur
+                    place dans des cages de fer. Il s’agissait là de tous les voyageurs et leurs
+                    dames qui avaient été enlevés dans la forêt. &#x2028;
+                    Didier, l’aimé d’Edith, comprit bien vite que la jeune femme avait été capturée par l’Homme Noir et se résolut à la sauver. Il
+                    se vêtit comme un Bohémien et, lorsque la nuit tomba, il s’engagea sur le chemin
+                    de la forêt. Bientôt, l’Homme
+                    Noirvînt à sa rencontre. « Qui es-tu ? lui demanda-t-il. - Je suis un
+                    guérisseur et je coupe là une fleur qui me permettra de finir une potion
+                    d’immortalité. - Viens. Si tu dis vrai, je te ferai riche. Mais si tu mens, je
+                    te tuerai. » &#x2028;
+                    Didier accepta l’offre et suivit
+                        l’Homme Noir jusqu’à son
+                        château. Lorsqu’il arriva dans
+                    la salle du festin, les prisonniers étaient encore là. Son entrée attisa la
+                    curiosité des invités. Didier leur
+                    répéta ce qu’il avait dit plus tôt : « Apportez-moi un animal mourant. Je vous
+                    montrerai l’efficacité de mon philtre. » &#x2028; Un lévrier souffrant de paralysie fut amené devant Didier. Celui-ci versa quelques gouttes de la potion sur la
+                    langue du chien et, immédiatement, l’animal fut guéri – ses membres s’animèrent
+                    et il put enfin se relever. &#x2028;
+                    L’Homme Noir, alors convaincu,
+                    tendit sa coupe au faux Bohémien. Cependant, Didier avait furtivement remplacé le philtre par un poison
+                    violent et agissant rapidement. Ainsi, après avoir bu seulement quelques gouttes
+                    du breuvage, l’Homme Noir tomba
+                    inanimé sur le sol. &#x2028; La salle se transforma alors complètement. Les femmes se retrouvèrent de nouveau
+                    vêtues des robes qu’elles portaient lors de leur enlèvement dans la forêt et les
+                    hommes regagnèrent leur force perdue. &#x2028;
+                    L’Homme Noir ainsi que tous ses
+                    serviteurs furent pendus. Didier fut
+                    célébré comme un héros et épousa Edith,
+                    à laquelle Gontran avait renoncé. &#x2028;</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Edith</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Fille de chevalier et d'une grande beauté</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Didier</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Amoureux d'Edith</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Gontran</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Seigneur très riche</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Homme Noir</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Seigneur, magicien</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Chateau de l'Homme Noir</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Allée de l'Homme Noir</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>37540</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Saint-Cyr-sur-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Chateau en Touraine du seigneur Gontran</fo:block>
+         <fo:block>&#x2028;</fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

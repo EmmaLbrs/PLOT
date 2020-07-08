@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4"
+                             page-width="210mm"
+                             page-height="297mm"
+                             margin-top="1cm"
+                             margin-bottom="1cm"
+                             margin-left="1cm"
+                             margin-right="1cm">
+         <fo:region-body margin="2cm"/>
+         <fo:region-before extent="2cm"/>
+         <fo:region-after extent="2cm"/>
+         <fo:region-start extent="2cm"/>
+         <fo:region-end extent="2cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="xx-large" text-align="center" font-weight="bold">La légende du roi Hugon</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="small" font-style="italic">Editrice : Alexa Darmagnac</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" font-style="italic" text-align="justify">Contexte :  Hugues ou Hugon Ier, comte de Tours au IXème s, avait été chargé par Charles le
+                    Chauve de fortifier la ville de Tours des invasions normandes (vikings). Ce
+                    château fort est aujourd’hui disparu. C’est au XVI s qu’on attribua le nom de
+                    Huguenot aux protestants qui étaient mal vus par la population catholique. Il
+                    était là pour critiquer et effrayer les personnes qui voudraient les rejoindre.
+                </fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" text-align="justify">&#x2028; Au Moyen Age, dans la ville de Tours
+                    un grand château fort dominait
+                    les bords de Loire. Ce château
+                    avait pour vocation de protéger la ville des invasions normandes. Hugues Ier devint comte de Tours et devait
+                    par l’ordre du roi fortifier
+                    la ville. Il fit construire une tour carrée à laquelle il donna bientôt son nom.
+                        Hugues Ier décéda sur le champ
+                    de bataille en protégeant la ville d’Orléans. &#x2028; Quelques années après, de ce château il ne resta plus rien. De ces ruines qui étaient
+                    impressionnante et sinistre on entendit des plaintes. Puis une apparition, la
+                    nuit. Un fantôme qui chevauchait le soir aux environs des villes et dans les
+                    rues et s’attaquait aux personnes qu’il rencontrait. Une fois son escapade finie
+                    il retournait se réfugier dans l’ancienne Tour du roi Hugon. C’est de cette tour bientôt
+                    surnommée la tour de feu Hugon que
+                    l’on entendait des plaintes. &#x2028; Le souverain décédé était alors de retour et n’était pas prêt de s’arrêter. La
+                    population prit bientôt peur de ce revenant et des chrétiens installèrent une cloche dans la
+                    tour pour empêcher le fantôme de terroriser la ville. Mais ceci ne fonctionna
+                    pas. Feu le roi Hugon prit un malin
+                    plaisir à faire sonner la cloche dès qu’il s’attaquait à quelqu’un, pour
+                    prévenir la population qu’il était là. La cloche censée faire partir le revenant
+                    était devenue la cloche des agonisants. Mais s’il n’y avait pas de victimes, le
+                    fantôme se contentait de renverser les croix du cimetière pour marquer sa
+                    présence. &#x2028; On se servit de ce revenant comme mise en garde auprès des enfants désobéissant.
+                    Il était devenu un personnage de la ville, effrayant chacun mais permettant aux
+                    petits enfants d’obéir à leurs parents. &#x2028; Quelques siècles plus tard quand vint l’émergence du protestantisme, les partisans de ce
+                    nouvel ordre se réunirent dans les décombres de la tour. Les catholiquessurnommèrent les protestants d’Huguenots en mémoire de ce
+                    fantôme qui hantait les nuits de la ville et du mal qu’il faisait. Un terme
+                    négatif fait pour dégouter la population de se joindre à cet ordre. Mais les
+                        protestants gardèrent ce nom
+                    d’Huguenot et se l’approprièrent pour désigner chaque protestant du pays. &#x2028; C’est donc d’un fantôme qui hantait la ville de Tours et effrayait les petits enfants que naquit le nom d’un
+                    mouvement qui les séduits eux même, par la signification de ce nouveau
+                    patronyme. &#x2028;</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Le roi Hugon</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Hugon Ier, comte de Tours au IXème s, envoyé par Charles le
+                            Chauve de fortifier la ville de Tours.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Charles le Chauve</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Né en 823 est le petit fils de Charlemagne et roi des Francs de
+                            843 à 877. </fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les chrétiens</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Religion appartenant au christianisme qui reconnait l'autorité du
+                            Pape.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les protestants</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Religion appartenant au christianisme qui rejette les fonctions mise
+                            en place par le catholicisme durant le Moyen Age</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Chateau fort</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Bord de Loire entre Tours et
+                                    Saint-Pierre-des-Corps</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Orléans</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Loiret</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

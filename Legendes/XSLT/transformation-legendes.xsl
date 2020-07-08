@@ -4,6 +4,171 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0">
 
     <xsl:template match="tei:TEI">
+
+        <xsl:result-document href="../PDF/PDF-{@xml:id}.fo" method="xml" indent="yes">
+            <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+                <fo:layout-master-set>
+                    <fo:simple-page-master master-name="A4" page-width="210mm" page-height="297mm"
+                        margin-top="1cm" margin-bottom="1cm" margin-left="1cm" margin-right="1cm">
+                        <fo:region-body margin="2cm"/>
+                        <fo:region-before extent="2cm"/>
+                        <fo:region-after extent="2cm"/>
+                        <fo:region-start extent="2cm"/>
+                        <fo:region-end extent="2cm"/>
+                    </fo:simple-page-master>
+                </fo:layout-master-set>
+                <fo:page-sequence master-reference="A4">
+                    <fo:flow flow-name="xsl-region-body">
+                        <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <fo:block font-size="xx-large" text-align="center" font-weight="bold">
+                            <xsl:value-of
+                                select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                        </fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <fo:block font-size="small" font-style="italic"><xsl:value-of
+                                select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"
+                            /> : <xsl:value-of
+                                select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:persName"
+                            /></fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <fo:block font-size="medium" font-style="italic" text-align="justify"
+                            >Contexte : <xsl:value-of select="tei:text/tei:front/tei:set/tei:p"
+                            /></fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <fo:block font-size="medium" text-align="justify">
+                            <xsl:for-each select="tei:text/tei:body/tei:sp/tei:p">
+                                <xsl:choose>
+                                    <xsl:when test="tei:text/tei:body/tei:sp/tei:p[@xml:id]">
+                                        <xsl:value-of/>
+                                    </xsl:when>
+                                    <xsl:otherwise><xsl:value-of
+                                            select=".[not(@xml:id) or @xml:id != 'titre']"
+                                        />&#x2028;</xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:for-each>
+                        </fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <xsl:for-each
+                            select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:*">
+                            <fo:block font-weight="bold">
+                                <xsl:value-of select="tei:persName | tei:name"/>
+                            </fo:block>
+                            <fo:list-block provisional-distance-between-starts="6pt"
+                                provisional-label-separation="6pt">
+                                <xsl:if test="tei:birth">
+                                    <xsl:if test="tei:birth/tei:date">
+                                        <fo:list-item>
+                                            <fo:list-item-label end-indent="label-end()">
+                                                <fo:block>- </fo:block>
+                                            </fo:list-item-label>
+                                            <fo:list-item-body start-indent="body-start()">
+                                                <fo:block>Date de naissance : <xsl:value-of
+                                                  select="tei:birth/tei:date"/>
+                                                </fo:block>
+                                            </fo:list-item-body>
+                                        </fo:list-item>
+                                    </xsl:if>
+                                    <xsl:if test="tei:birth/tei:placeName">
+                                        <fo:list-item>
+                                            <fo:list-item-label end-indent="label-end()">
+                                                <fo:block>- </fo:block>
+                                            </fo:list-item-label>
+                                            <fo:list-item-body start-indent="body-start()">
+                                                <fo:block>Lieu de naissance : <xsl:value-of
+                                                  select="tei:birth/tei:placeName"/>
+                                                </fo:block>
+                                            </fo:list-item-body>
+                                        </fo:list-item>
+                                    </xsl:if>
+                                </xsl:if>
+                                <xsl:if test="tei:death">
+                                    <xsl:if test="tei:death/tei:date">
+                                        <fo:list-item>
+                                            <fo:list-item-label end-indent="label-end()">
+                                                <fo:block>- </fo:block>
+                                            </fo:list-item-label>
+                                            <fo:list-item-body start-indent="body-start()">
+                                                <fo:block>Date de décès : <xsl:value-of
+                                                  select="tei:death/tei:date"/>
+                                                </fo:block>
+                                            </fo:list-item-body>
+                                        </fo:list-item>
+                                    </xsl:if>
+                                    <xsl:if test="tei:placeName">
+                                        <fo:list-item>
+                                            <fo:list-item-label end-indent="label-end()">
+                                                <fo:block>- </fo:block>
+                                            </fo:list-item-label>
+                                            <fo:list-item-body start-indent="body-start()">
+                                                <fo:block>Lieu de décès : <xsl:value-of select="."/>
+                                                </fo:block>
+                                            </fo:list-item-body>
+                                        </fo:list-item>
+                                    </xsl:if>
+                                </xsl:if>
+                                <xsl:if test="tei:occupation">
+                                    <fo:list-item>
+                                        <fo:list-item-label end-indent="label-end()">
+                                            <fo:block>- </fo:block>
+                                        </fo:list-item-label>
+                                        <fo:list-item-body start-indent="body-start()">
+                                            <fo:block>Occupation : <xsl:value-of
+                                                  select="tei:occupation"/>
+                                            </fo:block>
+                                        </fo:list-item-body>
+                                    </fo:list-item>
+                                </xsl:if>
+                                <xsl:if test="tei:note">
+                                    <fo:list-item>
+                                        <fo:list-item-label end-indent="label-end()">
+                                            <fo:block>- </fo:block>
+                                        </fo:list-item-label>
+                                        <fo:list-item-body start-indent="body-start()">
+                                            <fo:block>
+                                                <xsl:value-of select="tei:note"/>
+                                            </fo:block>
+                                        </fo:list-item-body>
+                                    </fo:list-item>
+                                </xsl:if>
+                            </fo:list-block>
+                            <fo:block>&#x2028;</fo:block>
+                        </xsl:for-each>
+                        <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+                        <fo:block>&#x2028;</fo:block>
+                        <xsl:for-each
+                            select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPlace/tei:place">
+                            <fo:block font-weight="bold">
+                                <xsl:value-of select="tei:placeName/tei:name"/>
+                            </fo:block>
+                            <xsl:if test="tei:placeName/tei:address">
+                                <fo:list-block provisional-distance-between-starts="6pt"
+                                    provisional-label-separation="6pt">
+                                    <xsl:for-each select="tei:placeName/tei:address/tei:addrLine">
+                                        <fo:list-item>
+                                            <fo:list-item-label end-indent="label-end()"><fo:block/></fo:list-item-label>
+                                            <fo:list-item-body start-indent="body-start()">
+                                                <fo:block>
+                                                  <xsl:value-of select="."/>
+                                                </fo:block>
+                                            </fo:list-item-body>
+                                        </fo:list-item>
+                                    </xsl:for-each>
+                                </fo:list-block>
+                            </xsl:if>
+                            <fo:block>&#x2028;</fo:block>
+                        </xsl:for-each>
+                    </fo:flow>
+                </fo:page-sequence>
+            </fo:root>
+        </xsl:result-document>
+
         <xsl:result-document href="../HTML/{@xml:id}-txt.html" method="xhtml"
             doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
             exclude-result-prefixes="xs tei" omit-xml-declaration="yes">

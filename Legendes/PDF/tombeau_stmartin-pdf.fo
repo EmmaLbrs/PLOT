@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4"
+                             page-width="210mm"
+                             page-height="297mm"
+                             margin-top="1cm"
+                             margin-bottom="1cm"
+                             margin-left="1cm"
+                             margin-right="1cm">
+         <fo:region-body margin="2cm"/>
+         <fo:region-before extent="2cm"/>
+         <fo:region-after extent="2cm"/>
+         <fo:region-start extent="2cm"/>
+         <fo:region-end extent="2cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="xx-large" text-align="center" font-weight="bold">Le tombeau de Saint-Martin</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="small" font-style="italic">Editrice : Alexa Darmagnac</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" font-style="italic" text-align="justify">Contexte : Saint-Martin, évêque de Tours, était
+                    connu pour sa vertu et ses nombreux travaux. Fondateur du monastère de Marmoutier, ses fidèles et
+                    lui-même se donnèrent pour mission d’évangéliser les campagnes, alors encore
+                    païennes. Aujourd’hui, la basilique de
+                        Tours, où se trouve son tombeau, est l’un des premiers lieux de
+                    pèlerinage pour .</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" text-align="justify">&#x2028;Alors qu’il tentait de réconcilier les
+                        moines Tourangeaux et les moines
+                        Poitevins, Saint-Martin
+                    mourut en 397 à Candes. Les deux
+                        partis mirent leurs différends de côté pour veiller ensemble sur sa
+                    dépouille. Mais la trêve ne dura pas. Les uns et les
+                        autres se disputaient les reliques de ce grand homme, vénéré par tous.&#x2028;Au milieu de la nuit, alors que les
+                        Poitevins dormaient profondément, les Tourangeaux décidèrent de passer
+                    à l’action. Il parvinrent à sortir le corps du saint homme par la fenêtre de la chapelle et l’apportèrent
+                    précautionneusement vers la Loire, où
+                    les attendait une barque. La voile levée, les hommes ramèrent, et le vent soufflant comme pour leur donner
+                    raison, accéléra le voyage.&#x2028;Le saint se fit donc enterrer dans un
+                    cimetière public à Tours. Puis, en
+                    435, l’évêque Saint-Brice fit
+                    construire une chapelle au-dessus de la tombe afin de lui rendre hommage.&#x2028;Mais l’importance de Saint-Martin
+                    conduit à une plus grande décision encore. Saint
+                        Perpet décida en 471 de faire édifier une collégiale rappelant à
+                    la mémoire du saint homme. Sitôt les
+                    travaux terminés, il fut décidé que la consécration du bâtiment, ainsi que le
+                    déplacement des reliques se feraient le 1er juillet.&#x2028;Le jour même, évêques, abbés et autres fidèles se pressent au cimetière où se
+                    trouve encore le sarcophage dans lequel repose la dépouille de Saint-Martin. Très vite, on creuse et
+                    dégage la terre afin d’atteindre le sarcophage, mais alors même qu’on tente de
+                    le sortir de terre, celui-ci ne bouge pas d’un pouce. Après de maintes essais,
+                    la foule, abattue décide de rentrer. Il est décidé qu’on réessaiera demain.&#x2028;Mais le lendemain, même affaire : impossible de déplacer le sarcophage. Alors que
+                    les fidèles commencent à s’inquièter de ce mystère, un vieillard à la longue
+                    chevelure blanche s’avance au milieu de la foule désespérée. Peut-être,
+                    annonce-t-il, faudra-t-il encore patienter quelques jours. Après tout, le 4
+                    juillet se trouve être le jour de la consécration épiscopale"L'ordination épiscopale, dite encore consécration ou sacre est la
+                        cérémonique lithurgique au cours de laquelle le sacrement de l'ordre dans sa
+                        plénitude est conféré aux nouveaux évêques.", Chapeau André. Les ordinations
+                        épiscopales dans l'Église catholique du XVIe siècle à nos jours. In: Revue
+                        d'histoire de l'Église de France, tome 76, n°196, 1990. pp. 73-84..
+                    Ne serait-ce pas là un message de Saint-Martin ?&#x2028;Tous décident de suivre le conseil de l’étrange vieillard et d’attendre. Le 4
+                    juillet donc, on tente à nouveau de sortir le sarcophage de terre, et cette
+                    fois-ci, ô miracle, ce dernier est extrait sans aucune difficulté !&#x2028;La foule en liesse accompagne le déplacement du saint homme jusqu’à la
+                    collégiale, et lorsqu’on se retourne pour remercier le vieil homme de sa
+                    précieuse remarque, ce dernier s’est évaporé... &#x2028;</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Saint-Martin de Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de naissance : An 316</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Sabaria de Pannonie (ajd. Szombathely, Hongrie)</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : An 397</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Saint de la chrétienté et évêque de Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les moines Tourangeaux</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Moines de la ville de Tours, dont l'évêque était Saint-Martin.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Les moines Poitevins</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Moines du Poitou.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Brice de Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : An 444</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Evêque de Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>4ème évêque de Tours, a succédé à Saint-Martin. Devenu
+                            Saint-Brice</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Perpet de Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Lieu de naissance : Auvergne, France</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Date de décès : 8 Avril 491</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Evêque de Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>6ème évêque de Tours. Devenu Saint Perpet</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Monastère de Marmoutier</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Vendée</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Pays de la Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Candes-Saint-Martin</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Basilique Saint-Martin de Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>7 Rue Baleschoux</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>37000</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">La Loire</fo:block>
+         <fo:block>&#x2028;</fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>
