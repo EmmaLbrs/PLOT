@@ -98,13 +98,13 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours<address>
+                        <placeName><name>Tours</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-poitiers">
-                        <placeName>Poitiers <address>
+                        <placeName><name>Poitiers</name> <address>
                                 <addrLine>Vienne</addrLine>
                                 <addrLine>Nouvelle-Acquitaine</addrLine>
                             </address>

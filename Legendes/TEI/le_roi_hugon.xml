@@ -60,19 +60,19 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours<address>
+                        <placeName><name>Tours</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-chateau-fort">
-                        <placeName>Chateau fort<address>
+                        <placeName><name>Chateau fort</name><address>
                                 <addrLine>Bord de Loire entre Tours et
                                     Saint-Pierre-des-Corps</addrLine>
                             </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-orleans">
-                        <placeName>Orléans<address>
+                        <placeName><name>Orléans</name><address>
                                 <addrLine>Loiret</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>

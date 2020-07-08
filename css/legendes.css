@@ -21,13 +21,23 @@ body p, body h2, body h3, body ul{
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
 }
-#perso-legende {
+#perso-legende, #lieux-legendes, #categories, #motcle {
     padding-top: 20px;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
+}
+
+#perso-legende h3, #lieux-legendes h3, #categories h3, #motcle h3 {
+    text-align: center;
+    /* border-bottom: 1px solid gray; */
+}
+
+#perso-legende ul a, #lieux-legendes ul span {
+    font-weight:bold;
 }
 
 #liens-telechargement {
     padding-top:20px;
+    border-top:1px solid gray;
 }
 
 

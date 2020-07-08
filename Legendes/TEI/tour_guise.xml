@@ -96,30 +96,30 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours<address>
+                        <placeName><name>Tours</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="fleuve" xml:id="place-loire">
-                        <placeName>La Loire</placeName>
+                        <placeName><name>La Loire</name></placeName>
                     </place>
                     <place type="batiment" xml:id="place-chateau-tours">
-                        <placeName>Château de Tours<address>
+                        <placeName><name>Château de Tours</name><address>
                                 <addrLine>25 Avenue André Malraux</addrLine>
                                 <addrLine>37000</addrLine>
                                 <addrLine>Tours</addrLine>
                             </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-notre-dame-la-riche">
-                        <placeName>Notre-Dame-la-Riche<address>
+                        <placeName><name>Notre-Dame-la-Riche</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address>
                         </placeName>
                     </place>
                     <place type="riviere" xml:id="place-cher">
-                        <placeName>Le Cher</placeName>
+                        <placeName><name>Le Cher</name></placeName>
                     </place>
                 </listPlace>
             </sourceDesc>

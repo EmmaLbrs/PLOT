@@ -100,32 +100,32 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours<address>
+                        <placeName><name>Tours</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-marmoutier">
-                        <placeName>Monastère de Marmoutier<address>
+                        <placeName><name>Monastère de Marmoutier</name><address>
                                 <addrLine>Vendée</addrLine>
                                 <addrLine>Pays de la Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-candes">
-                        <placeName>Candes-Saint-Martin<address>
+                        <placeName><name>Candes-Saint-Martin</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-basilique-tours">
-                        <placeName>Basilique Saint-Martin de Tours<address>
+                        <placeName><name>Basilique Saint-Martin de Tours</name><address>
                                 <addrLine>7 Rue Baleschoux</addrLine>
                                 <addrLine>37000</addrLine>
                                 <addrLine>Tours</addrLine>
                             </address></placeName>
                     </place>
                     <place type="fleuve" xml:id="place-loire">
-                        <placeName>La Loire</placeName>
+                        <placeName><name>La Loire</name></placeName>
                     </place>
                 </listPlace>
             </sourceDesc>

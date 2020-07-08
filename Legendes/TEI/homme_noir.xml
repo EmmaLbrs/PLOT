@@ -58,14 +58,14 @@
                 </listPerson>
                 <listPlace>
                     <place type="batiment" xml:id="place-chateau-homme-noir">
-                        <placeName>Chateau de l'Homme Noir<address>
+                        <placeName><name>Chateau de l'Homme Noir</name><address>
                                 <addrLine>Allée de l'Homme Noir</addrLine>
                                 <addrLine>37540</addrLine>
                                 <addrLine>Saint-Cyr-sur-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-chateau-gontran">
-                        <placeName>Chateau en Touraine du seigneur Gontran</placeName>
+                        <placeName><name>Chateau en Touraine du seigneur Gontran</name></placeName>
                     </place>
                 </listPlace>
             </sourceDesc>

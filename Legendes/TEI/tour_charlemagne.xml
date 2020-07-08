@@ -56,14 +56,14 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours
+                        <placeName><name>Tours</name>
                             <address>
                                 <addrLine>Indre-et-Loire</addrLine>
                             </address>
                         </placeName>
                     </place>
                     <place type="batiment" xml:id="place-basilique-stmartin">
-                        <placeName>Basilique Saint-Martin
+                        <placeName><name>Basilique Saint-Martin</name>
                             <address>
                                 <addrLine>7 Rue Baleschoux</addrLine>
                                 <addrLine>37000</addrLine>
@@ -72,7 +72,7 @@
                         </placeName>
                     </place>
                     <place type="batiment" xml:id="place-tour-charlemagne">
-                        <placeName>Tour Charlemagne
+                        <placeName><name>Tour Charlemagne</name>
                             <address>
                                 <addrLine>Rue des Halles</addrLine>
                                 <addrLine>37000</addrLine>

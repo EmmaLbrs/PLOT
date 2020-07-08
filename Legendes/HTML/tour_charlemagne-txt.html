@@ -43,8 +43,8 @@
                            <a href="../../audios.php" class="nav-link">Audios</a>
                         </li>
                         <li>
-                           <a href="../../bddicono.php" class="nav-link">Base de données
-                              iconographiques
+                           <a href="../../bddicono.php" class="nav-link">Base
+                              de données iconographiques
                            </a>
                         </li>
                         <li>
@@ -55,8 +55,7 @@
                      </ul>
                   </li>
                   <li class="dropdown nav-item">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="../../apropos.html">A
-                        propos
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="../../apropos.html">A propos
                         <span class="caret"></span>
                      </a>
                      <ul class="dropdown-menu">
@@ -69,7 +68,9 @@
                            </a>
                         </li>
                         <li>
-                           <a href="../../contact.php" class="nav-link">Contact</a>
+                           <a href="../../contact.php" class="nav-link">Nous
+                              contacter
+                           </a>
                         </li>
                      </ul>
                   </li>
@@ -152,30 +153,64 @@
                <a href="#perso-luitgarde" goto="autour-legende">Luitgarde</a> demeure depuis la Tour Charlemagne. 
             </p>
          </div>
-         <div id="perso-legende">
-            <h3>Personnages</h3>
-            <p id="perso-charlemagne">
-               <a href="../../cible_requete.php?personnage_id=perso-charlemagne">Charlemagne</a>
-               <li xmlns:tei="http://www.tei-c.org/ns/1.0">Occupation : Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis
-                  Empereur d'Occident en 800.
-               </li>
-               <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
-            </p>
-            <p id="perso-luitgarde">
-               <a href="../../cible_requete.php?personnage_id=perso-luitgarde">Luitgarde</a>
-               <li xmlns:tei="http://www.tei-c.org/ns/1.0">Occupation : Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une
-                  princesse germanique et également la 4ème épouse du roi des Francs,
-                  Charlemagne
-               </li>
-               <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
-            </p>
-            <p id="perso-stmartin">
-               <a href="../../cible_requete.php?personnage_id=perso-stmartin">Saint-Martin</a>
-               <li xmlns:tei="http://www.tei-c.org/ns/1.0">Occupation : Né en 316 et décédé en 397. Un des principaux saints de la
-                  chrétienté et évèque de Tours.
-               </li>
-               <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
-            </p>
+         <div class="row">
+            <div id="perso-legende" class="col-md-3">
+               <h3>Personnages</h3>
+               <ul id="perso-charlemagne" class="col-md-6">
+                  <a href="../../cible_requete.php?personnage_id=perso-charlemagne">Charlemagne</a>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Occupation : Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis
+                     Empereur d'Occident en 800.
+                  </li>
+                  <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
+               </ul>
+               <ul id="perso-luitgarde" class="col-md-6">
+                  <a href="../../cible_requete.php?personnage_id=perso-luitgarde">Luitgarde</a>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Occupation : Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une
+                     princesse germanique et également la 4ème épouse du roi des Francs,
+                     Charlemagne
+                  </li>
+                  <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
+               </ul>
+               <ul id="perso-stmartin" class="col-md-6">
+                  <a href="../../cible_requete.php?personnage_id=perso-stmartin">Saint-Martin</a>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Occupation : Né en 316 et décédé en 397. Un des principaux saints de la
+                     chrétienté et évèque de Tours.
+                  </li>
+                  <br xmlns:tei="http://www.tei-c.org/ns/1.0"></br>
+               </ul>
+            </div>
+            <div id="lieux-legendes" class="col-md-3">
+               <h3>Lieux</h3>
+               <ul id="place-tours" class="col-md-6">
+                  <span xmlns:tei="http://www.tei-c.org/ns/1.0">Tours</span>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Indre-et-Loire</li>
+               </ul>
+               <ul id="place-basilique-stmartin" class="col-md-6">
+                  <span xmlns:tei="http://www.tei-c.org/ns/1.0">Basilique Saint-Martin</span>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">7 Rue Baleschoux</li>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">37000</li>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Tours</li>
+               </ul>
+               <ul id="place-tour-charlemagne" class="col-md-6">
+                  <span xmlns:tei="http://www.tei-c.org/ns/1.0">Tour Charlemagne</span>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Rue des Halles</li>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">37000</li>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Tours</li>
+               </ul>
+            </div>
+            <div id="categories" class="col-md-3">
+               <h3>Catégories</h3>
+               <ul>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Historique</li>
+               </ul>
+            </div>
+            <div id="motcle" class="col-md-3">
+               <h3>Mots-clé</h3>
+               <ul>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Rois et souverains</li>
+                  <li xmlns:tei="http://www.tei-c.org/ns/1.0">Femmes et mort</li>
+               </ul>
+            </div>
          </div>
          <div id="liens-telechargement">
             <ul>

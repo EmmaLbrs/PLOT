@@ -61,8 +61,8 @@
                                                   >Audios</a>
                                             </li>
                                             <li>
-                                                <a href="../../bddicono.php" class="nav-link">Base de données
-                                                  iconographiques</a>
+                                                <a href="../../bddicono.php" class="nav-link">Base
+                                                  de données iconographiques</a>
                                             </li>
                                             <li>
                                                 <a href="../../acces.php" class="nav-link">Accès
@@ -72,8 +72,8 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown nav-item">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="../../apropos.html">A
-                                                propos<span class="caret"/>
+                                        <a class="dropdown-toggle" data-toggle="dropdown"
+                                            href="../../apropos.html">A propos<span class="caret"/>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -85,8 +85,8 @@
                                                   projet</a>
                                             </li>
                                             <li>
-                                                <a href="../../contact.php" class="nav-link"
-                                                  >Contact</a>
+                                                <a href="../../contact.php" class="nav-link">Nous
+                                                  contacter</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -120,12 +120,40 @@
                         </div>
 
 
-                        <div id="perso-legende">
-                            <h3>Personnages</h3>
-                            <xsl:for-each
-                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:*">
-                                <xsl:apply-templates select="." mode="texte"/>
-                            </xsl:for-each>
+                        <div class="row">
+                            <div id="perso-legende" class="col-md-3">
+                                <h3>Personnages</h3>
+                                <xsl:for-each
+                                    select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:*">
+                                    <xsl:apply-templates select="." mode="texte"/>
+                                </xsl:for-each>
+                            </div>
+
+                            <div id="lieux-legendes" class="col-md-3">
+                                <h3>Lieux</h3>
+                                <xsl:for-each
+                                    select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPlace/tei:*">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:for-each>
+                            </div>
+
+                            <div id="categories" class="col-md-3">
+                                <h3>Catégories</h3>
+                                <ul>
+                                    <xsl:apply-templates
+                                        select="tei:teiHeader/tei:profileDesc/tei:textClass/tei:catRef"
+                                    />
+                                </ul>
+                            </div>
+
+                            <div id="motcle" class="col-md-3">
+                                <h3>Mots-clé</h3>
+                                <ul>
+                                    <xsl:apply-templates
+                                        select="tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords"
+                                    />
+                                </ul>
+                            </div>
                         </div>
 
                         <div id="liens-telechargement">
@@ -231,7 +259,8 @@
                             </xsl:element>
 
                         </xsl:element>
-                        <p>Narration : <xsl:value-of select="tei:text/tei:body/tei:sp/tei:speaker"/></p>
+                        <p>Narration : <xsl:value-of select="tei:text/tei:body/tei:sp/tei:speaker"
+                            /></p>
                     </div>
 
 
@@ -279,6 +308,30 @@
         </xsl:result-document>
     </xsl:template>
 
+
+    <xsl:template match="tei:catRef">
+        <xsl:if test="contains(./@target, '#cat-hist')">
+            <li>Historique</li>
+        </xsl:if>
+        <xsl:if test="contains(./@target, '#cat-rel')">
+            <li>Religion</li>
+        </xsl:if>
+        <xsl:if test="contains(./@target, '#cat-paien')">
+            <li>Croyance païenne</li>
+        </xsl:if>
+        <xsl:if test="contains(./@target, '#cat-fant')">
+            <li>Fantastique</li>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="tei:keywords">
+        <xsl:for-each select="*">
+            <li>
+                <xsl:apply-templates/>
+            </li>
+        </xsl:for-each>
+    </xsl:template>
+
     <xsl:template match="tei:persName | tei:name">
         <xsl:element name="a">
             <xsl:attribute name="href">
@@ -288,6 +341,45 @@
                 <xsl:text>autour-legende</xsl:text>
             </xsl:attribute>
             <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+
+    <xsl:template match="tei:place">
+
+        <xsl:element name="ul">
+            <xsl:attribute name="id">
+                <xsl:value-of select="./@xml:id"/>
+            </xsl:attribute>
+            <xsl:attribute name="class">col-md-6</xsl:attribute>
+            <xsl:for-each select="*">
+                <xsl:choose>
+                    <xsl:when test="name() = 'placeName'">
+                        <xsl:for-each select="*">
+                            <xsl:choose>
+                                <xsl:when test="name() = 'name'">
+                                    <span>
+                                        <xsl:apply-templates/>
+                                    </span>
+                                </xsl:when>
+                                <xsl:when test="name() = 'address'">
+                                    <xsl:for-each select="*">
+                                        <li>
+                                            <xsl:apply-templates/>
+                                        </li>
+                                    </xsl:for-each>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <li>
+                                        <xsl:apply-templates/>
+                                    </li>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:for-each>
+
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
         </xsl:element>
     </xsl:template>
 
@@ -345,10 +437,11 @@
     </xsl:template>
 
     <xsl:template match="tei:person | tei:personGrp" mode="texte">
-        <xsl:element name="p">
+        <xsl:element name="ul">
             <xsl:attribute name="id">
                 <xsl:value-of select="./@xml:id"/>
             </xsl:attribute>
+            <xsl:attribute name="class">col-md-6</xsl:attribute>
             <xsl:for-each select="*">
                 <xsl:choose>
                     <xsl:when test="name() = 'persName' or name() = 'name'">

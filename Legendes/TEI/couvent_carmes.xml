@@ -59,20 +59,20 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours<address>
+                        <placeName><name>Tours</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-couvent-saint-anne">
-                        <placeName>Couvent Sainte Anne<address>
+                        <placeName><name>Couvent Sainte Anne</name><address>
                                 <addrLine>Quartier Riche Sainte-Anne</addrLine>
                                 <addrLine>37520</addrLine>
                                 <addrLine>La Riche</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-monastere-carmes">
-                        <placeName>Monastères des Carmes de Tours<address>
+                        <placeName><name>Monastères des Carmes de Tours</name><address>
                                 <addrLine>1 rue des Tanneurs</addrLine>
                                 <addrLine>37000</addrLine>
                                 <addrLine>Tours</addrLine>

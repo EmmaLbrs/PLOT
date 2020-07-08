@@ -60,13 +60,13 @@
                 </listPerson>
                 <listPlace>
                     <place type="ville" xml:id="place-tours">
-                        <placeName>Tours<address>
+                        <placeName><name>Tours</name><address>
                                 <addrLine>Indre-et-Loire</addrLine>
                                 <addrLine>Centre-Val-de-Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-remparts-tours">
-                        <placeName>Les remparts de Tours <address>
+                        <placeName><name>Les remparts de Tours</name> <address>
                                 <addrLine>2 rue des Ursulines</addrLine>
                                 <addrLine>37000</addrLine>
                                 <addrLine>Tours</addrLine>
@@ -74,7 +74,7 @@
                         </placeName>
                     </place>
                     <place type="batiment" xml:id="place-cathedrale-stgatien">
-                        <placeName>Cathédrale Saint-Gatien <address>
+                        <placeName><name>Cathédrale Saint-Gatien</name> <address>
                                 <addrLine>Place de la Cathédrale</addrLine>
                                 <addrLine>37000</addrLine>
                                 <addrLine>Tours</addrLine>
@@ -82,7 +82,7 @@
                         </placeName>
                     </place>
                     <place type="batiment" xml:id="place-amphi">
-                        <placeName>Amphithéâtre de Tours <address>
+                        <placeName><name>Amphithéâtre de Tours</name> <address>
                                 <addrLine>3 Rue Manceau</addrLine>
                                 <addrLine>37000</addrLine>
                                 <addrLine>Tours</addrLine>
@@ -91,22 +91,22 @@
                         <note>Ancien amphithéâtre transformé en place forte.</note>
                     </place>
                     <place type="fleuve" xml:id="place-loire">
-                        <placeName>La Loire</placeName>
+                        <placeName><name>La Loire</name></placeName>
                     </place>
                     <place type="ile" xml:id="place-noirmoutier">
-                        <placeName>L'île de Noirmoutier<address>
+                        <placeName><name>L'île de Noirmoutier</name><address>
                                 <addrLine>Vendée</addrLine>
                                 <addrLine>Pays de la Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="ville" xml:id="place-nantes">
-                        <placeName>Nantes<address>
+                        <placeName><name>Nantes</name><address>
                                 <addrLine>Loire-Atlantique</addrLine>
                                 <addrLine>Pays de la Loire</addrLine>
                             </address></placeName>
                     </place>
                     <place type="batiment" xml:id="place-marmoutier">
-                        <placeName>Monastère de Marmoutier <address>
+                        <placeName><name>Monastère de Marmoutier</name> <address>
                                 <addrLine>17 Quai de Marmoutier</addrLine>
                                 <addrLine>37100</addrLine>
                                 <addrLine>Tours</addrLine>

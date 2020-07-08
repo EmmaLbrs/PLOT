@@ -64,7 +64,7 @@
                 </listPerson>
                 <listPlace>
                     <place type="batiment" xml:id="place-chateau-tours">
-                        <placeName>Chateau de Plessis-lès-Tours<address>
+                        <placeName><name>Chateau de Plessis-lès-Tours</name><address>
                                 <addrLine>Rue du Plessis</addrLine>
                                 <addrLine>37520</addrLine>
                                 <addrLine>La Riche</addrLine>
