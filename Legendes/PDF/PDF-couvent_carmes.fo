@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4"
+                             page-width="210mm"
+                             page-height="297mm"
+                             margin-top="1cm"
+                             margin-bottom="1cm"
+                             margin-left="1cm"
+                             margin-right="1cm">
+         <fo:region-body margin="2cm"/>
+         <fo:region-before extent="2cm"/>
+         <fo:region-after extent="2cm"/>
+         <fo:region-start extent="2cm"/>
+         <fo:region-end extent="2cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="xx-large" text-align="center" font-weight="bold">Le couvent des Carmes</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="small" font-style="italic">Editrice : Alexa Darmagnac</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" font-style="italic" text-align="justify">Contexte : Les carmes, un ordre religieux catholique contemplatif (voir et observer),
+                    servant le prophète Elie, datant du XIIème siècle. Le couvent des carmes à Tours
+                    n’existe plus aujourd’hui. Louis XI était roi de France de 1461 à 1484 et s’est
+                    éteint au château de Plessis-lèz-Tours. C’est le sixième roi de la famille des
+                    Valois et il était notamment considéré par ses adversaires comme un roi sournois
+                </fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" text-align="justify">&#x2028; Le roi Louis XI  était en balade au
+                    bord du canal entre la Loire et le Cher à Tours. Il admirait ce beau canal qu’il avait fait construire
+                    pour que les Tourangeaux les plus fortunés puissent jouir d’un nouveau moyen de
+                    transport. Il continua à admirer le paysage de son pays, se posant des
+                    questions, cherchant comment améliorer la Touraine et la rendre plus importante
+                    encore qu’elle ne le fût. Louis XI 
+                    était un roi qui aimait conquérir des territoires, s’agrandir toujours plus,
+                    pour plus de puissance. « - J’aimerais conquérir la Brenne, c’est une petite
+                    rivière peut-être, mais elle serait utile. » dit le roi. &#x2028; Durant ces contemplations le roi
+                    entendit bientôt des bruits de pas. Il se demanda qui pouvait venir le déranger
+                    durant sa balade et qui pouvait donc venir si près du domaine royal. Bientôt, il
+                    vit apparaître un moine
+                    accompagné d’un âne. C’était un mendiant
+                        carme, un des moines de
+                    cet ordre catholique. Mais ce moine passa devant le roi sans le saluer. Il ne le regarda que
+                    de travers, pressant son âne d’aller plus vite. Il voulait alors fuir l’étranger
+                    devant lequel il passait. «- Hé ! Là-bas, le moine, écoute-moi. » Le moine s’arrêta pour écouter ce que
+                    voulait ce drôle d’homme. « - Je veux rentrer, donne-moi donc ton âne pour que
+                    je puisse aller plus vite, ordonna le roi - Cet âne est le mien, et, je ne le
+                    laisserai pas sur l’honneur de notre bon roi saint Louis se défendit le
+                        moine. - Et moi par
+                    Saint-Martin, patron des ânes, je le prendrai ! - Seul le roi pourrait me donner
+                    cet ordre, car c’est le roi qui décide ici. - Donc mon cher moine, tu respectes le roi ? - Oui,
+                    bien sûr, c’est notre maître, il nous a défendus quand il le fallait, nous a
+                    donnés certains privilèges. Et il aime même les pauvres. - Donc les moines carmes comme toi respectent le roi ? -
+                    Oui nous sommes pour le roi ! - Très bien, moine, tu peux partir. Je dirai quelques mots au roi sur toi et
+                    tes frères. » &#x2028; Le moine repartit en se
+                    demandant qui pouvait bien être ce drôle d’homme qui lui demandait son âne et
+                    après changeait d’avis. &#x2028; Dans le couvent de
+                        Sainte-Anne, près de Tours, les carmes
+                    étaient en pleine prière. Ils étaient très pieux et ne demandaient qu’un peu de
+                    pain. Malheureusement pour le couvent, ils étaient à court de farine. Leur âne,
+                    qui transportait les vivres, était revenu sans rien. Chacun décida de se séparer
+                    pour quérir un peu d’argent, de nourriture ou bien encore prier. Quand tout d’un
+                    coup le frère portier vint prévenir ses frères. « - Des cavaliers, des cavaliers
+                    ! Ils sont devant notre maison et viennent ici au nom du roi. Ils disent qu’ils sont là sous un ordre
+                    royal qui nous concerne, ils enfonceront la porte si nous ne leur ouvrons pas !
+                    - Mes frères, mes frères, agenouillons-nous et prions. Notre dernière heure est
+                    venue. Tristan le prévôt est là avec
+                    ses bourreaux et peut-être que bientôt nous devrons comparaître devant le
+                    tribunal de Dieu, après que son armée nous ait brulés, noyés ou encore pendus. -
+                    Mais qu’avons-nous fait de mal ? » &#x2028; Les moines étaient effrayés par la
+                    situation, chacun se demandait ce qu’ils avaient bien pu faire pour mériter une
+                    conclusion comme celle-là. D’autres se préparaient à fuir pour échapper à la
+                    sentence. Quand Tristan apparut dans
+                    le couvent avec un air sévère. « - Voilà, dit-il, les ordres du roi… Vous allez… - Seigneur ! Pitié, pitié !
+                    dirent les moines agenouillés.
+                    Laissez-nous une journée pour que nous puissions faire pénitence. - Laissez-moi
+                    vendre d’abord mon âne, dit l’un des moines. - Priez, suppliez, criez,sanglotez, clama Tristan, d’un air heureux, le roi m’envoie pour… » &#x2028;
+                    Tristan se mit alors à rire fortement.
+                    Les moines prirent de plus en plus peur
+                    au fil des rires de leur bourreau. « - Le roi m’envoie vous dire qu’il vous donne le poids de l’âne en
+                    argent. Ce même âne appartenant au moine
+                        quêteur qui seulement au roi aurait donné sa bête. Pour ma part, j’aurais pris plaisir à
+                    le faire pendre, mais le roi veut
+                    qu’il vive avec ses frères. Priez en paix et avec l’argent, construisez un autre
+                    monastère ici même à Tours. C’est le désir du roi. » &#x2028; Les moines, surpris, n’en croyant pas
+                    leurs yeux ni leurs oreilles, félicitèrent leur frère quêteur qui s’en voulut de ne
+                    pas avoir reconnu son souverain. Le couvent obéit à Louis XI et fit construire un nouveau
+                    monastère dans le centre de Tours : Le
+                        monastère des Carmes de Tours. &#x2028;</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Louis XI</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Né en 1423 à Bourges est roi de France de 1461 à 1484.
+                            Appertenant à la famille des Valois.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">moine queteur</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Moine carme qui quête pour son couvent</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Moine Carme</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Ordre religieux catholique contemplatif qui ont comme père
+                            spirituel le prophète Elie</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tristan</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Louis Tritan l'Hermite était maitre de l'artillerie puis grand
+                            prévot du roi Louis XI.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Centre-Val-de-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Couvent Sainte Anne</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Quartier Riche Sainte-Anne</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>37520</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>La Riche</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Monastères des Carmes de Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>1 rue des Tanneurs</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>37000</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

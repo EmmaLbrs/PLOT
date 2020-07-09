@@ -152,7 +152,9 @@
                                     provisional-label-separation="6pt">
                                     <xsl:for-each select="tei:placeName/tei:address/tei:addrLine">
                                         <fo:list-item>
-                                            <fo:list-item-label end-indent="label-end()"><fo:block/></fo:list-item-label>
+                                            <fo:list-item-label end-indent="label-end()">
+                                                <fo:block/>
+                                            </fo:list-item-label>
                                             <fo:list-item-body start-indent="body-start()">
                                                 <fo:block>
                                                   <xsl:value-of select="."/>
@@ -284,25 +286,26 @@
                             </xsl:for-each>
                         </div>
 
+                        <div id="perso-legende">
+                            <h3>Personnages</h3>
+                            <xsl:for-each
+                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:*">
+                                <xsl:apply-templates select="." mode="texte"/>
+                            </xsl:for-each>
+                        </div>
+                        <div class="clearfix"/>
 
-                        <div class="row display-flex">
-                            <div id="perso-legende" class="col-md-3">
-                                <h3>Personnages</h3>
-                                <xsl:for-each
-                                    select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPerson/tei:*">
-                                    <xsl:apply-templates select="." mode="texte"/>
-                                </xsl:for-each>
-                            </div>
+                        <div id="lieux-legendes">
+                            <h3>Lieux</h3>
+                            <xsl:for-each
+                                select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPlace/tei:*">
+                                <xsl:apply-templates select="."/>
+                            </xsl:for-each>
+                        </div>
+                        <div class="clearfix"/>
 
-                            <div id="lieux-legendes" class="col-md-3">
-                                <h3>Lieux</h3>
-                                <xsl:for-each
-                                    select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:listPlace/tei:*">
-                                    <xsl:apply-templates select="."/>
-                                </xsl:for-each>
-                            </div>
-
-                            <div id="categories" class="col-md-3">
+                        <div class="row">
+                            <div id="categories" class="col-md-6">
                                 <h3>Catégories</h3>
                                 <ul>
                                     <xsl:apply-templates
@@ -311,7 +314,7 @@
                                 </ul>
                             </div>
 
-                            <div id="motcle" class="col-md-3">
+                            <div id="motcle" class="col-md-6">
                                 <h3>Mots-clé</h3>
                                 <ul>
                                     <xsl:apply-templates
@@ -321,6 +324,7 @@
                             </div>
                         </div>
 
+
                         <div id="liens-telechargement">
                             <ul>
                                 <li>
@@ -328,7 +332,7 @@
                                         <xsl:attribute name="href">
                                             <xsl:text>../PDF/</xsl:text>
                                             <xsl:value-of select="./@xml:id"/>
-                                            <xsl:text>.pdf</xsl:text>
+                                            <xsl:text>-pdf.pdf</xsl:text>
                                         </xsl:attribute>
                                         <xsl:attribute name="download">
                                             <xsl:value-of select="./@xml:id"/>

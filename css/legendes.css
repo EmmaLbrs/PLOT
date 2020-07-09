@@ -10,16 +10,10 @@
      padding-left: 50px;
   }
 
-  .row.display-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    #perso-legende, #lieux-legendes, #categories {
+        padding-left:100px;
+    }
 
-  #perso-legende, #lieux-legendes, #categories, #motcle {
-      border-right: 1px solid lightgray;
-      margin-top: 10px;
-      margin-bottom: 10px;
-  }
 }
   
 body p, body h2, body h3, body ul{ 
@@ -32,15 +26,15 @@ body p, body h2, body h3, body ul{
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
 }
-#perso-legende, #lieux-legendes, #categories, #motcle {
+/* #perso-legende, #lieux-legendes, #categories, #motcle {
     padding-top: 20px;
-    /* border-bottom: 1px solid gray; */
-}
+     border-bottom: 1px solid gray; 
+} */
 
 #perso-legende h3, #lieux-legendes h3, #categories h3, #motcle h3 {
-    text-align: center;
-    /* border-bottom: 1px solid gray; */
-}
+    font-family: 'titre';
+    color: #870909;
+} 
 
 #perso-legende ul a, #lieux-legendes ul span {
     font-weight:bold;

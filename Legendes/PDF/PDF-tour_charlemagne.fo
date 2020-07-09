@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="A4"
+                             page-width="210mm"
+                             page-height="297mm"
+                             margin-top="1cm"
+                             margin-bottom="1cm"
+                             margin-left="1cm"
+                             margin-right="1cm">
+         <fo:region-body margin="2cm"/>
+         <fo:region-before extent="2cm"/>
+         <fo:region-after extent="2cm"/>
+         <fo:region-start extent="2cm"/>
+         <fo:region-end extent="2cm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="A4">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block font-size="x-small" font-style="italic">PLOT - Project Legends of
+                            Tours -- Legende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="xx-large" text-align="center" font-weight="bold">La Tour Charlemagne</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="small" font-style="italic">Editrice : Alexa Darmagnac</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" font-style="italic" text-align="justify">Contexte : La tour Charlemagne Notre légende se déroule en 800, Charlemagne était alors roi
+                    des Francs et des Lombards. Il ne devint empereur d’Occident que le 25 décembre
+                    800, soit quelques mois après le décès de Luitgarde sa quatrième et dernière
+                    épouse. La campagne énoncée dans la légende fait référence au fait que
+                    Charlemagne faisait une tournée en Neustrie (région au nord-ouest du royaume des
+                    Francs).</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="medium" text-align="justify">&#x2028;
+                    Luitgarde, la 4ème épouse du roi des
+                    Francs, Charlemagne, se rendit
+                    dans la ville de Tours, alors que son
+                    époux était en pleine tournée. De cette visite, la reine s’affaiblit et tomba
+                    bientôt malade. Sa santé était en danger et le roi revint de son voyage pour
+                    être auprès de sa bien-aimée. Le roi fit chercher un remède pour guérir la
+                    reine. Il pensa aux reliques de Saint-Martin qui pouvaient, d’après la légende guérir les
+                    maladies. On fit également appel à des savants, des moines, des botanistes, et
+                    même des Égyptiennes, mais rien n’avait pu encore aider son épouse.&#x2028;La reine était en train de mourir d’un mal inconnu. Entourée de ses femmes
+                    fidèles, elle luttait contre la mort. Son combat était vain, et la reine, petit
+                    à petit imagina la mort. La faucheuse prenait des traits de monstres qui
+                    encerclaient son cou ou d’un oiseau guettant sa proie. Quand vint le moment tant
+                    redouté, des prêtres vinrent réciter les Saintes Paroles à la mourante.
+                        Luitgarde la tendre épouse du
+                    roi, rendit son dernier souffle. Quand s’allumèrent les cierges et devant son
+                    corps maintenant vide de toute vie, le roi s’agenouilla.&#x2028;Charlemagne qui avait connu des
+                    femmes, des batailles et des couronnes n’était plus qu’un homme qui se lamentait
+                    d’avoir perdu l’être aimé. Il baisa les mains de sa tendre épouse et après un
+                    dernier regard pour elle, il se retira.&#x2028;Le jour de ses funérailles ce 4 Juin 800, la reine Luitgarde était étendue à visage
+                    découvert, habillée de ses plus beaux habits. Son lit mortuaire, porté par les
+                    principaux officiers du palais, était précédé par un diacre tenant en main une
+                    grande croix d’argent. Ce cortège funéraire passait dans la foule sous les
+                    bruits de lamentation du peuple. Le roi marchait seul, la tête haute, robuste de
+                    corps. Il portait des habits brodés d’or et de pierres précieuses, épée près du
+                    corps. À son côté, un clerc portait sur un coussin brillant un diadème
+                    étincelant d’or et de pierreries. Le diadème de la reine. Ce cortège se
+                    poursuivait avec les fils de Charlemagne. La reine Luitgarde et le roi n’eurent jamais d’enfants et sa descendance
+                    venait de ses premières épouses. On pouvait admirer dans ce cortège des curés,
+                    chanceliers, comtes et domestiques du palais, sénéchaux, clercs, évêques, abbés,
+                    seigneurs, prêtres puis enfin des savants. Ce cortège était là pour rendre
+                    hommage à la reine et l’accompagner dans sa dernière demeure.&#x2028;Luitgarde fut enterrée dans ce
+                    sanctuaire, la basilique
+                        Saint-Martin au centre de la ville de Tours. C’est là où
+                        Charlemagne déposa sa dernière
+                    épouse, celle qu’il ne remplaça jamais. L’édifice dans lequel reposait la 4ème
+                    reine du roi des Francs subit un incendie et il ne resta bientôt que des
+                    cendres. De ces cendres naquit quelques années après une tour.&#x2028;De cette tour de pierre, qui gardait les cendres de Luitgarde demeure depuis la Tour Charlemagne. &#x2028;</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="x-large" font-weight="bold">Autour de la
+                            légende</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Personnages</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Charlemagne</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Né en 742 et est devenu roi des Francs en 768 jusqu'à 814, puis
+                            Empereur d'Occident en 800.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Luitgarde</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Luitgarde d'Alémanie née en 776 et décédée en 800. C'est une
+                            princesse germanique et également la 4ème épouse du roi des Francs,
+                            Charlemagne</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Saint-Martin</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block>- </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Occupation : Né en 316 et décédé en 397. Un des principaux saints de la
+                            chrétienté et évèque de Tours.</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-size="large" font-weight="bold">Lieux</fo:block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tours</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Indre-et-Loire</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Basilique Saint-Martin</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>7 Rue Baleschoux</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>37000</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+         <fo:block font-weight="bold">Tour Charlemagne</fo:block>
+         <fo:list-block provisional-distance-between-starts="6pt"
+                        provisional-label-separation="6pt">
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Rue des Halles</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>37000</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label end-indent="label-end()">
+                  <fo:block/>
+               </fo:list-item-label>
+               <fo:list-item-body start-indent="body-start()">
+                  <fo:block>Tours</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+         <fo:block>&#x2028;</fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>
