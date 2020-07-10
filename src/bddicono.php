@@ -10,8 +10,8 @@
 
     <!-- Bootstrap CSS     
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> --> 
-    <link rel="stylesheet" type="text/css" href="css/general.css">
-  	<link rel="stylesheet" type="text/css" href="css/legendes_apropos.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+  	<link rel="stylesheet" type="text/css" href="../css/legendes_apropos.css">
        <title>PLOT - CESR | Base de données iconographique</title>
 
        <style>
@@ -48,12 +48,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a href="index.html" class="navbar-brand"><img src="images/logos/logo_plot_couleur_recadre.png" alt="logo de PLOT"></img></a>
+          <a href="../index.html" class="navbar-brand"><img src="../images/logos/logo_plot_couleur_recadre.png" alt="logo de PLOT"></img></a>
         </div>
         
         <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav" role="navigation">
-              <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
               <li class="nav-item"><a class="nav-link" href="carte.html">Carte</a></li>
               <li class="dropdown nav-item">
                 <a class="dropdown-toggle active" data-toggle="dropdown" href="legende.html">Légendes<span class="caret"></span> </a>
@@ -81,7 +81,7 @@
     <div class="container-fluid">
 
     <div class="fil_ariane">
-            <p><a href="index.html">PLOT</a> > <a href="legende.html">Légendes</a> > <a href="bddicono.php">Base de données iconographique</a></p>
+            <p><a href="../index.html">PLOT</a> > <a href="legende.html">Légendes</a> > <a href="bddicono.php">Base de données iconographique</a></p>
         </div>
 
     <header>
@@ -100,14 +100,15 @@
           echo "<h3>".$donnees['nom']."</h3>";
             echo "<div class='row'>";
             while($images = $legendes_bis->fetch()) {
+                $url_image =  '../'.$images['url_img'];
                 echo "<div class='col-md-3'>";
-                echo "<a data-toggle='modal' data-target='#".$images['id_img']."'><img src='".$images['url_img']."' class='img-responsive img-thumbnail'></img></a>";
+                echo "<a data-toggle='modal' data-target='#".$images['id_img']."'><img src='".$url_image."' class='img-responsive img-thumbnail'></img></a>";
                 echo "<div id='".$images['id_img']."' class='modal fade' role='dialog'>";
                 echo '<div class="modal-dialog">';
                 echo  '<div class="modal-content">';
                 echo '<div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
                     <div class="modal-body">';
-                echo "<img src='".$images['url_img']."' class='img-responsive'></img>";
+                echo "<img src='".$url_image."' class='img-responsive'></img>";
                 echo'<p>'.$images['desc_img'].'</p>';
                 echo '</div></div></div></div></div>';
             }
@@ -135,10 +136,10 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-offset-6 col-md-3 logo-footer">
-                <a href="https://cesr.cnrs.fr/"><img src="images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/></a>
+                <a href="https://cesr.cnrs.fr/"><img src="../images/logos/logo_cesr.gif" class="img-responsive" alt="Logo du CESR"/></a>
             </div>
             <div class="col-md-3 logo-footer">
-              <a href="https://www.univ-tours.fr/"><img src="images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" /></a>
+              <a href="https://www.univ-tours.fr/"><img src="../images/logos/logo_univ_tours.png" class="img-responsive" alt="Logo de l'Université de Tours" /></a>
             </div>
           </div>
         </div>
@@ -149,8 +150,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="bootstrap/js/jquery-3.4.1.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery-3.4.1.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
 	
   </body>
 

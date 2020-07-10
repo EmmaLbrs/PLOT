@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/general.css">
-    <link rel="stylesheet" type="text/css" href="css/carte.css">
-    <link rel="stylesheet" href="leaflet/leaflet.css">        
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/carte.css">
+    <link rel="stylesheet" href="../leaflet/leaflet.css">        
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="leaflet/sidebar-v2-master/css/leaflet-sidebar.css" />
+    <link rel="stylesheet" href="../leaflet/sidebar-v2-master/css/leaflet-sidebar.css" />
 
     <title>PLOT - CESR | Carte</title>
   </head>
@@ -26,12 +26,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a href="index.html" class="navbar-brand"><img src="images/logos/logo_plot_couleur_recadre.png" alt="logo de PLOT"></img></a>
+          <a href="../index.html" class="navbar-brand"><img src="../images/logos/logo_plot_couleur_recadre.png" alt="logo de PLOT"></img></a>
         </div>
         
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav" role="navigation">
-            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link active" href="carte.html">Carte</a></li>
             <li class="dropdown nav-item">
               <a class="dropdown-toggle" data-toggle="dropdown" href="legende.html">Légendes<span class="caret"></span> </a>
@@ -114,12 +114,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="../bootstrap/js/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script> 
-    <script src="leaflet/leaflet.js"></script>
-    <script src="leaflet/sidebar-v2-master/js/leaflet-sidebar.js"></script>
-    <script src="leaflet/sidebar-v2-master/js/scripttab.js" type="text/javascript"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script> 
+    <script src="../leaflet/leaflet.js"></script>
+    <script src="../leaflet/sidebar-v2-master/js/leaflet-sidebar.js"></script>
+    <script src="../leaflet/sidebar-v2-master/js/scripttab.js" type="text/javascript"></script>
 
     <script>
 
@@ -207,38 +207,38 @@ function loadPage(href)
     // Définition des icones pour marqueur
 
     var tourRouge = L.icon({
-      iconUrl: 'images/icons/tour-rouge.svg',
+      iconUrl: '../images/icons/tour-rouge.svg',
       iconSize:     [50, 50], // size of the icon
       iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
     });
 
     var eglise8Rouge = L.icon({
-      iconUrl: 'images/icons/eglise-8-rouge.svg',
+      iconUrl: '../images/icons/eglise-8-rouge.svg',
       iconSize:     [40, 40], // size of the icon
       iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
     });
 
     var murailleRouge = L.icon({
-      iconUrl: 'images/icons/muraille-rouge.svg',
+      iconUrl: '../images/icons/muraille-rouge.svg',
       iconSize:     [50, 50], // size of the icon
       iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
     });
 
     var chateau1Rouge = L.icon({
-      iconUrl: 'images/icons/chateau-1-rouge.svg',
+      iconUrl: '../images/icons/chateau-1-rouge.svg',
       iconSize:     [50, 50], // size of the icon
       iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
     });
 
     var chateau2Rouge = L.icon({
-      iconUrl: 'images/icons/chateau-2-rouge.svg',
+      iconUrl: '../images/icons/chateau-2-rouge.svg',
       iconSize:     [50, 50], // size of the icon
       iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
     });
 
 
     var eglise9Rouge = L.icon({
-      iconUrl: 'images/icons/eglise-9-rouge.svg',
+      iconUrl: '../images/icons/eglise-9-rouge.svg',
       iconSize:     [50, 50], // size of the icon
       iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
     });
@@ -261,7 +261,7 @@ function loadPage(href)
 
     bataille_tours.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/bataille_tours-carte.php');
+            var legende = loadPage('../Legendes/HTML/bataille_tours-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
@@ -281,14 +281,14 @@ function loadPage(href)
 
     tour_guise.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/tour_guise-carte.php');
+            var legende = loadPage('../Legendes/HTML/tour_guise-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende");
 
-            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/chateau_tours/chateau_tours-3.jpg"><img src="Legendes/Images_Legendes/chateau_tours/chateau_tours-3.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/chateau_tours/chateau_tours-2.jpg"><img src="Legendes/Images_Legendes/chateau_tours/chateau_tours-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/chateau_tours/chateau_tours-1.jpg"><img src="Legendes/Images_Legendes/chateau_tours/chateau_tours-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            var galerie = '<div class="row"><div class="col-md-6"><a href="../Legendes/Images_Legendes/chateau_tours/chateau_tours-3.jpg"><img src="../Legendes/Images_Legendes/chateau_tours/chateau_tours-3.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="../Legendes/Images_Legendes/chateau_tours/chateau_tours-2.jpg"><img src="../Legendes/Images_Legendes/chateau_tours/chateau_tours-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="../Legendes/Images_Legendes/chateau_tours/chateau_tours-1.jpg"><img src="../Legendes/Images_Legendes/chateau_tours/chateau_tours-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
             galerieLeg.innerHTML = galerie;
 
              spanLeg.innerHTML += titre[0].innerText;
@@ -305,7 +305,7 @@ function loadPage(href)
 
     roi_hugon.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/le_roi_hugon-carte.php');
+            var legende = loadPage('../Legendes/HTML/le_roi_hugon-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
@@ -325,14 +325,14 @@ function loadPage(href)
 
     couvent_carmes.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/couvent_carmes-carte.php');
+            var legende = loadPage('../Legendes/HTML/couvent_carmes-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende");
 
-            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-3.jpg"><img src="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-3.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-2.jpg"><img src="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-12"><a href="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-1.jpg"><img src="Legendes/Images_Legendes/couvent_carmes/couvent_carmes-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            var galerie = '<div class="row"><div class="col-md-6"><a href="../Legendes/Images_Legendes/couvent_carmes/couvent_carmes-3.jpg"><img src="../Legendes/Images_Legendes/couvent_carmes/couvent_carmes-3.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="../Legendes/Images_Legendes/couvent_carmes/couvent_carmes-2.jpg"><img src="../Legendes/Images_Legendes/couvent_carmes/couvent_carmes-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-12"><a href="../Legendes/Images_Legendes/couvent_carmes/couvent_carmes-1.jpg"><img src="../Legendes/Images_Legendes/couvent_carmes/couvent_carmes-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
             galerieLeg.innerHTML = galerie;
             
              spanLeg.innerHTML += titre[0].innerText;
@@ -348,7 +348,7 @@ function loadPage(href)
 
     homme_noir.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/homme_noir-carte.php');
+            var legende = loadPage('../Legendes/HTML/homme_noir-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
@@ -368,7 +368,7 @@ function loadPage(href)
 
     tour_charlemagne.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/tour_charlemagne-carte.php');
+            var legende = loadPage('../Legendes/HTML/tour_charlemagne-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
@@ -376,7 +376,7 @@ function loadPage(href)
             var audioLegende = doc.getElementById("audio-legende");
             
 
-            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-2.jpg"><img src="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-1.jpg"><img src="Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            var galerie = '<div class="row"><div class="col-md-6"><a href="../Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-2.jpg"><img src="../Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="../Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-1.jpg"><img src="../Legendes/Images_Legendes/tour_charlemagne/tour_charlemagne-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
             galerieLeg.innerHTML = galerie;
             
              spanLeg.innerHTML += titre[0].innerText;
@@ -392,14 +392,14 @@ function loadPage(href)
 
     breche_normands.on('click', function () 
    {        
-            var legende = loadPage('Legendes/HTML/breche_normands-carte.php');
+            var legende = loadPage('../Legendes/HTML/breche_normands-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende");
 
-            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/breche_normands/breche_normands-2.jpg"><img src="Legendes/Images_Legendes/breche_normands/breche_normands-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/breche_normands/breche_normands-1.jpg"><img src="Legendes/Images_Legendes/breche_normands/breche_normands-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            var galerie = '<div class="row"><div class="col-md-6"><a href="../Legendes/Images_Legendes/breche_normands/breche_normands-2.jpg"><img src="../Legendes/Images_Legendes/breche_normands/breche_normands-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="../Legendes/Images_Legendes/breche_normands/breche_normands-1.jpg"><img src="../Legendes/Images_Legendes/breche_normands/breche_normands-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
             galerieLeg.innerHTML = galerie;
               
             
@@ -417,7 +417,7 @@ function loadPage(href)
 
     la_souris_blanche.on('click', function () 
    {
-            var legende = loadPage('Legendes/HTML/la_souris_blanche-carte.php');
+            var legende = loadPage('../Legendes/HTML/la_souris_blanche-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
@@ -438,14 +438,14 @@ function loadPage(href)
 
     tombeau_stmartin.on('click', function () 
    {
-            var legende = loadPage('Legendes/HTML/tombeau_stmartin-carte.php');
+            var legende = loadPage('../Legendes/HTML/tombeau_stmartin-carte.php');
             var doc = new DOMParser().parseFromString(legende, "text/html");
             var texteLegende = doc.getElementById("texte-legende");
             var titre = texteLegende.getElementsByTagName("h2");
             var autourLegende = doc.getElementById("autour-legende");
             var audioLegende = doc.getElementById("audio-legende");
 
-            var galerie = '<div class="row"><div class="col-md-6"><a href="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-2.jpg"><img src="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-1.jpg"><img src="Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
+            var galerie = '<div class="row"><div class="col-md-6"><a href="../Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-2.jpg"><img src="../Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-2.jpg" class="img-responsive img-thumbnail"/></a></div><div class="col-md-6"><a href="../Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-1.jpg"><img src="../Legendes/Images_Legendes/basilique_stmartin/basilique_stmartin-1.jpg" class="img-responsive img-thumbnail"/></a></div></div>';
             galerieLeg.innerHTML = galerie;
             
              spanLeg.innerHTML += titre[0].innerText;
