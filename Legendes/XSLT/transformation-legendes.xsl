@@ -212,27 +212,27 @@
                                         <a class="nav-link" href="../../index.html">Accueil</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="../../carte.html">Carte</a>
+                                        <a class="nav-link" href="../../src/carte.html">Carte</a>
                                     </li>
                                     <li class="dropdown nav-item">
                                         <a class="dropdown-toggle active" data-toggle="dropdown"
-                                            href="../../legende.html">Légendes<span class="caret"/>
+                                            href="../../src/legende.html">Légendes<span class="caret"/>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="../../textes.php" class="nav-link active"
+                                                <a href="../../src/textes.php" class="nav-link active"
                                                   >Textes</a>
                                             </li>
                                             <li>
-                                                <a href="../../audios.php" class="nav-link"
+                                                <a href="../../src/audios.php" class="nav-link"
                                                   >Audios</a>
                                             </li>
                                             <li>
-                                                <a href="../../bddicono.php" class="nav-link">Base
+                                                <a href="../../src/bddicono.php" class="nav-link">Base
                                                   de données iconographiques</a>
                                             </li>
                                             <li>
-                                                <a href="../../acces.php" class="nav-link">Accès
+                                                <a href="../../src/acces.php" class="nav-link">Accès
                                                   thématiques</a>
                                             </li>
 
@@ -240,19 +240,19 @@
                                     </li>
                                     <li class="dropdown nav-item">
                                         <a class="dropdown-toggle" data-toggle="dropdown"
-                                            href="../../apropos.html">A propos<span class="caret"/>
+                                            href="../../src/apropos.html">A propos<span class="caret"/>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="../../sources.html" class="nav-link"
+                                                <a href="../../src/sources.html" class="nav-link"
                                                   >Sources</a>
                                             </li>
                                             <li>
-                                                <a href="../../leprojet.html" class="nav-link">Le
+                                                <a href="../../src/leprojet.html" class="nav-link">Le
                                                   projet</a>
                                             </li>
                                             <li>
-                                                <a href="../../contact.php" class="nav-link">Nous
+                                                <a href="../../src/contact.php" class="nav-link">Nous
                                                   contacter</a>
                                             </li>
                                         </ul>
@@ -265,8 +265,8 @@
                     <div class="container-fluid">
 
                         <div class="fil_ariane">
-                            <p><a href="../../index.html">PLOT</a> > <a href="../../legende.html"
-                                    >Légendes</a> > <a href="../../textes.php">Textes</a> >
+                            <p><a href="../../index.html">PLOT</a> > <a href="../../src/legende.html"
+                                    >Légendes</a> > <a href="../../src/textes.php">Textes</a> >
                                     <xsl:element name="a">
                                     <xsl:attribute name="href"> # </xsl:attribute>
                                     <xsl:value-of
@@ -359,8 +359,8 @@
                     <footer class="row">
                         <div class="col-md-6">
                             <p>
-                                <a href="../../sources.html">Sources</a><br/>
-                                <a href="../../contact.php">Nous contacter</a><br/> Mentions légales
+                                <a href="../../src/sources.html">Sources</a><br/>
+                                <a href="../../src/contact.php">Nous contacter</a><br/> Mentions légales
                                 -- Centre d'Etudes Supérieures de la Renaissance -- 2020 </p>
                         </div>
                         <div class="col-md-6">
@@ -616,7 +616,7 @@
                     <xsl:when test="name() = 'persName' or name() = 'name'">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>../../cible_requete.php?personnage_id=</xsl:text>
+                                <xsl:text>../../src/cible_requete.php?personnage_id=</xsl:text>
                                 <xsl:value-of select="../@xml:id"/>
                             </xsl:attribute>
                             <xsl:value-of select="."/>
