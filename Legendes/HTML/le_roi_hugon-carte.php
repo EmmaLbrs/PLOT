@@ -11,7 +11,7 @@
    <body>
       <div id="audio-legende">
          <audio controls="">
-            <source src="Legendes/Audio/le_roi_hugon.mp3"></source>
+            <source src="../Legendes/Audio/le_roi_hugon.mp3"></source>
          </audio>
          <p>Narration : En attente d'un narrateur.</p>
       </div>

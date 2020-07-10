@@ -11,7 +11,7 @@
    <body>
       <div id="audio-legende">
          <audio controls="">
-            <source src="Legendes/Audio/breche_normands.mp3"></source>
+            <source src="../Legendes/Audio/breche_normands.mp3"></source>
          </audio>
          <p>Narration : Sandrine Bihan</p>
       </div>

@@ -421,7 +421,7 @@
                             <xsl:attribute name="controls"/>
                             <xsl:element name="source">
                                 <xsl:attribute name="src">
-                                    <xsl:text>Legendes/Audio/</xsl:text>
+                                    <xsl:text>../Legendes/Audio/</xsl:text>
                                     <xsl:value-of select="@xml:id"/>
                                     <xsl:text>.mp3</xsl:text>
                                 </xsl:attribute>

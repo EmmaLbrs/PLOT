@@ -11,7 +11,7 @@
    <body>
       <div id="audio-legende">
          <audio controls="">
-            <source src="Legendes/Audio/couvent_carmes.mp3"></source>
+            <source src="../Legendes/Audio/couvent_carmes.mp3"></source>
          </audio>
          <p>Narration : Frédérique Ménicot</p>
       </div>
